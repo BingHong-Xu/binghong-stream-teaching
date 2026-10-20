@@ -15,13 +15,13 @@
 4. 在 **Build and deployment** 下方的 **Branch** 選擇 `main`（或 `master`），資料夾選擇 `/(root)`，點擊 **Save**。
 5. 等待約 1～2 分鐘部署完成後，即可取得您的專屬 `https://` 公開網址：
    - **主網站首頁（STEAM 跨域與永續旗艦版）**：  
-     `https://<您的GitHub帳號>.github.io/binghong-teaching-portfolio/` （或結尾加 `index.html`）
+     `https://binghong-xu.github.io/binghong-teaching-portfolio/`
    - **2026 台灣傑出永續教育人物 獨立深度專頁**：  
-     `https://<您的GitHub帳號>.github.io/binghong-teaching-portfolio/special-sustainability.html`
+     `https://binghong-xu.github.io/binghong-teaching-portfolio/special-sustainability.html`
    - **學院卓越智庫版**：  
-     `https://<您的GitHub帳號>.github.io/binghong-teaching-portfolio/academic.html`
+     `https://binghong-xu.github.io/binghong-teaching-portfolio/academic.html`
    - **自然走讀與書香人文版**：  
-     `https://<您的GitHub帳號>.github.io/binghong-teaching-portfolio/literary.html`
+     `https://binghong-xu.github.io/binghong-teaching-portfolio/literary.html`
 
 > 💡 **不想用指令上傳？** 您也可以使用 **[Netlify Drop](https://app.netlify.com/drop)**：直接打開網頁，把整個 `binghong-teaching-portfolio` 資料夾用滑鼠拖拉進去，30 秒內就會自動產生一組 `https://xxxx.netlify.app` 專屬網址！
 
@@ -43,7 +43,7 @@
 <!-- 徐秉鴻老師教學成果與「2026 台灣傑出永續教育人物」數位典藏庫 自適應 iframe 嵌入代碼 -->
 <div style="width: 100%; position: relative; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); background: #ffffff;">
   <iframe
-    src="https://您的網站網址/index.html"
+    src="https://binghong-xu.github.io/binghong-teaching-portfolio/"
     title="徐秉鴻老師 教學成果與2026台灣傑出永續教育人物數位典藏庫"
     style="width: 100%; height: 1000px; border: none; display: block; overflow: auto;"
     allow="clipboard-write; fullscreen"
