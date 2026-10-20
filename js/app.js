@@ -1899,11 +1899,20 @@
     if (styleBtn && styleMenu) {
       styleBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        styleMenu.classList.toggle('show');
+        const isOpen = styleMenu.classList.toggle('show');
+        styleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
       document.addEventListener('click', (e) => {
-        if (!styleMenu.contains(e.target) && e.target !== styleBtn) {
+        if (!styleMenu.contains(e.target) && !styleBtn.contains(e.target)) {
           styleMenu.classList.remove('show');
+          styleBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && styleMenu.classList.contains('show')) {
+          styleMenu.classList.remove('show');
+          styleBtn.setAttribute('aria-expanded', 'false');
+          styleBtn.focus();
         }
       });
     }

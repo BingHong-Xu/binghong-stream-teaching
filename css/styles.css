@@ -249,7 +249,7 @@ button {
   justify-content: space-between;
   gap: 0.75rem;
   flex-wrap: nowrap !important;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .brand-wrapper {
@@ -433,16 +433,17 @@ button {
   flex-direction: column;
   gap: 0.35rem;
   z-index: 100010;
-  animation: styleMenuFade 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(-6px);
 }
 
 .style-dropdown-menu.show {
   display: flex;
-}
-
-@keyframes styleMenuFade {
-  from { opacity: 0; transform: translateY(-8px); }
-  to { opacity: 1; transform: translateY(0); }
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .style-menu-item {
@@ -5377,8 +5378,13 @@ html, body {
 @media (max-width: 768px) {
   /* Prevent style dropdown from overflowing off left/right screen edge on phones */
   .style-dropdown-menu {
-    right: -36px;
-    width: min(300px, calc(100vw - 1.25rem));
+    position: fixed;
+    top: calc(var(--header-height, 58px) + 6px);
+    right: 12px;
+    left: auto;
+    width: min(295px, calc(100vw - 24px));
+    max-width: calc(100vw - 24px);
+    z-index: 100010;
   }
 
   /* Horizontal touch-scroll for dense filter bars on mobile */

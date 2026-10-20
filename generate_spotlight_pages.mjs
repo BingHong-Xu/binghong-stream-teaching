@@ -381,6 +381,39 @@ function createPageHtml(feat) {
         <a href="index.html" class="btn-primary" style="font-size: 0.85rem; padding: 0.48rem 0.95rem;">
           &larr; 返回成果首頁
         </a>
+
+        <!-- 三大風格切換選單 (Global Skill 3-Archetypes) -->
+        <div class="relative-dropdown" id="styleSwitcherWrapper">
+          <button id="styleSwitcherBtn" class="btn-outline style-switcher-btn" title="切換成果網站三大經典風格" aria-haspopup="true" aria-expanded="false">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 10 10 0 0 0 0-20"/></svg>
+            <span>風格 (3)</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="styleSwitcherMenu" class="style-dropdown-menu">
+            <a href="index.html" class="style-menu-item">
+              <span class="style-item-icon">🌍</span>
+              <div class="style-item-text">
+                <span class="style-item-title">1. 永續教育 × STREAM 旗艦版</span>
+                <span class="style-item-desc">傑出永續教育人物策展與 1,140 筆檢索庫</span>
+              </div>
+            </a>
+            <a href="academic.html" class="style-menu-item">
+              <span class="style-item-icon">🏛️</span>
+              <div class="style-item-text">
+                <span class="style-item-title">2. 學院卓越智庫版</span>
+                <span class="style-item-desc">TSSCI 論文發表與學術研究專用</span>
+              </div>
+            </a>
+            <a href="literary.html" class="style-menu-item">
+              <span class="style-item-icon">🌿</span>
+              <div class="style-item-text">
+                <span class="style-item-title">3. 自然走讀與書香人文版</span>
+                <span class="style-item-desc">環境教育、走讀古厝與晨讀推廣</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <button id="themeToggleBtn" class="btn-icon" title="切換深淺模式">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
@@ -618,6 +651,29 @@ function createPageHtml(feat) {
     document.getElementById('specialLightbox')?.addEventListener('click', (e) => {
       if (e.target.id === 'specialLightbox') window.closeSpecialLightbox();
     });
+
+    const styleBtn = document.getElementById('styleSwitcherBtn');
+    const styleMenu = document.getElementById('styleSwitcherMenu');
+    if (styleBtn && styleMenu) {
+      styleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = styleMenu.classList.toggle('show');
+        styleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      document.addEventListener('click', (e) => {
+        if (!styleMenu.contains(e.target) && !styleBtn.contains(e.target)) {
+          styleMenu.classList.remove('show');
+          styleBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && styleMenu.classList.contains('show')) {
+          styleMenu.classList.remove('show');
+          styleBtn.setAttribute('aria-expanded', 'false');
+          styleBtn.focus();
+        }
+      });
+    }
   </script>
 
 </body>
