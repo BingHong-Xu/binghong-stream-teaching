@@ -363,7 +363,7 @@ ${googleSitesExtraCss}
       <div class="hero-content">
         <!-- 四大核心教育實踐榮譽徽章列 -->
         <div class="hero-identity-bar">
-          <span class="identity-badge sustainability">🌍 2026 台灣傑出永續教育人物 · 環境教育認證</span>
+          <span class="identity-badge sustainability">🌍 台灣傑出永續教育人物 · 環境教育認證</span>
           <span class="identity-divider" style="color: var(--text-subtle);">✕</span>
           <span class="identity-badge practicum">🎓 高師大師培 × 四維國小</span>
           <span class="identity-divider" style="color: var(--text-subtle);">✕</span>
@@ -552,7 +552,7 @@ ${googleSitesExtraCss}
         <span>🏆 教學成果四大核心專區</span>
       </h2>
       <p>
-        深耕教育現場，全方位展現<strong>「永續教育」</strong>（🌍 2026 台灣傑出永續教育人物 · 環境教育認證）、<strong>「師培傳承」</strong>（🎓 高師大師培 × 四維國小）、<strong>「跨域美感」</strong>（🎨 教育部標竿學校 · 苗栗縣教案首獎）及<strong>「閱讀推動」</strong>（📖 永貞國小閱推專任 · 聊書典範教師）四大指標性教育實踐歷程。
+        深耕教育現場，全方位展現<strong>「永續教育」</strong>（🌍 台灣傑出永續教育人物 · 環境教育認證）、<strong>「師培傳承」</strong>（🎓 高師大師培 × 四維國小）、<strong>「跨域美感」</strong>（🎨 教育部標竿學校 · 苗栗縣教案首獎）及<strong>「閱讀推動」</strong>（📖 永貞國小閱推專任 · 聊書典範教師）四大指標性教育實踐歷程。
       </p>
     </div>
 
