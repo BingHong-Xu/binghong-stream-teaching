@@ -419,66 +419,102 @@ ${googleSitesExtraCss}
 
         <!-- 典藏數據儀表板 (十二色點分級色彩) -->
         <div class="hero-stats-row">
-          <div class="stat-card" data-stat="items">
+          <div class="stat-card" data-stat="items" onclick="window.jumpToSection('portfolio-catalog')" title="點擊直接捲動檢索 ${processedPortfolio.items.length} 筆成果典藏" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">${processedPortfolio.items.length}</span>
               <span class="stat-dot" title="十二色點・藍（4.1-4.5 四上）">🔵</span>
             </div>
-            <span class="stat-label">筆成果典藏</span>
+            <span class="stat-label">筆成果典藏 ↗</span>
           </div>
-          <div class="stat-card" data-stat="sections">
+          <div class="stat-card" data-stat="sections" onclick="window.jumpToSection('subsectionsSection')" title="點擊檢視 43 項專業向度標籤索引" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">43</span>
               <span class="stat-dot" title="十二色點・紫（5.1-5.5 五上）">🟣</span>
             </div>
-            <span class="stat-label">項專業向度</span>
+            <span class="stat-label">項專業向度 ↗</span>
           </div>
-          <div class="stat-card" data-stat="spotlights">
+          <div class="stat-card" data-stat="spotlights" onclick="window.jumpToSection('teaching-spotlights')" title="點擊檢視 4+6 大專區與旗艦策展" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">4+6</span>
               <span class="stat-dot" title="十二色點・橙（2.6-3.0 二下）">🟠</span>
             </div>
-            <span class="stat-label">大專區與策展</span>
+            <span class="stat-label">大專區與策展 ↗</span>
           </div>
-          <div class="stat-card" data-stat="albums">
+          <div class="stat-card" data-stat="albums" onclick="window.filterByAlbumTag()" title="點擊檢視 93 場永續SDGs相簿" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">93</span>
               <span class="stat-dot" title="十二色點・綠（3.6-4.0 三下）">🟢</span>
             </div>
-            <span class="stat-label">場永續SDGs相簿</span>
+            <span class="stat-label">場永續SDGs相簿 ↗</span>
           </div>
-          <div class="stat-card" data-stat="awards">
+          <div class="stat-card" data-stat="awards" onclick="window.jumpToSection('portfolio-catalog')" title="點擊檢視 17 項永續代表大獎與五大構面佐證" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">17</span>
               <span class="stat-dot" title="十二色點・金（6.6+ 六下）">🟡</span>
             </div>
-            <span class="stat-label">項永續代表大獎</span>
+            <span class="stat-label">項永續代表大獎 ↗</span>
           </div>
-          <div class="stat-card" data-stat="offline">
+          <div class="stat-card" data-stat="offline" onclick="window.jumpToSection('portfolio-catalog')" title="點擊檢索完整離線佐證" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">100%</span>
               <span class="stat-dot" title="十二色點・銅（5.6-6.0 五下）">🟤</span>
             </div>
-            <span class="stat-label">自包含離線預覽</span>
+            <span class="stat-label">自包含離線預覽 ↗</span>
           </div>
         </div>
 
         <!-- 國教署與高師大「識字金銀島」十二色點指標體系導覽列 -->
         <div class="hero-dot-legend">
-          <span class="dot-legend-title">🎨 欄位色彩取材自國教署與高師大閱讀評量與教學研究中心研發之「識字金銀島」十二色點指標體系：</span>
-          <div class="dot-legend-dots">
-            <span class="color-dot-tag tag-white" title="白：1.0-1.5 一年級上學期"><span class="cd-circle">⚪</span> 白</span>
-            <span class="color-dot-tag tag-black" title="黑：1.6-2.0 一年級下學期"><span class="cd-circle">⚫</span> 黑</span>
-            <span class="color-dot-tag tag-red" title="紅：2.1-2.5 二年級上學期"><span class="cd-circle">🔴</span> 紅</span>
-            <span class="color-dot-tag tag-orange" title="橙：2.6-3.0 二年級下學期"><span class="cd-circle">🟠</span> 橙</span>
-            <span class="color-dot-tag tag-yellow" title="黃：3.1-3.5 三年級上學期"><span class="cd-circle">🟡</span> 黃</span>
-            <span class="color-dot-tag tag-green" title="綠：3.6-4.0 三年級下學期"><span class="cd-circle">🟢</span> 綠</span>
-            <span class="color-dot-tag tag-blue" title="藍：4.1-4.5 四年級上學期"><span class="cd-circle">🔵</span> 藍</span>
-            <span class="color-dot-tag tag-indigo" title="靛：4.6-5.0 四年級下學期"><span class="cd-circle">🟣</span> 靛</span>
-            <span class="color-dot-tag tag-purple" title="紫：5.1-5.5 五年級上學期"><span class="cd-circle">🟣</span> 紫</span>
-            <span class="color-dot-tag tag-bronze" title="銅：5.6-6.0 五年級下學期"><span class="cd-circle">🟤</span> 銅</span>
-            <span class="color-dot-tag tag-silver" title="銀：6.1-6.5 六年級上學期"><span class="cd-circle">⚪</span> 銀</span>
-            <span class="color-dot-tag tag-gold" title="金：6.6以上 六年級下學期"><span class="cd-circle">🟡</span> 金</span>
+          <div class="dot-legend-header">
+            <span class="dot-legend-title">
+              🎨 欄位色彩取材自國教署與高師大閱讀評量與教學研究中心研發之<a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="dot-legend-title-link" title="前往國教署與高師大閱讀評量與教學研究中心「識字金銀島」官方平台">「識字金銀島」↗</a>十二色點指標體系：
+            </span>
+            <div class="dot-legend-actions">
+              <button type="button" class="dot-legend-guide-btn" onclick="window.openLiteracyModal('white')" title="開啟十二色點完整指標對照表與適性閱讀學習地圖">
+                📊 十二色點互動對照表
+              </button>
+              <a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="dot-legend-ext-pill" title="前往國教署與高師大閱讀評量與教學研究中心「識字金銀島」官方測驗與自主學習平台">
+                <span>🏝️ 識字金銀島官網 ↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="dot-legend-dots" role="group" aria-label="識字金銀島十二色點指標導覽">
+            <button type="button" class="color-dot-tag tag-white" onclick="window.openLiteracyModal('white')" title="點擊檢視 ⚪ 白點：1.0-1.5 一年級上學期指標與互動連結">
+              <span class="cd-circle">⚪</span> 白
+            </button>
+            <button type="button" class="color-dot-tag tag-black" onclick="window.openLiteracyModal('black')" title="點擊檢視 ⚫ 黑點：1.6-2.0 一年級下學期指標與互動連結">
+              <span class="cd-circle">⚫</span> 黑
+            </button>
+            <button type="button" class="color-dot-tag tag-red" onclick="window.openLiteracyModal('red')" title="點擊檢視 🔴 紅點：2.1-2.5 二年級上學期指標與互動連結">
+              <span class="cd-circle">🔴</span> 紅
+            </button>
+            <button type="button" class="color-dot-tag tag-orange" onclick="window.openLiteracyModal('orange')" title="點擊檢視 🟠 橙點：2.6-3.0 二年級下學期指標與互動連結">
+              <span class="cd-circle">🟠</span> 橙
+            </button>
+            <button type="button" class="color-dot-tag tag-yellow" onclick="window.openLiteracyModal('yellow')" title="點擊檢視 🟡 黃點：3.1-3.5 三年級上學期指標與互動連結">
+              <span class="cd-circle">🟡</span> 黃
+            </button>
+            <button type="button" class="color-dot-tag tag-green" onclick="window.openLiteracyModal('green')" title="點擊檢視 🟢 綠點：3.6-4.0 三年級下學期指標與互動連結">
+              <span class="cd-circle">🟢</span> 綠
+            </button>
+            <button type="button" class="color-dot-tag tag-blue" onclick="window.openLiteracyModal('blue')" title="點擊檢視 🔵 藍點：4.1-4.5 四年級上學期指標與互動連結">
+              <span class="cd-circle">🔵</span> 藍
+            </button>
+            <button type="button" class="color-dot-tag tag-indigo" onclick="window.openLiteracyModal('indigo')" title="點擊檢視 🟣 靛點：4.6-5.0 四年級下學期指標與互動連結">
+              <span class="cd-circle">🟣</span> 靛
+            </button>
+            <button type="button" class="color-dot-tag tag-purple" onclick="window.openLiteracyModal('purple')" title="點擊檢視 🟣 紫點：5.1-5.5 五年級上學期指標與互動連結">
+              <span class="cd-circle">🟣</span> 紫
+            </button>
+            <button type="button" class="color-dot-tag tag-bronze" onclick="window.openLiteracyModal('bronze')" title="點擊檢視 🟤 銅點：5.6-6.0 五年級下學期指標與互動連結">
+              <span class="cd-circle">🟤</span> 銅
+            </button>
+            <button type="button" class="color-dot-tag tag-silver" onclick="window.openLiteracyModal('silver')" title="點擊檢視 ⚪ 銀點：6.1-6.5 六年級上學期指標與互動連結">
+              <span class="cd-circle">⚪</span> 銀
+            </button>
+            <button type="button" class="color-dot-tag tag-gold" onclick="window.openLiteracyModal('gold')" title="點擊檢視 🟡 金點：6.6以上 六年級下學期指標與互動連結">
+              <span class="cd-circle">🟡</span> 金
+            </button>
           </div>
         </div>
 
@@ -871,6 +907,88 @@ ${googleSitesExtraCss}
     </div>
   </div>
 
+  <!-- 國教署與高師大「識字金銀島」十二色點指標體系 互動彈窗 -->
+  <div id="literacyDotsModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="literacyModalTitle" style="display: none;">
+    <div class="modal-dialog literacy-modal-dialog">
+      <div class="literacy-modal-header">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="pillars-badge-pill" style="font-size: 0.76rem; background: linear-gradient(135deg, rgba(2, 132, 199, 0.15), rgba(147, 51, 234, 0.15)); color: #0284c7;">
+              🏝️ 國教署 × 高師大閱讀評量與教學研究中心研發
+            </span>
+            <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: 600;">十二年國教適性學習指標</span>
+          </div>
+          <h2 id="literacyModalTitle" class="literacy-modal-title">「識字金銀島」十二色點指標體系</h2>
+          <p class="literacy-modal-subtitle">國中小學童分級識字量常模標準 · 永貞國小閱讀推動適性學習地圖</p>
+        </div>
+        <button id="closeLiteracyModalBtn" class="modal-close-btn" aria-label="關閉視窗" onclick="window.closeLiteracyModal()">&times;</button>
+      </div>
+
+      <div class="literacy-modal-body">
+        <!-- 12 Color Dots Selector Tabs -->
+        <div class="literacy-tabs-scroll" id="literacyDotsTabList" role="tablist" aria-label="十二色點年段切換">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+        <!-- Active Color Dot Detailed Card -->
+        <div id="literacyActiveCard" class="literacy-active-card">
+          <!-- Populated via renderLiteracyCard(dotId) -->
+        </div>
+
+        <!-- Low / Mid / High 3-Tier Summary Matrix -->
+        <div class="literacy-summary-matrix">
+          <div class="lsm-title">
+            <span>🗺️ 國中小 1～6 年級十二色點年段進階地圖</span>
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">點擊任一項目即可切換檢視</span>
+          </div>
+          <div class="lsm-grid">
+            <div class="lsm-col">
+              <div class="lsm-col-header" style="color: #dc2626;">🌱 低年級啟蒙階（1～2年級）</div>
+              <div class="lsm-dots-list">
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('white')">⚪ <b>白點</b>：1.0-1.5（一上，注音與生活字）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('black')">⚫ <b>黑點</b>：1.6-2.0（一下，常用字詞累積）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('red')">🔴 <b>紅點</b>：2.1-2.5（二上，字形字義辨析）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('orange')">🟠 <b>橙點</b>：2.6-3.0（二下，橋樑書與短文）</div>
+              </div>
+            </div>
+            <div class="lsm-col">
+              <div class="lsm-col-header" style="color: #0284c7;">🌿 中年級進階階（3～4年級）</div>
+              <div class="lsm-dots-list">
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('yellow')">🟡 <b>黃點</b>：3.1-3.5（三上，部首造字歸納）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('green')">🟢 <b>綠點</b>：3.6-4.0（三下，詞彙豐富與聊書）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('blue')">🔵 <b>藍點</b>：4.1-4.5（四上，篇章結構與理解）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('indigo')">🟣 <b>靛點</b>：4.6-5.0（四下，跨學科詞彙素養）</div>
+              </div>
+            </div>
+            <div class="lsm-col">
+              <div class="lsm-col-header" style="color: #9333ea;">🌳 高年級深究階（5～6年級）</div>
+              <div class="lsm-dots-list">
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('purple')">🟣 <b>紫點</b>：5.1-5.5（五上，高階思維與摘要）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('bronze')">🟤 <b>銅點</b>：5.6-6.0（五下，多元思辨與觀點）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('silver')">⚪ <b>銀點</b>：6.1-6.5（六上，學術素養與論文）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('gold')">🟡 <b>金點</b>：6.6以上（六下，終身讀者與創課）</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="padding: 0.85rem 1.4rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--bg-surface); flex-wrap: wrap; gap: 0.6rem;">
+        <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.4rem;">
+          <span>🏫 苗栗縣永貞國小閱讀推動</span>
+          <span>·</span>
+          <span>🎓 國立高雄師範大學閱讀評量與教學研究中心 (PAIR)</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.82rem;">
+            🏝️ 開啟識字金銀島官方平台 ↗
+          </a>
+          <button class="btn-outline" style="padding: 0.45rem 0.85rem; font-size: 0.82rem;" onclick="window.closeLiteracyModal()">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Google Sites 嵌入指南彈出視窗 (Embed Guide Modal) -->
   <div id="embedGuideModal" class="modal-backdrop" role="dialog" aria-modal="true">
     <div class="modal-dialog" style="max-width: 650px;">
@@ -1020,7 +1138,10 @@ ${googleSitesExtraCss}
       spModalDocsWrapper: document.getElementById('spModalDocsWrapper'),
       embedGuideModal: document.getElementById('embedGuideModal'),
       teachingPillarsGrid: document.getElementById('teachingPillarsGrid'),
-      pillarModalBackdrop: document.getElementById('pillarModalBackdrop')
+      pillarModalBackdrop: document.getElementById('pillarModalBackdrop'),
+      literacyDotsModalBackdrop: document.getElementById('literacyDotsModalBackdrop'),
+      literacyDotsTabList: document.getElementById('literacyDotsTabList'),
+      literacyActiveCard: document.getElementById('literacyActiveCard')
     };
 
     function init() {
@@ -1250,6 +1371,252 @@ ${googleSitesExtraCss}
       const target = document.getElementById('portfolio-catalog');
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    // ==========================================================================
+    // 3A-2. 國教署 × 高師大「識字金銀島」十二色點指標體系 互動模組
+    // ==========================================================================
+    const TWELVE_LITERACY_DOTS = [
+      {
+        id: 'white', name: '白', emoji: '⚪', colorHex: '#ffffff', textCol: '#334155', bgCol: '#f8fafc', borderCol: '#cbd5e1',
+        level: '1.0 - 1.5', grade: '一年級上學期', stage: '啟蒙階 · 識字起點', vocabTarget: '約 500 - 700 字',
+        coreFocus: '注音符號認讀拼音連讀、生活常用漢字啟蒙、象形表意初識與基礎筆畫筆順',
+        pedagogy: '低年級以注音為認讀輔助橋樑，結合生活實景與看圖指字，透過識字金銀島「形音義入門」學習島進行趣味化適性練習。',
+        xuTeaching: '永貞國小一年級注音符號適性檢測、晨讀 MSSR 身教聽讀、生活識字桌遊實踐',
+        searchKeyword: '注音'
+      },
+      {
+        id: 'black', name: '黑', emoji: '⚫', colorHex: '#1e293b', textCol: '#1e293b', bgCol: '#f1f5f9', borderCol: '#94a3b8',
+        level: '1.6 - 2.0', grade: '一年級下學期', stage: '啟蒙階 · 字詞累積', vocabTarget: '約 700 - 1,000 字',
+        coreFocus: '高頻基礎漢字認讀累積、基本部首初步感知、常用名詞動詞組合與看讀短句',
+        pedagogy: '由單字進階至雙字詞，結合日常生活情境圖卡與識字金銀島島嶼闖關，建立學生識字信心與獨立認讀動機。',
+        xuTeaching: '圖書館看讀繪本導讀、生字趣味尋寶遊戲、結合識字金銀島基礎測驗進行起點診斷',
+        searchKeyword: '識字'
+      },
+      {
+        id: 'red', name: '紅', emoji: '🔴', colorHex: '#dc2626', textCol: '#dc2626', bgCol: '#fef2f2', borderCol: '#fca5a5',
+        level: '2.1 - 2.5', grade: '二年級上學期', stage: '基礎階 · 字形辨析', vocabTarget: '約 1,000 - 1,300 字',
+        coreFocus: '常見相似字形辨析、多音字基礎感知、常用複合詞彙識讀與繪本自讀理解',
+        pedagogy: '運用部首與部件拆解（如左右、上下結構），輔以金銀島遊戲化題型，預防低年級形近字與同音字混淆。',
+        xuTeaching: '低年級字形拆解趣味實作、晨讀自選繪本 MSSR、字詞配對闖關遊戲',
+        searchKeyword: '字形'
+      },
+      {
+        id: 'orange', name: '橙', emoji: '🟠', colorHex: '#ea580c', textCol: '#ea580c', bgCol: '#fff7ed', borderCol: '#fdba74',
+        level: '2.6 - 3.0', grade: '二年級下學期', stage: '基礎階 · 橋樑閱讀', vocabTarget: '約 1,300 - 1,600 字',
+        coreFocus: '語詞擴展、句型認讀與重組、故事短文理解、橋樑書獨立閱讀流暢度',
+        pedagogy: '推動由看圖繪本過渡至橋樑書，透過金銀島詞意選配與朗讀流暢度診斷，銜接中高年級長文理解。',
+        xuTeaching: '橋樑書主題書展、二年級故事大王聊書圈、學習扶助語文適性補強',
+        searchKeyword: '橋樑書'
+      },
+      {
+        id: 'yellow', name: '黃', emoji: '🟡', colorHex: '#ca8a04', textCol: '#ca8a04', bgCol: '#fefce8', borderCol: '#fde047',
+        level: '3.1 - 3.5', grade: '三年級上學期', stage: '進階階 · 部首歸納', vocabTarget: '約 1,600 - 1,900 字',
+        coreFocus: '系統化部首造字歸納、語境推測生詞意涵、自然段落掌握與晨讀 MSSR 沉浸閱讀',
+        pedagogy: '進入中學段語文轉折點，引導學生利用部首表意特徵推測未知詞義，結合識字金銀島三年級常模測驗診斷落後節點。',
+        xuTeaching: '三年級晨讀 MSSR 身教示範、字典部首查閱探究、字族樹創意海報製作',
+        searchKeyword: '明日閱讀'
+      },
+      {
+        id: 'green', name: '綠', emoji: '🟢', colorHex: '#16a34a', textCol: '#16a34a', bgCol: '#f0fdf4', borderCol: '#86efac',
+        level: '3.6 - 4.0', grade: '三年級下學期', stage: '進階階 · 詞彙豐富', vocabTarget: '約 1,900 - 2,200 字',
+        coreFocus: '同義反義詞辨析、成語萌芽與靈活運用、跨學科主題閱讀與同儕聊書分享',
+        pedagogy: '擴大詞彙網絡與語境靈活性，以同儕合作學習與識字金銀島競賽機制激發字彙探索趣味。',
+        xuTeaching: '班級聊書小圈圈、成語情境劇實作、永續生態主題繪本走讀',
+        searchKeyword: '聊書'
+      },
+      {
+        id: 'blue', name: '藍', emoji: '🔵', colorHex: '#0284c7', textCol: '#0284c7', bgCol: '#f0f9ff', borderCol: '#7dd3fc',
+        level: '4.1 - 4.5', grade: '四年級上學期', stage: '發展階 · 結構理解', vocabTarget: '約 2,200 - 2,500 字',
+        coreFocus: '篇章結構分析、段落主旨擷取、科普短文認讀、閱讀理解策略應用',
+        pedagogy: '強調自字詞走向篇章，教導學生運用六何法（5W1H）、概念圖與心智圖整理閱讀訊息，全面對接教育部閱讀素養指標。',
+        xuTeaching: '科普環島列車短文探究、四甲心智圖筆記教學、金銀島四年級常模檢測全面追蹤',
+        searchKeyword: '科學探究'
+      },
+      {
+        id: 'indigo', name: '靛', emoji: '🟣', colorHex: '#4338ca', textCol: '#4338ca', bgCol: '#eef2ff', borderCol: '#a5b4fc',
+        level: '4.6 - 5.0', grade: '四年級下學期', stage: '發展階 · 跨域素養', vocabTarget: '約 2,500 - 2,800 字',
+        coreFocus: '跨領域學科專門詞彙、文本訊息比較、多元媒介訊息解讀、數位適性學習扶助',
+        pedagogy: '結合自然科學、社會科多文本資訊，引導學生在真實情境中驗證詞意，搭配數位工具開展自主探索。',
+        xuTeaching: '跨領域美數課程教案、數位學習載具 Padlet 互動探究、科技化學扶差異化指導',
+        searchKeyword: '跨領域'
+      },
+      {
+        id: 'purple', name: '紫', emoji: '🟣', colorHex: '#9333ea', textCol: '#9333ea', bgCol: '#faf5ff', borderCol: '#d8b4fe',
+        level: '5.1 - 5.5', grade: '五年級上學期', stage: '深究階 · 高階思維', vocabTarget: '約 2,800 - 3,100 字',
+        coreFocus: '高階提問（推論/詮釋/評鑑）、文本摘要重組、批判思考、UN SDGs 永續議題深究',
+        pedagogy: '著重論述文本與複雜情境閱讀，結合 PIRLS/PISA 閱讀素養題型與高師大研究成果，引導學生反思與發表獨立觀點。',
+        xuTeaching: '永續 SDGs 17 項指標專題閱讀、剩食大作戰探究學習、論證短文讀寫結合',
+        searchKeyword: '永續'
+      },
+      {
+        id: 'bronze', name: '銅', emoji: '🟤', colorHex: '#b45309', textCol: '#b45309', bgCol: '#fffbeb', borderCol: '#fcd34d',
+        level: '5.6 - 6.0', grade: '五年級下學期', stage: '深究階 · 多元辨思', vocabTarget: '約 3,100 - 3,400 字',
+        coreFocus: '長篇文本閱讀耐力、多文本觀點對讀與整合、社會議題思辨、讀書會專題發表',
+        pedagogy: '引導學生從不同立場閱讀同一事件文本，學習辨識事實與觀點，培養深度思辨與口頭策展解說能力。',
+        xuTeaching: '五甲跨域專題讀書會、風力發電與高美濕地正反論點辯證、全國科學探究競賽初階備賽',
+        searchKeyword: '專題'
+      },
+      {
+        id: 'silver', name: '銀', emoji: '⚪', colorHex: '#64748b', textCol: '#475569', bgCol: '#f8fafc', borderCol: '#cbd5e1',
+        level: '6.1 - 6.5', grade: '六年級上學期', stage: '卓越階 · 學術素養', vocabTarget: '約 3,400 - 3,700 字',
+        coreFocus: '議論文證分析、科學探究專題報告閱讀、深度聊書哲學探討、高層次認知建構',
+        pedagogy: '培養準中學生之高階學術閱讀力，閱讀科普論文、社會調查報告，訓練「閱讀即探究、文字即證據」之素養。',
+        xuTeaching: '六年甲班多元智能地圖、STREAM 探究跨域創作、科學探究全國第一作品研讀',
+        searchKeyword: '多元智能'
+      },
+      {
+        id: 'gold', name: '金', emoji: '🟡', colorHex: '#d97706', textCol: '#b45309', bgCol: '#fffbeb', borderCol: '#fde68a',
+        level: '6.6 以上', grade: '六年級下學期', stage: '卓越階 · 終身讀者', vocabTarget: '3,700 字以上（國中小最高階）',
+        coreFocus: '跨領域自主研究、終身閱讀者習慣、小論文產出、數位策展與社會影響力實踐',
+        pedagogy: '識字金銀島體系最高頂峰，學生具備全方位獨立閱讀、跨域整合與自學力，能運用閱讀探索世界、解決現實社會難題。',
+        xuTeaching: '六甲美感成果數位策展、國小畢業探究小論文指導、TSSCI 核心期刊發表與永續人物得獎實踐',
+        searchKeyword: 'TSSCI'
+      }
+    ];
+
+    let currentLiteracyDotId = 'white';
+
+    window.openLiteracyModal = function(dotId = 'white') {
+      const backdrop = document.getElementById('literacyDotsModalBackdrop');
+      if (!backdrop) return;
+      backdrop.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+
+      renderLiteracyTabs();
+      window.selectLiteracyDot(dotId);
+    };
+
+    window.closeLiteracyModal = function() {
+      const backdrop = document.getElementById('literacyDotsModalBackdrop');
+      if (!backdrop) return;
+      backdrop.style.display = 'none';
+      document.body.style.overflow = '';
+    };
+
+    function renderLiteracyTabs() {
+      const tabList = document.getElementById('literacyDotsTabList');
+      if (!tabList) return;
+      tabList.innerHTML = TWELVE_LITERACY_DOTS.map(function(d) {
+        const isAct = d.id === currentLiteracyDotId;
+        const actStyle = isAct ? ('background: ' + d.bgCol + '; border-color: ' + d.borderCol + '; color: ' + d.textCol + '; box-shadow: 0 4px 12px ' + d.colorHex + '33;') : '';
+        return '<button type="button" class="literacy-tab-chip ' + (isAct ? 'active' : '') + '" data-dot="' + d.id + '" onclick="window.selectLiteracyDot(\'' + d.id + '\')" style="' + actStyle + '">' +
+          '<span>' + d.emoji + '</span>' +
+          '<span>' + d.name + ' (' + d.level + ')</span>' +
+        '</button>';
+      }).join('');
+    }
+
+    window.selectLiteracyDot = function(dotId) {
+      const dot = TWELVE_LITERACY_DOTS.find(function(d) { return d.id === dotId; }) || TWELVE_LITERACY_DOTS[0];
+      currentLiteracyDotId = dot.id;
+
+      const tabList = document.getElementById('literacyDotsTabList');
+      if (tabList) {
+        tabList.querySelectorAll('.literacy-tab-chip').forEach(function(btn) {
+          const isCurrent = btn.dataset.dot === dot.id;
+          btn.classList.toggle('active', isCurrent);
+          if (isCurrent) {
+            btn.style.background = dot.bgCol;
+            btn.style.borderColor = dot.borderCol;
+            btn.style.color = dot.textCol;
+            btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          } else {
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.style.color = '';
+          }
+        });
+      }
+
+      const cardEl = document.getElementById('literacyActiveCard');
+      if (!cardEl) return;
+      cardEl.style.borderColor = dot.borderCol;
+      cardEl.innerHTML = [
+        '<div class="lac-header">',
+        '  <div class="lac-badge-group">',
+        '    <h3 class="lac-title" style="color: ' + dot.textCol + ';">',
+        '      <span>' + dot.emoji + '</span>',
+        '      <span>' + dot.name + '點指標</span>',
+        '      <span style="font-size: 1rem; color: var(--text-muted); font-weight: 700;">(' + dot.level + ')</span>',
+        '    </h3>',
+        '    <span class="lac-stage-pill" style="background: ' + dot.bgCol + '; color: ' + dot.textCol + '; border: 1px solid ' + dot.borderCol + ';">',
+        '      ' + escapeHtml(dot.stage) + ' · ' + escapeHtml(dot.grade),
+        '    </span>',
+        '  </div>',
+        '  <div class="lac-vocab-stat">',
+        '    <span>🎯 常模識字量指標：</span>',
+        '    <b style="color: ' + dot.textCol + ';">' + escapeHtml(dot.vocabTarget) + '</b>',
+        '  </div>',
+        '</div>',
+        '<div class="lac-grid">',
+        '  <div class="lac-block">',
+        '    <div class="lac-block-title" style="color: ' + dot.textCol + ';">',
+        '      <span>🎯</span>',
+        '      <span>年段核心識字與語文目標</span>',
+        '    </div>',
+        '    <p class="lac-block-text">' + escapeHtml(dot.coreFocus) + '</p>',
+        '  </div>',
+        '  <div class="lac-block">',
+        '    <div class="lac-block-title" style="color: #0284c7;">',
+        '      <span>🏝️</span>',
+        '      <span>「識字金銀島」適性島嶼學習指引</span>',
+        '    </div>',
+        '    <p class="lac-block-text">' + escapeHtml(dot.pedagogy) + '</p>',
+        '  </div>',
+        '</div>',
+        '<div class="lac-xu-practice">',
+        '  <div class="lac-xu-title">',
+        '    <span>🧑‍🏫</span>',
+        '    <span>永貞國小閱讀推動 · 徐秉鴻老師適性教學現場實踐</span>',
+        '  </div>',
+        '  <p class="lac-xu-text">' + escapeHtml(dot.xuTeaching) + '</p>',
+        '</div>',
+        '<div class="lac-actions">',
+        '  <a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="lac-btn-ext" title="前往國教署與高師大閱讀評量與教學研究中心「識字金銀島」平台進行測驗或自主學習">',
+        '    <span>🏝️ 前往「識字金銀島」官方平台 (高師大 PAIR 中心) ↗</span>',
+        '  </a>',
+        '  <button type="button" class="lac-btn-search" onclick="window.filterLiteracyFromModal(\'' + dot.searchKeyword + '\')" title="關閉視窗並在成果庫中自動檢索相關成果">',
+        '    <span>🔍 檢索本典藏庫「' + dot.searchKeyword + '」成果 →</span>',
+        '  </button>',
+        '</div>'
+      ].join('');
+    };
+
+    window.filterLiteracyFromModal = function(keyword) {
+      window.closeLiteracyModal();
+      if (el.searchInput && keyword) {
+        state.currentCategory = 'all';
+        state.currentSection = 'all';
+        el.searchInput.value = keyword;
+        state.searchQuery = keyword;
+        renderCategoryTabs();
+        applyFilters();
+      }
+      const catSection = document.getElementById('portfolio-catalog');
+      if (catSection) {
+        catSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    window.jumpToSection = function(sectionId) {
+      const sec = document.getElementById(sectionId);
+      if (sec) {
+        sec.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    window.filterByAlbumTag = function() {
+      state.currentCategory = 'sustainability_sdgs';
+      state.currentSection = 'all';
+      state.searchQuery = '';
+      if (el.searchInput) el.searchInput.value = '';
+      renderCategoryTabs();
+      applyFilters();
+      const catSection = document.getElementById('portfolio-catalog');
+      if (catSection) {
+        catSection.scrollIntoView({ behavior: 'smooth' });
       }
     };
 
@@ -2193,9 +2560,15 @@ ${googleSitesExtraCss}
       el.pillarModalBackdrop?.addEventListener('click', (e) => {
         if (e.target === el.pillarModalBackdrop) window.closePillarModal();
       });
+      el.literacyDotsModalBackdrop?.addEventListener('click', (e) => {
+        if (e.target === el.literacyDotsModalBackdrop) window.closeLiteracyModal();
+      });
 
       // Keyboard
       window.addEventListener('keydown', (e) => {
+        if (el.literacyDotsModalBackdrop && el.literacyDotsModalBackdrop.style.display === 'flex') {
+          if (e.key === 'Escape') { window.closeLiteracyModal(); return; }
+        }
         if (el.pillarModalBackdrop?.classList.contains('open')) {
           if (e.key === 'Escape') window.closePillarModal();
           return;

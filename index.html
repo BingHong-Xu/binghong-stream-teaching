@@ -214,66 +214,102 @@
 
         <!-- 典藏數據儀表板 (十二色點分級色彩) -->
         <div class="hero-stats-row">
-          <div class="stat-card" data-stat="items">
+          <div class="stat-card" data-stat="items" onclick="window.jumpToSection('portfolio-catalog')" title="點擊直接捲動檢索 1,145 筆成果典藏" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">1,145</span>
               <span class="stat-dot" title="十二色點・藍（4.1-4.5 四上）">🔵</span>
             </div>
-            <span class="stat-label">筆成果典藏</span>
+            <span class="stat-label">筆成果典藏 ↗</span>
           </div>
-          <div class="stat-card" data-stat="sections">
+          <div class="stat-card" data-stat="sections" onclick="window.jumpToSection('subsectionsSection')" title="點擊檢視 43 項專業向度標籤索引" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">43</span>
               <span class="stat-dot" title="十二色點・紫（5.1-5.5 五上）">🟣</span>
             </div>
-            <span class="stat-label">項專業向度</span>
+            <span class="stat-label">項專業向度 ↗</span>
           </div>
-          <div class="stat-card" data-stat="spotlights">
+          <div class="stat-card" data-stat="spotlights" onclick="window.jumpToSection('teaching-spotlights')" title="點擊檢視 4+6 大專區與旗艦策展" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">4+6</span>
               <span class="stat-dot" title="十二色點・橙（2.6-3.0 二下）">🟠</span>
             </div>
-            <span class="stat-label">大專區與策展</span>
+            <span class="stat-label">大專區與策展 ↗</span>
           </div>
-          <div class="stat-card" data-stat="albums">
+          <div class="stat-card" data-stat="albums" onclick="window.filterByAlbumTag()" title="點擊檢視 93 場永續SDGs相簿" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">93</span>
               <span class="stat-dot" title="十二色點・綠（3.6-4.0 三下）">🟢</span>
             </div>
-            <span class="stat-label">場永續SDGs相簿</span>
+            <span class="stat-label">場永續SDGs相簿 ↗</span>
           </div>
-          <div class="stat-card" data-stat="awards">
+          <div class="stat-card" data-stat="awards" onclick="window.jumpToSection('sustainability-showcase')" title="點擊檢視 17 項永續代表大獎與五大構面佐證" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">17</span>
               <span class="stat-dot" title="十二色點・金（6.6+ 六下）">🟡</span>
             </div>
-            <span class="stat-label">項永續代表大獎</span>
+            <span class="stat-label">項永續代表大獎 ↗</span>
           </div>
-          <div class="stat-card" data-stat="offline">
+          <div class="stat-card" data-stat="offline" onclick="window.jumpToSection('portfolio-catalog')" title="點擊檢索完整離線佐證" role="button" tabindex="0">
             <div class="stat-header-row">
               <span class="stat-number">100%</span>
               <span class="stat-dot" title="十二色點・銅（5.6-6.0 五下）">🟤</span>
             </div>
-            <span class="stat-label">離線完整打包</span>
+            <span class="stat-label">離線完整打包 ↗</span>
           </div>
         </div>
 
         <!-- 國教署與高師大「識字金銀島」十二色點指標體系導覽列 -->
         <div class="hero-dot-legend">
-          <span class="dot-legend-title">🎨 欄位色彩取材自國教署與高師大閱讀評量與教學研究中心研發之「識字金銀島」十二色點指標體系：</span>
-          <div class="dot-legend-dots">
-            <span class="color-dot-tag tag-white" title="白：1.0-1.5 一年級上學期"><span class="cd-circle">⚪</span> 白</span>
-            <span class="color-dot-tag tag-black" title="黑：1.6-2.0 一年級下學期"><span class="cd-circle">⚫</span> 黑</span>
-            <span class="color-dot-tag tag-red" title="紅：2.1-2.5 二年級上學期"><span class="cd-circle">🔴</span> 紅</span>
-            <span class="color-dot-tag tag-orange" title="橙：2.6-3.0 二年級下學期"><span class="cd-circle">🟠</span> 橙</span>
-            <span class="color-dot-tag tag-yellow" title="黃：3.1-3.5 三年級上學期"><span class="cd-circle">🟡</span> 黃</span>
-            <span class="color-dot-tag tag-green" title="綠：3.6-4.0 三年級下學期"><span class="cd-circle">🟢</span> 綠</span>
-            <span class="color-dot-tag tag-blue" title="藍：4.1-4.5 四年級上學期"><span class="cd-circle">🔵</span> 藍</span>
-            <span class="color-dot-tag tag-indigo" title="靛：4.6-5.0 四年級下學期"><span class="cd-circle">🟣</span> 靛</span>
-            <span class="color-dot-tag tag-purple" title="紫：5.1-5.5 五年級上學期"><span class="cd-circle">🟣</span> 紫</span>
-            <span class="color-dot-tag tag-bronze" title="銅：5.6-6.0 五年級下學期"><span class="cd-circle">🟤</span> 銅</span>
-            <span class="color-dot-tag tag-silver" title="銀：6.1-6.5 六年級上學期"><span class="cd-circle">⚪</span> 銀</span>
-            <span class="color-dot-tag tag-gold" title="金：6.6以上 六年級下學期"><span class="cd-circle">🟡</span> 金</span>
+          <div class="dot-legend-header">
+            <span class="dot-legend-title">
+              🎨 欄位色彩取材自國教署與高師大閱讀評量與教學研究中心研發之<a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="dot-legend-title-link" title="前往國教署與高師大閱讀評量與教學研究中心「識字金銀島」官方平台">「識字金銀島」↗</a>十二色點指標體系：
+            </span>
+            <div class="dot-legend-actions">
+              <button type="button" class="dot-legend-guide-btn" onclick="window.openLiteracyModal('white')" title="開啟十二色點完整指標對照表與適性閱讀學習地圖">
+                📊 十二色點互動對照表
+              </button>
+              <a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="dot-legend-ext-pill" title="前往國教署與高師大閱讀評量與教學研究中心「識字金銀島」官方測驗與自主學習平台">
+                <span>🏝️ 識字金銀島官網 ↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="dot-legend-dots" role="group" aria-label="識字金銀島十二色點指標導覽">
+            <button type="button" class="color-dot-tag tag-white" onclick="window.openLiteracyModal('white')" title="點擊檢視 ⚪ 白點：1.0-1.5 一年級上學期指標與互動連結">
+              <span class="cd-circle">⚪</span> 白
+            </button>
+            <button type="button" class="color-dot-tag tag-black" onclick="window.openLiteracyModal('black')" title="點擊檢視 ⚫ 黑點：1.6-2.0 一年級下學期指標與互動連結">
+              <span class="cd-circle">⚫</span> 黑
+            </button>
+            <button type="button" class="color-dot-tag tag-red" onclick="window.openLiteracyModal('red')" title="點擊檢視 🔴 紅點：2.1-2.5 二年級上學期指標與互動連結">
+              <span class="cd-circle">🔴</span> 紅
+            </button>
+            <button type="button" class="color-dot-tag tag-orange" onclick="window.openLiteracyModal('orange')" title="點擊檢視 🟠 橙點：2.6-3.0 二年級下學期指標與互動連結">
+              <span class="cd-circle">🟠</span> 橙
+            </button>
+            <button type="button" class="color-dot-tag tag-yellow" onclick="window.openLiteracyModal('yellow')" title="點擊檢視 🟡 黃點：3.1-3.5 三年級上學期指標與互動連結">
+              <span class="cd-circle">🟡</span> 黃
+            </button>
+            <button type="button" class="color-dot-tag tag-green" onclick="window.openLiteracyModal('green')" title="點擊檢視 🟢 綠點：3.6-4.0 三年級下學期指標與互動連結">
+              <span class="cd-circle">🟢</span> 綠
+            </button>
+            <button type="button" class="color-dot-tag tag-blue" onclick="window.openLiteracyModal('blue')" title="點擊檢視 🔵 藍點：4.1-4.5 四年級上學期指標與互動連結">
+              <span class="cd-circle">🔵</span> 藍
+            </button>
+            <button type="button" class="color-dot-tag tag-indigo" onclick="window.openLiteracyModal('indigo')" title="點擊檢視 🟣 靛點：4.6-5.0 四年級下學期指標與互動連結">
+              <span class="cd-circle">🟣</span> 靛
+            </button>
+            <button type="button" class="color-dot-tag tag-purple" onclick="window.openLiteracyModal('purple')" title="點擊檢視 🟣 紫點：5.1-5.5 五年級上學期指標與互動連結">
+              <span class="cd-circle">🟣</span> 紫
+            </button>
+            <button type="button" class="color-dot-tag tag-bronze" onclick="window.openLiteracyModal('bronze')" title="點擊檢視 🟤 銅點：5.6-6.0 五年級下學期指標與互動連結">
+              <span class="cd-circle">🟤</span> 銅
+            </button>
+            <button type="button" class="color-dot-tag tag-silver" onclick="window.openLiteracyModal('silver')" title="點擊檢視 ⚪ 銀點：6.1-6.5 六年級上學期指標與互動連結">
+              <span class="cd-circle">⚪</span> 銀
+            </button>
+            <button type="button" class="color-dot-tag tag-gold" onclick="window.openLiteracyModal('gold')" title="點擊檢視 🟡 金點：6.6以上 六年級下學期指標與互動連結">
+              <span class="cd-circle">🟡</span> 金
+            </button>
           </div>
         </div>
 
@@ -759,6 +795,88 @@
         <div style="display: flex; gap: 0.5rem;">
           <button id="pillarModalFilterCatalogBtn" class="btn-primary" style="padding: 0.45rem 0.85rem; font-size: 0.82rem;">🗂️ 檢索對應成果檔案庫 &rarr;</button>
           <button class="btn-outline" style="padding: 0.45rem 0.85rem; font-size: 0.82rem;" onclick="window.closePillarModal()">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 國教署與高師大「識字金銀島」十二色點指標體系 互動彈窗 -->
+  <div id="literacyDotsModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="literacyModalTitle" style="display: none;">
+    <div class="modal-dialog literacy-modal-dialog">
+      <div class="literacy-modal-header">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="pillars-badge-pill" style="font-size: 0.76rem; background: linear-gradient(135deg, rgba(2, 132, 199, 0.15), rgba(147, 51, 234, 0.15)); color: #0284c7;">
+              🏝️ 國教署 × 高師大閱讀評量與教學研究中心研發
+            </span>
+            <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: 600;">十二年國教適性學習指標</span>
+          </div>
+          <h2 id="literacyModalTitle" class="literacy-modal-title">「識字金銀島」十二色點指標體系</h2>
+          <p class="literacy-modal-subtitle">國中小學童分級識字量常模標準 · 永貞國小閱讀推動適性學習地圖</p>
+        </div>
+        <button id="closeLiteracyModalBtn" class="modal-close-btn" aria-label="關閉視窗" onclick="window.closeLiteracyModal()">&times;</button>
+      </div>
+
+      <div class="literacy-modal-body">
+        <!-- 12 Color Dots Selector Tabs -->
+        <div class="literacy-tabs-scroll" id="literacyDotsTabList" role="tablist" aria-label="十二色點年段切換">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+        <!-- Active Color Dot Detailed Card -->
+        <div id="literacyActiveCard" class="literacy-active-card">
+          <!-- Populated via renderLiteracyCard(dotId) -->
+        </div>
+
+        <!-- Low / Mid / High 3-Tier Summary Matrix -->
+        <div class="literacy-summary-matrix">
+          <div class="lsm-title">
+            <span>🗺️ 國中小 1～6 年級十二色點年段進階地圖</span>
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">點擊任一項目即可切換檢視</span>
+          </div>
+          <div class="lsm-grid">
+            <div class="lsm-col">
+              <div class="lsm-col-header" style="color: #dc2626;">🌱 低年級啟蒙階（1～2年級）</div>
+              <div class="lsm-dots-list">
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('white')">⚪ <b>白點</b>：1.0-1.5（一上，注音與生活字）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('black')">⚫ <b>黑點</b>：1.6-2.0（一下，常用字詞累積）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('red')">🔴 <b>紅點</b>：2.1-2.5（二上，字形字義辨析）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('orange')">🟠 <b>橙點</b>：2.6-3.0（二下，橋樑書與短文）</div>
+              </div>
+            </div>
+            <div class="lsm-col">
+              <div class="lsm-col-header" style="color: #0284c7;">🌿 中年級進階階（3～4年級）</div>
+              <div class="lsm-dots-list">
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('yellow')">🟡 <b>黃點</b>：3.1-3.5（三上，部首造字歸納）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('green')">🟢 <b>綠點</b>：3.6-4.0（三下，詞彙豐富與聊書）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('blue')">🔵 <b>藍點</b>：4.1-4.5（四上，篇章結構與理解）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('indigo')">🟣 <b>靛點</b>：4.6-5.0（四下，跨學科詞彙素養）</div>
+              </div>
+            </div>
+            <div class="lsm-col">
+              <div class="lsm-col-header" style="color: #9333ea;">🌳 高年級深究階（5～6年級）</div>
+              <div class="lsm-dots-list">
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('purple')">🟣 <b>紫點</b>：5.1-5.5（五上，高階思維與摘要）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('bronze')">🟤 <b>銅點</b>：5.6-6.0（五下，多元思辨與觀點）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('silver')">⚪ <b>銀點</b>：6.1-6.5（六上，學術素養與論文）</div>
+                <div class="lsm-dot-item" onclick="window.selectLiteracyDot('gold')">🟡 <b>金點</b>：6.6以上（六下，終身讀者與創課）</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="padding: 0.85rem 1.4rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--bg-surface); flex-wrap: wrap; gap: 0.6rem;">
+        <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.4rem;">
+          <span>🏫 苗栗縣永貞國小閱讀推動</span>
+          <span>·</span>
+          <span>🎓 國立高雄師範大學閱讀評量與教學研究中心 (PAIR)</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.82rem;">
+            🏝️ 開啟識字金銀島官方平台 ↗
+          </a>
+          <button class="btn-outline" style="padding: 0.45rem 0.85rem; font-size: 0.82rem;" onclick="window.closeLiteracyModal()">關閉</button>
         </div>
       </div>
     </div>

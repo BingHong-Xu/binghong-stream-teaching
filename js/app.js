@@ -85,6 +85,10 @@
     // Four Pillars Elements
     teachingPillarsGrid: document.getElementById('teachingPillarsGrid'),
     pillarModalBackdrop: document.getElementById('pillarModalBackdrop'),
+    // Literacy Dots Elements
+    literacyDotsModalBackdrop: document.getElementById('literacyDotsModalBackdrop'),
+    literacyDotsTabList: document.getElementById('literacyDotsTabList'),
+    literacyActiveCard: document.getElementById('literacyActiveCard'),
     // Sustainability Showcase Elements
     saExecutiveBanner: document.getElementById('saExecutiveBanner'),
     saSdgFilterBar: document.getElementById('saSdgFilterBar'),
@@ -421,6 +425,368 @@
       applyFilters();
     }
     document.getElementById('portfolio-catalog')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  // ==========================================================================
+  // 3A-2. 國教署 × 高師大「識字金銀島」十二色點指標體系 互動模組
+  // ==========================================================================
+  const TWELVE_LITERACY_DOTS = [
+    {
+      id: 'white',
+      name: '白',
+      emoji: '⚪',
+      colorHex: '#ffffff',
+      textCol: '#334155',
+      bgCol: '#f8fafc',
+      borderCol: '#cbd5e1',
+      level: '1.0 - 1.5',
+      grade: '一年級上學期',
+      stage: '啟蒙階 · 識字起點',
+      vocabTarget: '約 500 - 700 字',
+      coreFocus: '注音符號認讀拼音連讀、生活常用漢字啟蒙、象形表意初識與基礎筆畫筆順',
+      pedagogy: '低年級以注音為認讀輔助橋樑，結合生活實景與看圖指字，透過識字金銀島「形音義入門」學習島進行趣味化適性練習。',
+      xuTeaching: '永貞國小一年級注音符號適性檢測、晨讀 MSSR 身教聽讀、生活識字桌遊實踐',
+      searchKeyword: '注音'
+    },
+    {
+      id: 'black',
+      name: '黑',
+      emoji: '⚫',
+      colorHex: '#1e293b',
+      textCol: '#1e293b',
+      bgCol: '#f1f5f9',
+      borderCol: '#94a3b8',
+      level: '1.6 - 2.0',
+      grade: '一年級下學期',
+      stage: '啟蒙階 · 字詞累積',
+      vocabTarget: '約 700 - 1,000 字',
+      coreFocus: '高頻基礎漢字認讀累積、基本部首初步感知、常用名詞動詞組合與看讀短句',
+      pedagogy: '由單字進階至雙字詞，結合日常生活情境圖卡與識字金銀島島嶼闖關，建立學生識字信心與獨立認讀動機。',
+      xuTeaching: '圖書館看讀繪本導讀、生字趣味尋寶遊戲、結合識字金銀島基礎測驗進行起點診斷',
+      searchKeyword: '識字'
+    },
+    {
+      id: 'red',
+      name: '紅',
+      emoji: '🔴',
+      colorHex: '#dc2626',
+      textCol: '#dc2626',
+      bgCol: '#fef2f2',
+      borderCol: '#fca5a5',
+      level: '2.1 - 2.5',
+      grade: '二年級上學期',
+      stage: '基礎階 · 字形辨析',
+      vocabTarget: '約 1,000 - 1,300 字',
+      coreFocus: '常見相似字形辨析、多音字基礎感知、常用複合詞彙識讀與繪本自讀理解',
+      pedagogy: '運用部首與部件拆解（如左右、上下結構），輔以金銀島遊戲化題型，預防低年級形近字與同音字混淆。',
+      xuTeaching: '低年級字形拆解趣味實作、晨讀自選繪本 MSSR、字詞配對闖關遊戲',
+      searchKeyword: '字形'
+    },
+    {
+      id: 'orange',
+      name: '橙',
+      emoji: '🟠',
+      colorHex: '#ea580c',
+      textCol: '#ea580c',
+      bgCol: '#fff7ed',
+      borderCol: '#fdba74',
+      level: '2.6 - 3.0',
+      grade: '二年級下學期',
+      stage: '基礎階 · 橋樑閱讀',
+      vocabTarget: '約 1,300 - 1,600 字',
+      coreFocus: '語詞擴展、句型認讀與重組、故事短文理解、橋樑書獨立閱讀流暢度',
+      pedagogy: '推動由看圖繪本過渡至橋樑書，透過金銀島詞意選配與朗讀流暢度診斷，銜接中高年級長文理解。',
+      xuTeaching: '橋樑書主題書展、二年級故事大王聊書圈、學習扶助語文適性補強',
+      searchKeyword: '橋樑書'
+    },
+    {
+      id: 'yellow',
+      name: '黃',
+      emoji: '🟡',
+      colorHex: '#ca8a04',
+      textCol: '#ca8a04',
+      bgCol: '#fefce8',
+      borderCol: '#fde047',
+      level: '3.1 - 3.5',
+      grade: '三年級上學期',
+      stage: '進階階 · 部首歸納',
+      vocabTarget: '約 1,600 - 1,900 字',
+      coreFocus: '系統化部首造字歸納、語境推測生詞意涵、自然段落掌握與晨讀 MSSR 沉浸閱讀',
+      pedagogy: '進入中學段語文轉折點，引導學生利用部首表意特徵推測未知詞義，結合識字金銀島三年級常模測驗診斷落後節點。',
+      xuTeaching: '三年級晨讀 MSSR 身教示範、字典部首查閱探究、字族樹創意海報製作',
+      searchKeyword: '明日閱讀'
+    },
+    {
+      id: 'green',
+      name: '綠',
+      emoji: '🟢',
+      colorHex: '#16a34a',
+      textCol: '#16a34a',
+      bgCol: '#f0fdf4',
+      borderCol: '#86efac',
+      level: '3.6 - 4.0',
+      grade: '三年級下學期',
+      stage: '進階階 · 詞彙豐富',
+      vocabTarget: '約 1,900 - 2,200 字',
+      coreFocus: '同義反義詞辨析、成語萌芽與靈活運用、跨學科主題閱讀與同儕聊書分享',
+      pedagogy: '擴大詞彙網絡與語境靈活性，以同儕合作學習與識字金銀島競賽機制激發字彙探索趣味。',
+      xuTeaching: '班級聊書小圈圈、成語情境劇實作、永續生態主題繪本走讀',
+      searchKeyword: '聊書'
+    },
+    {
+      id: 'blue',
+      name: '藍',
+      emoji: '🔵',
+      colorHex: '#0284c7',
+      textCol: '#0284c7',
+      bgCol: '#f0f9ff',
+      borderCol: '#7dd3fc',
+      level: '4.1 - 4.5',
+      grade: '四年級上學期',
+      stage: '發展階 · 結構理解',
+      vocabTarget: '約 2,200 - 2,500 字',
+      coreFocus: '篇章結構分析、段落主旨擷取、科普短文認讀、閱讀理解策略應用',
+      pedagogy: '強調自字詞走向篇章，教導學生運用六何法（5W1H）、概念圖與心智圖整理閱讀訊息，全面對接教育部閱讀素養指標。',
+      xuTeaching: '科普環島列車短文探究、四甲心智圖筆記教學、金銀島四年級常模檢測全面追蹤',
+      searchKeyword: '科學探究'
+    },
+    {
+      id: 'indigo',
+      name: '靛',
+      emoji: '🟣',
+      colorHex: '#4338ca',
+      textCol: '#4338ca',
+      bgCol: '#eef2ff',
+      borderCol: '#a5b4fc',
+      level: '4.6 - 5.0',
+      grade: '四年級下學期',
+      stage: '發展階 · 跨域素養',
+      vocabTarget: '約 2,500 - 2,800 字',
+      coreFocus: '跨領域學科專門詞彙、文本訊息比較、多元媒介訊息解讀、數位適性學習扶助',
+      pedagogy: '結合自然科學、社會科多文本資訊，引導學生在真實情境中驗證詞意，搭配數位工具開展自主探索。',
+      xuTeaching: '跨領域美數課程教案、數位學習載具 Padlet 互動探究、科技化學扶差異化指導',
+      searchKeyword: '跨領域'
+    },
+    {
+      id: 'purple',
+      name: '紫',
+      emoji: '🟣',
+      colorHex: '#9333ea',
+      textCol: '#9333ea',
+      bgCol: '#faf5ff',
+      borderCol: '#d8b4fe',
+      level: '5.1 - 5.5',
+      grade: '五年級上學期',
+      stage: '深究階 · 高階思維',
+      vocabTarget: '約 2,800 - 3,100 字',
+      coreFocus: '高階提問（推論/詮釋/評鑑）、文本摘要重組、批判思考、UN SDGs 永續議題深究',
+      pedagogy: '著重論述文本與複雜情境閱讀，結合 PIRLS/PISA 閱讀素養題型與高師大研究成果，引導學生反思與發表獨立觀點。',
+      xuTeaching: '永續 SDGs 17 項指標專題閱讀、剩食大作戰探究學習、論證短文讀寫結合',
+      searchKeyword: '永續'
+    },
+    {
+      id: 'bronze',
+      name: '銅',
+      emoji: '🟤',
+      colorHex: '#b45309',
+      textCol: '#b45309',
+      bgCol: '#fffbeb',
+      borderCol: '#fcd34d',
+      level: '5.6 - 6.0',
+      grade: '五年級下學期',
+      stage: '深究階 · 多元辨思',
+      vocabTarget: '約 3,100 - 3,400 字',
+      coreFocus: '長篇文本閱讀耐力、多文本觀點對讀與整合、社會議題思辨、讀書會專題發表',
+      pedagogy: '引導學生從不同立場閱讀同一事件文本，學習辨識事實與觀點，培養深度思辨與口頭策展解說能力。',
+      xuTeaching: '五甲跨域專題讀書會、風力發電與高美濕地正反論點辯證、全國科學探究競賽初階備賽',
+      searchKeyword: '專題'
+    },
+    {
+      id: 'silver',
+      name: '銀',
+      emoji: '⚪',
+      colorHex: '#64748b',
+      textCol: '#475569',
+      bgCol: '#f8fafc',
+      borderCol: '#cbd5e1',
+      level: '6.1 - 6.5',
+      grade: '六年級上學期',
+      stage: '卓越階 · 學術素養',
+      vocabTarget: '約 3,400 - 3,700 字',
+      coreFocus: '議論文證分析、科學探究專題報告閱讀、深度聊書哲學探討、高層次認知建構',
+      pedagogy: '培養準中學生之高階學術閱讀力，閱讀科普論文、社會調查報告，訓練「閱讀即探究、文字即證據」之素養。',
+      xuTeaching: '六年甲班多元智能地圖、STREAM 探究跨域創作、科學探究全國第一作品研讀',
+      searchKeyword: '多元智能'
+    },
+    {
+      id: 'gold',
+      name: '金',
+      emoji: '🟡',
+      colorHex: '#d97706',
+      textCol: '#b45309',
+      bgCol: '#fffbeb',
+      borderCol: '#fde68a',
+      level: '6.6 以上',
+      grade: '六年級下學期',
+      stage: '卓越階 · 終身讀者',
+      vocabTarget: '3,700 字以上（國中小最高階）',
+      coreFocus: '跨領域自主研究、終身閱讀者習慣、小論文產出、數位策展與社會影響力實踐',
+      pedagogy: '識字金銀島體系最高頂峰，學生具備全方位獨立閱讀、跨域整合與自學力，能運用閱讀探索世界、解決現實社會難題。',
+      xuTeaching: '六甲美感成果數位策展、國小畢業探究小論文指導、TSSCI 核心期刊發表與永續人物得獎實踐',
+      searchKeyword: 'TSSCI'
+    }
+  ];
+
+  let currentLiteracyDotId = 'white';
+
+  window.openLiteracyModal = function(dotId = 'white') {
+    const backdrop = document.getElementById('literacyDotsModalBackdrop');
+    if (!backdrop) return;
+    backdrop.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    renderLiteracyTabs();
+    window.selectLiteracyDot(dotId);
+  };
+
+  window.closeLiteracyModal = function() {
+    const backdrop = document.getElementById('literacyDotsModalBackdrop');
+    if (!backdrop) return;
+    backdrop.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  function renderLiteracyTabs() {
+    const tabList = document.getElementById('literacyDotsTabList');
+    if (!tabList) return;
+    tabList.innerHTML = TWELVE_LITERACY_DOTS.map(d => `
+      <button type="button" class="literacy-tab-chip ${d.id === currentLiteracyDotId ? 'active' : ''}" 
+        data-dot="${d.id}" onclick="window.selectLiteracyDot('${d.id}')"
+        style="${d.id === currentLiteracyDotId ? `background: ${d.bgCol}; border-color: ${d.borderCol}; color: ${d.textCol}; box-shadow: 0 4px 12px ${d.colorHex}33;` : ''}">
+        <span>${d.emoji}</span>
+        <span>${d.name} (${d.level})</span>
+      </button>
+    `).join('');
+  }
+
+  window.selectLiteracyDot = function(dotId) {
+    const dot = TWELVE_LITERACY_DOTS.find(d => d.id === dotId) || TWELVE_LITERACY_DOTS[0];
+    currentLiteracyDotId = dot.id;
+
+    // Update tab active classes
+    const tabList = document.getElementById('literacyDotsTabList');
+    if (tabList) {
+      tabList.querySelectorAll('.literacy-tab-chip').forEach(btn => {
+        const isCurrent = btn.dataset.dot === dot.id;
+        btn.classList.toggle('active', isCurrent);
+        if (isCurrent) {
+          btn.style.background = dot.bgCol;
+          btn.style.borderColor = dot.borderCol;
+          btn.style.color = dot.textCol;
+          btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        } else {
+          btn.style.background = '';
+          btn.style.borderColor = '';
+          btn.style.color = '';
+        }
+      });
+    }
+
+    // Render active card
+    const cardEl = document.getElementById('literacyActiveCard');
+    if (!cardEl) return;
+    cardEl.style.borderColor = dot.borderCol;
+    cardEl.innerHTML = `
+      <div class="lac-header">
+        <div class="lac-badge-group">
+          <h3 class="lac-title" style="color: ${dot.textCol};">
+            <span>${dot.emoji}</span>
+            <span>${dot.name}點指標</span>
+            <span style="font-size: 1rem; color: var(--text-muted); font-weight: 700;">(${dot.level})</span>
+          </h3>
+          <span class="lac-stage-pill" style="background: ${dot.bgCol}; color: ${dot.textCol}; border: 1px solid ${dot.borderCol};">
+            ${escapeHtml(dot.stage)} · ${escapeHtml(dot.grade)}
+          </span>
+        </div>
+        <div class="lac-vocab-stat">
+          <span>🎯 常模識字量指標：</span>
+          <b style="color: ${dot.textCol};">${escapeHtml(dot.vocabTarget)}</b>
+        </div>
+      </div>
+
+      <div class="lac-grid">
+        <div class="lac-block">
+          <div class="lac-block-title" style="color: ${dot.textCol};">
+            <span>🎯</span>
+            <span>年段核心識字與語文目標</span>
+          </div>
+          <p class="lac-block-text">${escapeHtml(dot.coreFocus)}</p>
+        </div>
+        <div class="lac-block">
+          <div class="lac-block-title" style="color: #0284c7;">
+            <span>🏝️</span>
+            <span>「識字金銀島」適性島嶼學習指引</span>
+          </div>
+          <p class="lac-block-text">${escapeHtml(dot.pedagogy)}</p>
+        </div>
+      </div>
+
+      <div class="lac-xu-practice">
+        <div class="lac-xu-title">
+          <span>🧑‍🏫</span>
+          <span>永貞國小閱讀推動 · 徐秉鴻老師適性教學現場實踐</span>
+        </div>
+        <p class="lac-xu-text">${escapeHtml(dot.xuTeaching)}</p>
+      </div>
+
+      <div class="lac-actions">
+        <a href="https://pair-learn.nknu.edu.tw/" target="_blank" rel="noopener noreferrer" class="lac-btn-ext" title="前往國教署與高師大閱讀評量與教學研究中心「識字金銀島」平台進行測驗或自主學習">
+          <span>🏝️ 前往「識字金銀島」官方平台 (高師大 PAIR 中心) ↗</span>
+        </a>
+        <button type="button" class="lac-btn-search" onclick="window.filterLiteracyFromModal('${dot.searchKeyword}')" title="關閉視窗並在成果庫中自動檢索「${dot.searchKeyword}」相關成果">
+          <span>🔍 檢索本典藏庫「${dot.searchKeyword}」成果 →</span>
+        </button>
+        <a href="special-reading.html" class="lac-btn-feature" title="開啟永貞國小明日閱讀 MSSR 與數位適性識字旗艦專題專頁">
+          <span>📖 明日閱讀旗艦專題 ↗</span>
+        </a>
+      </div>
+    `;
+  };
+
+  window.filterLiteracyFromModal = function(keyword) {
+    window.closeLiteracyModal();
+    if (el.searchInput && keyword) {
+      state.currentCategory = 'all';
+      state.currentSection = 'all';
+      el.searchInput.value = keyword;
+      state.searchQuery = keyword;
+      renderCategoryTabs();
+      applyFilters();
+    }
+    const catSection = document.getElementById('portfolio-catalog');
+    if (catSection) {
+      catSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  window.jumpToSection = function(sectionId) {
+    const sec = document.getElementById(sectionId);
+    if (sec) {
+      sec.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  window.filterByAlbumTag = function() {
+    state.currentCategory = 'sustainability_sdgs';
+    state.currentSection = 'all';
+    state.searchQuery = '';
+    if (el.searchInput) el.searchInput.value = '';
+    renderCategoryTabs();
+    applyFilters();
+    const catSection = document.getElementById('portfolio-catalog');
+    if (catSection) {
+      catSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   // ==========================================================================
@@ -2014,8 +2380,14 @@
     el.pillarModalBackdrop?.addEventListener('click', (e) => {
       if (e.target === el.pillarModalBackdrop) window.closePillarModal();
     });
+    el.literacyDotsModalBackdrop?.addEventListener('click', (e) => {
+      if (e.target === el.literacyDotsModalBackdrop) window.closeLiteracyModal();
+    });
 
     window.addEventListener('keydown', (e) => {
+      if (el.literacyDotsModalBackdrop && el.literacyDotsModalBackdrop.style.display === 'flex') {
+        if (e.key === 'Escape') { window.closeLiteracyModal(); return; }
+      }
       if (el.pillarModalBackdrop?.classList.contains('open')) {
         if (e.key === 'Escape') window.closePillarModal();
         return;
