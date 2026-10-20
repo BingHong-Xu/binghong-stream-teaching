@@ -27,6 +27,7 @@ portfolioData.items.forEach(item => {
 
 // Avatar Base64 (720p HD)
 const avatarBase64 = hd720pBase64['downloads/site_assets/avatar.jpg'] || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="%232563eb"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>';
+const streamBannerBase64 = hd720pBase64['downloads/feature_photos/stream_sports_day_lawn_group.jpg'] || ('data:image/jpeg;base64,' + fs.readFileSync('downloads/feature_photos/stream_sports_day_lawn_group.jpg').toString('base64'));
 
 // Process specialFeatures: preserve clean local paths for Base64 mapping
 const processedFeatures = specialFeatures.map(feat => {
@@ -577,6 +578,22 @@ ${googleSitesExtraCss}
         <span class="hero-tag" style="background: var(--primary-light); color: var(--primary); font-weight: 700; border-radius: var(--radius-full); padding: 0.4rem 0.95rem; font-size: 0.82rem; border: 1px solid rgba(var(--primary-rgb), 0.25);">
           ✨ 7 大色彩識別 · SDGs 永續對應 · 現場紀實相簿
         </span>
+      </div>
+    </div>
+
+    <!-- 7 大旗艦策展專題預覽封面圖 (運動會草坪師生大合影) -->
+    <div class="spotlight-featured-banner" onclick="window.previewSpotlightDoc('【7大旗艦策展封面】運動會草坪師生大合影（永貞六甲身穿專屬 SDGs 戰袍榮耀綻放）', 'downloads/feature_photos/stream_sports_day_lawn_group.jpg', '', 'image')" title="點擊放大檢視大合影原圖" role="button" tabindex="0">
+      <div class="sfb-media-wrap">
+        <img src="${streamBannerBase64}" alt="STREAM 跨域與永續教育創新 · 運動會草坪師生大合影" class="sfb-img" referrerpolicy="no-referrer">
+        <div class="sfb-overlay">
+          <div class="sfb-badges">
+            <span class="sfb-badge badge-stream">🔬 STREAM × SEL × SDGs 跨域實踐典範</span>
+            <span class="sfb-badge badge-award">🏆 校慶拔河與趣味競賽雙奪「冠軍」</span>
+            <span class="sfb-badge badge-sdgs">🌱 永貞六甲專屬 SDGs 戰袍全人綻放</span>
+          </div>
+          <h3 class="sfb-title">運動會草坪師生大合影：永貞六甲身穿專屬 SDGs 戰袍 · 航向永續未來</h3>
+          <p class="sfb-desc">徐秉鴻導師帶領全體 17 位學童，以「築夢踏實，夢想起飛」為信念，在田徑競技、美感數藝、科學探究與永續走讀中全面開展八大多元智能。</p>
+        </div>
       </div>
     </div>
 
