@@ -478,7 +478,7 @@
         <div>
           <div class="sa-exec-badge-row" style="margin-bottom: 0.75rem;">
             <span class="sa-exec-pill">🏆 ${escapeHtml(info.title || '2026 台灣傑出永續教育人物獎')}（${escapeHtml(info.category || '國民小學組')}）</span>
-            <span class="sa-exec-pill gold">📜 環境教育人員認證：(113)高師大環教字第0061-1號</span>
+            <span class="sa-exec-pill gold">📜 環境教育人員認證：(112)環署訓證字第EP106004號</span>
             <span class="sa-exec-pill">📊 五大構面 99 項佐證 × 93 場活動相簿 (823 檔)</span>
           </div>
 
