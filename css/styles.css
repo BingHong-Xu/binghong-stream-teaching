@@ -35,6 +35,68 @@
   --steam-purple: #7c3aed;
   --steam-cyan: #0284c7;
 
+  /* ==========================================================================
+     國教署「識字金銀島」十二色點指標體系 (Twelve Literacy Color Dots System)
+     高師大科環所博士班研究 × 明日閱讀適性分級色彩標準
+     ========================================================================== */
+  --dot-white: #ffffff;
+  --dot-white-border: #e2e8f0;
+  --dot-white-bg: #f8fafc;
+
+  --dot-black: #1e293b;
+  --dot-black-border: #475569;
+  --dot-black-bg: #f1f5f9;
+
+  --dot-red: #dc2626;
+  --dot-red-border: #fecaca;
+  --dot-red-bg: #fef2f2;
+  --dot-red-glow: rgba(220, 38, 38, 0.25);
+
+  --dot-orange: #ea580c;
+  --dot-orange-border: #fed7aa;
+  --dot-orange-bg: #fff7ed;
+  --dot-orange-glow: rgba(234, 88, 12, 0.25);
+
+  --dot-yellow: #ca8a04;
+  --dot-yellow-border: #fef08a;
+  --dot-yellow-bg: #fefce8;
+  --dot-yellow-glow: rgba(202, 138, 4, 0.25);
+
+  --dot-green: #16a34a;
+  --dot-green-border: #bbf7d0;
+  --dot-green-bg: #f0fdf4;
+  --dot-green-glow: rgba(22, 163, 74, 0.25);
+
+  --dot-blue: #0284c7;
+  --dot-blue-border: #bae6fd;
+  --dot-blue-bg: #f0f9ff;
+  --dot-blue-glow: rgba(2, 132, 199, 0.25);
+
+  --dot-indigo: #4338ca;
+  --dot-indigo-border: #c7d2fe;
+  --dot-indigo-bg: #eef2ff;
+  --dot-indigo-glow: rgba(67, 56, 202, 0.25);
+
+  --dot-purple: #9333ea;
+  --dot-purple-border: #e9d5ff;
+  --dot-purple-bg: #faf5ff;
+  --dot-purple-glow: rgba(147, 51, 234, 0.25);
+
+  --dot-bronze: #b45309;
+  --dot-bronze-border: #fde68a;
+  --dot-bronze-bg: #fffbeb;
+  --dot-bronze-glow: rgba(180, 83, 9, 0.25);
+
+  --dot-silver: #64748b;
+  --dot-silver-border: #cbd5e1;
+  --dot-silver-bg: #f8fafc;
+  --dot-silver-glow: rgba(100, 116, 139, 0.25);
+
+  --dot-gold: #d97706;
+  --dot-gold-border: #fde68a;
+  --dot-gold-bg: #fffbeb;
+  --dot-gold-glow: rgba(217, 119, 6, 0.28);
+
   /* 5 大專題專屬色彩系統 (Thematic Palette) */
   --theme-succulent: #059669;        /* 植癒多肉: 森林翠綠 */
   --theme-succulent-bg: #ecfdf5;
@@ -131,6 +193,55 @@
   --steam-coral: #fb7185;
   --steam-purple: #a855f7;
   --steam-cyan: #38bdf8;
+
+  /* 十二色點暗色模式適配 */
+  --dot-white: #f8fafc;
+  --dot-white-border: #334155;
+  --dot-white-bg: rgba(248, 250, 252, 0.08);
+
+  --dot-black: #94a3b8;
+  --dot-black-border: #475569;
+  --dot-black-bg: rgba(15, 23, 42, 0.4);
+
+  --dot-red: #f87171;
+  --dot-red-border: rgba(239, 68, 68, 0.35);
+  --dot-red-bg: rgba(239, 68, 68, 0.12);
+
+  --dot-orange: #fb923c;
+  --dot-orange-border: rgba(249, 115, 22, 0.35);
+  --dot-orange-bg: rgba(249, 115, 22, 0.12);
+
+  --dot-yellow: #facc15;
+  --dot-yellow-border: rgba(234, 179, 8, 0.35);
+  --dot-yellow-bg: rgba(234, 179, 8, 0.12);
+
+  --dot-green: #4ade80;
+  --dot-green-border: rgba(34, 197, 94, 0.35);
+  --dot-green-bg: rgba(34, 197, 94, 0.12);
+
+  --dot-blue: #38bdf8;
+  --dot-blue-border: rgba(14, 165, 233, 0.35);
+  --dot-blue-bg: rgba(14, 165, 233, 0.12);
+
+  --dot-indigo: #818cf8;
+  --dot-indigo-border: rgba(99, 102, 241, 0.35);
+  --dot-indigo-bg: rgba(99, 102, 241, 0.12);
+
+  --dot-purple: #c084fc;
+  --dot-purple-border: rgba(168, 85, 247, 0.35);
+  --dot-purple-bg: rgba(168, 85, 247, 0.12);
+
+  --dot-bronze: #f59e0b;
+  --dot-bronze-border: rgba(245, 158, 11, 0.35);
+  --dot-bronze-bg: rgba(245, 158, 11, 0.12);
+
+  --dot-silver: #94a3b8;
+  --dot-silver-border: rgba(148, 163, 184, 0.35);
+  --dot-silver-bg: rgba(148, 163, 184, 0.12);
+
+  --dot-gold: #fbbf24;
+  --dot-gold-border: rgba(251, 191, 36, 0.4);
+  --dot-gold-bg: rgba(251, 191, 36, 0.14);
 
   --theme-succulent: #34d399;
   --theme-succulent-bg: rgba(5, 150, 105, 0.15);
@@ -712,82 +823,129 @@ button {
 
 .hero-pillars-row .pillar-card {
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1.05rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
   box-shadow: var(--shadow-xs);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
-  border-left: 4px solid var(--border);
+  border-left: 4.5px solid var(--border);
 }
 
 .hero-pillars-row .pillar-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
+/* 1. 綠色色點 (Green) - 2026 台灣傑出永續教育人物 */
+.hero-pillars-row .pillar-card.pillar-sustainability {
+  border-left-color: var(--dot-green);
+  border-color: var(--dot-green-border);
+  background: linear-gradient(135deg, var(--bg-card) 60%, var(--dot-green-bg) 100%);
+}
+.hero-pillars-row .pillar-card.pillar-sustainability:hover {
+  border-color: var(--dot-green);
+  border-left-color: var(--dot-green);
+  box-shadow: 0 10px 22px var(--dot-green-glow);
+}
+.hero-pillars-row .pillar-card.pillar-sustainability .pillar-title {
+  color: var(--dot-green);
+}
+.hero-pillars-row .pillar-card.pillar-sustainability .pillar-icon {
+  background: var(--dot-green-bg);
+  border: 1px solid var(--dot-green-border);
+}
+
+/* 2. 金色色點 (Gold) - 雙料全國第一名（金獎） */
 .hero-pillars-row .pillar-card.pillar-science {
-  border-left-color: var(--gold);
-  background: linear-gradient(135deg, var(--bg-card) 65%, rgba(217, 119, 6, 0.06) 100%);
+  border-left-color: var(--dot-gold);
+  border-color: var(--dot-gold-border);
+  background: linear-gradient(135deg, var(--bg-card) 60%, var(--dot-gold-bg) 100%);
 }
 .hero-pillars-row .pillar-card.pillar-science:hover {
-  border-color: var(--gold-border);
-  border-left-color: var(--gold);
-  box-shadow: 0 8px 18px rgba(217, 119, 6, 0.18);
+  border-color: var(--dot-gold);
+  border-left-color: var(--dot-gold);
+  box-shadow: 0 10px 22px var(--dot-gold-glow);
 }
 .hero-pillars-row .pillar-card.pillar-science .pillar-title {
-  color: #b45309;
+  color: var(--dot-gold);
 }
-[data-theme="dark"] .hero-pillars-row .pillar-card.pillar-science .pillar-title {
-  color: #fbbf24;
+.hero-pillars-row .pillar-card.pillar-science .pillar-icon {
+  background: var(--dot-gold-bg);
+  border: 1px solid var(--dot-gold-border);
 }
 
+/* 3. 靛色色點 (Indigo) - TSSCI 核心期刊第一作者 */
 .hero-pillars-row .pillar-card.pillar-academic {
-  border-left-color: var(--primary);
-  background: linear-gradient(135deg, var(--bg-card) 65%, rgba(37, 99, 235, 0.06) 100%);
+  border-left-color: var(--dot-indigo);
+  border-color: var(--dot-indigo-border);
+  background: linear-gradient(135deg, var(--bg-card) 60%, var(--dot-indigo-bg) 100%);
 }
 .hero-pillars-row .pillar-card.pillar-academic:hover {
-  border-color: rgba(var(--primary-rgb), 0.4);
-  border-left-color: var(--primary);
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
+  border-color: var(--dot-indigo);
+  border-left-color: var(--dot-indigo);
+  box-shadow: 0 10px 22px var(--dot-indigo-glow);
 }
 .hero-pillars-row .pillar-card.pillar-academic .pillar-title {
-  color: var(--primary);
+  color: var(--dot-indigo);
+}
+.hero-pillars-row .pillar-card.pillar-academic .pillar-icon {
+  background: var(--dot-indigo-bg);
+  border: 1px solid var(--dot-indigo-border);
 }
 
+/* 4. 紫色色點 (Purple) - 跨領域美感卓越領航 */
 .hero-pillars-row .pillar-card.pillar-aesthetic {
-  border-left-color: var(--steam-purple);
-  background: linear-gradient(135deg, var(--bg-card) 65%, rgba(124, 58, 237, 0.06) 100%);
+  border-left-color: var(--dot-purple);
+  border-color: var(--dot-purple-border);
+  background: linear-gradient(135deg, var(--bg-card) 60%, var(--dot-purple-bg) 100%);
 }
 .hero-pillars-row .pillar-card.pillar-aesthetic:hover {
-  border-color: rgba(124, 58, 237, 0.4);
-  border-left-color: var(--steam-purple);
-  box-shadow: 0 8px 18px rgba(124, 58, 237, 0.18);
+  border-color: var(--dot-purple);
+  border-left-color: var(--dot-purple);
+  box-shadow: 0 10px 22px var(--dot-purple-glow);
 }
 .hero-pillars-row .pillar-card.pillar-aesthetic .pillar-title {
-  color: var(--steam-purple);
+  color: var(--dot-purple);
+}
+.hero-pillars-row .pillar-card.pillar-aesthetic .pillar-icon {
+  background: var(--dot-purple-bg);
+  border: 1px solid var(--dot-purple-border);
 }
 
+/* 5. 橙色色點 (Orange) - 2026 明日閱讀典範學校 */
 .hero-pillars-row .pillar-card.pillar-reading {
-  border-left-color: var(--accent);
-  background: linear-gradient(135deg, var(--bg-card) 65%, rgba(5, 150, 105, 0.06) 100%);
+  border-left-color: var(--dot-orange);
+  border-color: var(--dot-orange-border);
+  background: linear-gradient(135deg, var(--bg-card) 60%, var(--dot-orange-bg) 100%);
 }
 .hero-pillars-row .pillar-card.pillar-reading:hover {
-  border-color: rgba(5, 150, 105, 0.4);
-  border-left-color: var(--accent);
-  box-shadow: 0 8px 18px rgba(5, 150, 105, 0.18);
+  border-color: var(--dot-orange);
+  border-left-color: var(--dot-orange);
+  box-shadow: 0 10px 22px var(--dot-orange-glow);
 }
 .hero-pillars-row .pillar-card.pillar-reading .pillar-title {
-  color: var(--accent);
+  color: var(--dot-orange);
+}
+.hero-pillars-row .pillar-card.pillar-reading .pillar-icon {
+  background: var(--dot-orange-bg);
+  border: 1px solid var(--dot-orange-border);
 }
 
 .hero-pillars-row .pillar-icon {
   font-size: 1.35rem;
   flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
 .hero-pillars-row .pillar-info {
@@ -796,20 +954,20 @@ button {
 }
 
 .hero-pillars-row .pillar-title {
-  font-size: 0.86rem;
+  font-size: 0.88rem;
   font-weight: 800;
   color: var(--text-main);
   transition: var(--transition);
 }
 
 .hero-pillars-row .pillar-desc {
-  font-size: 0.74rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   line-height: 1.4;
   margin-top: 0.15rem;
 }
 
-/* 典藏數據儀表板 (Stats Dashboard) */
+/* 典藏數據儀表板 (Stats Dashboard - 十二色點繽紛分級映射) */
 .hero-stats-row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -821,7 +979,7 @@ button {
   background: var(--bg-card);
   padding: 0.95rem 1.05rem;
   border-radius: var(--radius-md);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   box-shadow: var(--shadow-xs);
   display: flex;
   flex-direction: column;
@@ -836,34 +994,117 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 3.5px;
   background: var(--border);
   transition: var(--transition);
 }
 
-.stat-card[data-stat="items"]::before { background: var(--primary); }
-.stat-card[data-stat="sections"]::before { background: var(--steam-purple); }
-.stat-card[data-stat="files"]::before { background: var(--steam-cyan); }
-.stat-card[data-stat="plans"]::before { background: var(--steam-amber); }
-.stat-card[data-stat="papers"]::before { background: var(--steam-coral); }
-.stat-card[data-stat="offline"]::before { background: var(--accent); }
-
-.stat-card:hover {
+/* 1. 藍色色點 (Blue - 4.1-4.5) - 1,143 筆成果典藏 */
+.stat-card[data-stat="items"] {
+  border-color: var(--dot-blue-border);
+  background: linear-gradient(180deg, var(--dot-blue-bg) 0%, var(--bg-card) 55%);
+}
+.stat-card[data-stat="items"]::before { background: var(--dot-blue); }
+.stat-card[data-stat="items"]:hover {
+  border-color: var(--dot-blue);
+  box-shadow: 0 10px 22px var(--dot-blue-glow);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(var(--primary-rgb), 0.35);
+}
+.stat-card[data-stat="items"] .stat-number { color: var(--dot-blue); }
+
+/* 2. 紫色色點 (Purple - 5.1-5.5) - 43 項專業向度 */
+.stat-card[data-stat="sections"] {
+  border-color: var(--dot-purple-border);
+  background: linear-gradient(180deg, var(--dot-purple-bg) 0%, var(--bg-card) 55%);
+}
+.stat-card[data-stat="sections"]::before { background: var(--dot-purple); }
+.stat-card[data-stat="sections"]:hover {
+  border-color: var(--dot-purple);
+  box-shadow: 0 10px 22px var(--dot-purple-glow);
+  transform: translateY(-3px);
+}
+.stat-card[data-stat="sections"] .stat-number { color: var(--dot-purple); }
+
+/* 3. 橙色色點 (Orange - 2.6-3.0) - 4+6 大專區與策展 */
+.stat-card[data-stat="spotlights"],
+.stat-card[data-stat="plans"] {
+  border-color: var(--dot-orange-border);
+  background: linear-gradient(180deg, var(--dot-orange-bg) 0%, var(--bg-card) 55%);
+}
+.stat-card[data-stat="spotlights"]::before,
+.stat-card[data-stat="plans"]::before { background: var(--dot-orange); }
+.stat-card[data-stat="spotlights"]:hover,
+.stat-card[data-stat="plans"]:hover {
+  border-color: var(--dot-orange);
+  box-shadow: 0 10px 22px var(--dot-orange-glow);
+  transform: translateY(-3px);
+}
+.stat-card[data-stat="spotlights"] .stat-number,
+.stat-card[data-stat="plans"] .stat-number { color: var(--dot-orange); }
+
+/* 4. 綠色色點 (Green - 3.6-4.0) - 93 場永續SDGs相簿 */
+.stat-card[data-stat="albums"],
+.stat-card[data-stat="files"] {
+  border-color: var(--dot-green-border);
+  background: linear-gradient(180deg, var(--dot-green-bg) 0%, var(--bg-card) 55%);
+}
+.stat-card[data-stat="albums"]::before,
+.stat-card[data-stat="files"]::before { background: var(--dot-green); }
+.stat-card[data-stat="albums"]:hover,
+.stat-card[data-stat="files"]:hover {
+  border-color: var(--dot-green);
+  box-shadow: 0 10px 22px var(--dot-green-glow);
+  transform: translateY(-3px);
+}
+.stat-card[data-stat="albums"] .stat-number,
+.stat-card[data-stat="files"] .stat-number { color: var(--dot-green); }
+
+/* 5. 金色色點 (Gold - 6.6+) - 17 項永續代表大獎 */
+.stat-card[data-stat="awards"],
+.stat-card[data-stat="papers"] {
+  border-color: var(--dot-gold-border);
+  background: linear-gradient(180deg, var(--dot-gold-bg) 0%, var(--bg-card) 55%);
+}
+.stat-card[data-stat="awards"]::before,
+.stat-card[data-stat="papers"]::before { background: var(--dot-gold); }
+.stat-card[data-stat="awards"]:hover,
+.stat-card[data-stat="papers"]:hover {
+  border-color: var(--dot-gold);
+  box-shadow: 0 10px 22px var(--dot-gold-glow);
+  transform: translateY(-3px);
+}
+.stat-card[data-stat="awards"] .stat-number,
+.stat-card[data-stat="papers"] .stat-number { color: var(--dot-gold); }
+
+/* 6. 銅色色點 (Bronze - 5.6-6.0) - 100% 離線完整打包 */
+.stat-card[data-stat="offline"] {
+  border-color: var(--dot-bronze-border);
+  background: linear-gradient(180deg, var(--dot-bronze-bg) 0%, var(--bg-card) 55%);
+}
+.stat-card[data-stat="offline"]::before { background: var(--dot-bronze); }
+.stat-card[data-stat="offline"]:hover {
+  border-color: var(--dot-bronze);
+  box-shadow: 0 10px 22px var(--dot-bronze-glow);
+  transform: translateY(-3px);
+}
+.stat-card[data-stat="offline"] .stat-number { color: var(--dot-bronze); }
+
+.stat-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
 }
 
-.stat-card[data-stat="items"]:hover { border-color: var(--primary); }
-.stat-card[data-stat="sections"]:hover { border-color: var(--steam-purple); }
-.stat-card[data-stat="files"]:hover { border-color: var(--steam-cyan); }
-.stat-card[data-stat="plans"]:hover { border-color: var(--steam-amber); }
-.stat-card[data-stat="papers"]:hover { border-color: var(--steam-coral); }
-.stat-card[data-stat="offline"]:hover { border-color: var(--accent); }
+.stat-dot {
+  font-size: 1rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
 
 .stat-number {
   font-family: var(--font-mono);
-  font-size: 1.85rem;
+  font-size: 1.95rem;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 0.25rem;
@@ -871,26 +1112,119 @@ button {
   font-feature-settings: 'tnum' 1;
 }
 
-.stat-card[data-stat="items"] .stat-number { color: var(--primary); }
-.stat-card[data-stat="sections"] .stat-number { color: var(--steam-purple); }
-.stat-card[data-stat="files"] .stat-number { color: var(--steam-cyan); }
-.stat-card[data-stat="plans"] .stat-number { color: var(--steam-amber); }
-.stat-card[data-stat="papers"] .stat-number { color: var(--steam-coral); }
-.stat-card[data-stat="offline"] .stat-number { color: var(--accent); }
-
 .stat-label {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* Quick Action Group */
+/* 十二色點圖例引導列 (Twelve Color Dots Legend Pill) */
+.hero-dot-legend {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 0.85rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
+  font-size: 0.8rem;
+}
+
+.dot-legend-title {
+  font-weight: 700;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dot-legend-dots {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.color-dot-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  cursor: help;
+  transition: var(--transition);
+}
+
+.color-dot-tag:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: var(--shadow-sm);
+}
+
+.color-dot-tag.tag-white { border-color: var(--dot-white-border); }
+.color-dot-tag.tag-black { border-color: var(--dot-black-border); color: var(--dot-black); }
+.color-dot-tag.tag-red { border-color: var(--dot-red-border); color: var(--dot-red); background: var(--dot-red-bg); }
+.color-dot-tag.tag-orange { border-color: var(--dot-orange-border); color: var(--dot-orange); background: var(--dot-orange-bg); }
+.color-dot-tag.tag-yellow { border-color: var(--dot-yellow-border); color: var(--dot-yellow); background: var(--dot-yellow-bg); }
+.color-dot-tag.tag-green { border-color: var(--dot-green-border); color: var(--dot-green); background: var(--dot-green-bg); }
+.color-dot-tag.tag-blue { border-color: var(--dot-blue-border); color: var(--dot-blue); background: var(--dot-blue-bg); }
+.color-dot-tag.tag-indigo { border-color: var(--dot-indigo-border); color: var(--dot-indigo); background: var(--dot-indigo-bg); }
+.color-dot-tag.tag-purple { border-color: var(--dot-purple-border); color: var(--dot-purple); background: var(--dot-purple-bg); }
+.color-dot-tag.tag-bronze { border-color: var(--dot-bronze-border); color: var(--dot-bronze); background: var(--dot-bronze-bg); }
+.color-dot-tag.tag-silver { border-color: var(--dot-silver-border); color: var(--dot-silver); background: var(--dot-silver-bg); }
+.color-dot-tag.tag-gold { border-color: var(--dot-gold-border); color: var(--dot-gold); background: var(--dot-gold-bg); }
+
+/* Quick Action Group 十二色點質感強化 */
 .hero-cta-group {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
   margin-top: 1.5rem;
+}
+
+.hero-cta-group .btn-cta-gold {
+  background: var(--dot-gold-bg) !important;
+  border: 1.5px solid var(--dot-gold-border) !important;
+  color: var(--dot-gold) !important;
+  font-weight: 700 !important;
+}
+.hero-cta-group .btn-cta-gold:hover {
+  border-color: var(--dot-gold) !important;
+  box-shadow: 0 8px 20px var(--dot-gold-glow) !important;
+  transform: translateY(-2px);
+}
+
+.hero-cta-group .btn-cta-purple {
+  background: var(--dot-purple-bg) !important;
+  border: 1.5px solid var(--dot-purple-border) !important;
+  color: var(--dot-purple) !important;
+  font-weight: 700 !important;
+}
+.hero-cta-group .btn-cta-purple:hover {
+  border-color: var(--dot-purple) !important;
+  box-shadow: 0 8px 20px var(--dot-purple-glow) !important;
+  transform: translateY(-2px);
+}
+
+.hero-cta-group .btn-cta-orange {
+  background: var(--dot-orange-bg) !important;
+  border: 1.5px solid var(--dot-orange-border) !important;
+  color: var(--dot-orange) !important;
+  font-weight: 700 !important;
+}
+.hero-cta-group .btn-cta-orange:hover {
+  border-color: var(--dot-orange) !important;
+  box-shadow: 0 8px 20px var(--dot-orange-glow) !important;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -2149,39 +2483,100 @@ button {
 
 .cv-block {
   background: var(--bg-surface);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 1.4rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow-xs);
   transition: var(--transition);
+  position: relative;
+  overflow: hidden;
 }
 
-.cv-block:hover {
-  border-color: var(--primary);
-  box-shadow: var(--shadow-md);
+/* 1. 綠色色點 (Green) - 現職與永續教育專業服務 */
+.cv-block.cv-block-service {
+  border-top: 4px solid var(--dot-green);
+  border-color: var(--dot-green-border);
+  background: linear-gradient(180deg, var(--dot-green-bg) 0%, var(--bg-surface) 28%);
+}
+.cv-block.cv-block-service:hover {
+  border-color: var(--dot-green);
+  box-shadow: 0 10px 24px var(--dot-green-glow);
+  transform: translateY(-3px);
+}
+.cv-block.cv-block-service h4 {
+  color: var(--dot-green);
+  border-bottom: 2px solid var(--dot-green-border);
 }
 
-.cv-block h4 {
-  font-size: 1.12rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  border-bottom: 2px solid var(--border);
-  padding-bottom: 0.5rem;
+/* 2. 靛色色點 (Indigo) - 學歷與多元師資認證 */
+.cv-block.cv-block-edu {
+  border-top: 4px solid var(--dot-indigo);
+  border-color: var(--dot-indigo-border);
+  background: linear-gradient(180deg, var(--dot-indigo-bg) 0%, var(--bg-surface) 28%);
+}
+.cv-block.cv-block-edu:hover {
+  border-color: var(--dot-indigo);
+  box-shadow: 0 10px 24px var(--dot-indigo-glow);
+  transform: translateY(-3px);
+}
+.cv-block.cv-block-edu h4 {
+  color: var(--dot-indigo);
+  border-bottom: 2px solid var(--dot-indigo-border);
 }
 
-.cv-block.cv-block-service h4 { color: #2563eb; border-bottom-color: rgba(37, 99, 235, 0.3); }
-.cv-block.cv-block-edu h4 { color: #4f46e5; border-bottom-color: rgba(79, 70, 229, 0.3); }
-.cv-block.cv-block-awards h4 { color: #d97706; border-bottom-color: rgba(217, 119, 6, 0.3); }
-.cv-block.cv-block-papers h4 { color: #059669; border-bottom-color: rgba(5, 150, 105, 0.3); }
+/* 3. 金色色點 (Gold) - 代表性永續與科學教育榮譽 */
+.cv-block.cv-block-awards {
+  border-top: 4px solid var(--dot-gold);
+  border-color: var(--dot-gold-border);
+  background: linear-gradient(180deg, var(--dot-gold-bg) 0%, var(--bg-surface) 28%);
+}
+.cv-block.cv-block-awards:hover {
+  border-color: var(--dot-gold);
+  box-shadow: 0 10px 24px var(--dot-gold-glow);
+  transform: translateY(-3px);
+}
+.cv-block.cv-block-awards h4 {
+  color: var(--dot-gold);
+  border-bottom: 2px solid var(--dot-gold-border);
+}
 
-[data-theme="dark"] .cv-block.cv-block-service h4 { color: #60a5fa; }
-[data-theme="dark"] .cv-block.cv-block-edu h4 { color: #818cf8; }
-[data-theme="dark"] .cv-block.cv-block-awards h4 { color: #fbbf24; }
-[data-theme="dark"] .cv-block.cv-block-papers h4 { color: #34d399; }
+/* 4. 紫色色點 (Purple) - 代表性學術期刊與研討會論文 */
+.cv-block.cv-block-papers {
+  border-top: 4px solid var(--dot-purple);
+  border-color: var(--dot-purple-border);
+  background: linear-gradient(180deg, var(--dot-purple-bg) 0%, var(--bg-surface) 28%);
+}
+.cv-block.cv-block-papers:hover {
+  border-color: var(--dot-purple);
+  box-shadow: 0 10px 24px var(--dot-purple-glow);
+  transform: translateY(-3px);
+}
+.cv-block.cv-block-papers h4 {
+  color: var(--dot-purple);
+  border-bottom: 2px solid var(--dot-purple-border);
+}
+
+/* 5. 銅色色點 (Bronze) - 教育部、國科會與高師大研究計畫執行經歷 */
+.cv-block.cv-block-research {
+  border-top: 4px solid var(--dot-bronze);
+  border-color: var(--dot-bronze-border);
+  background: linear-gradient(180deg, var(--dot-bronze-bg) 0%, var(--bg-surface) 28%);
+}
+.cv-block.cv-block-research:hover {
+  border-color: var(--dot-bronze);
+  box-shadow: 0 10px 24px var(--dot-bronze-glow);
+  transform: translateY(-3px);
+}
+.cv-block.cv-block-research h4 {
+  color: var(--dot-bronze);
+  border-bottom: 2px solid var(--dot-bronze-border);
+}
+
+[data-theme="dark"] .cv-block.cv-block-service h4 { color: var(--dot-green); }
+[data-theme="dark"] .cv-block.cv-block-edu h4 { color: var(--dot-indigo); }
+[data-theme="dark"] .cv-block.cv-block-awards h4 { color: var(--dot-gold); }
+[data-theme="dark"] .cv-block.cv-block-papers h4 { color: var(--dot-purple); }
+[data-theme="dark"] .cv-block.cv-block-research h4 { color: var(--dot-bronze); }
 
 .cv-list {
   list-style: none;

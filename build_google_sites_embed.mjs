@@ -373,8 +373,15 @@ ${googleSitesExtraCss}
           苗栗縣頭份市永貞國民小學專任教師、圖書館閱讀推動教師、兼任文書組長｜苗栗縣國際教育中心專員｜國立高雄師範大學科學教育暨環境教育研究所博士生。致力於 <strong>STEAM 跨域探究</strong>、<strong>深耕閱讀素養</strong>、<strong>環境美感教育</strong> 與 <strong>科技創新適性教學</strong>。
         </p>
 
-        <!-- 四大標竿成就橫幅 -->
-        <div class="hero-pillars-row">
+        <!-- 五大標竿成就橫幅 -->
+        <div class="hero-pillars-row hero-pillars-five">
+          <div class="pillar-card pillar-sustainability">
+            <span class="pillar-icon">🌱</span>
+            <div class="pillar-info">
+              <span class="pillar-title">2026 台灣傑出永續教育人物</span>
+              <span class="pillar-desc">五大構面 99 項佐證 · 93 場 SDGs 紀實</span>
+            </div>
+          </div>
           <div class="pillar-card pillar-science">
             <span class="pillar-icon">🏆</span>
             <div class="pillar-info">
@@ -393,43 +400,80 @@ ${googleSitesExtraCss}
             <span class="pillar-icon">🎨</span>
             <div class="pillar-info">
               <span class="pillar-title">跨領域美感卓越領航</span>
-              <span class="pillar-desc">教育部標竿學校與種子學校研發教案</span>
+              <span class="pillar-desc">教育部 115 標竿學校與縣級教案首獎</span>
             </div>
           </div>
           <div class="pillar-card pillar-reading">
             <span class="pillar-icon">📖</span>
             <div class="pillar-info">
-              <span class="pillar-title">閱讀推動與身教晨讀 (MSSR)</span>
-              <span class="pillar-desc">高師大適性教學 · PAIR / TALP 研討會發表</span>
+              <span class="pillar-title">2026 明日閱讀典範學校</span>
+              <span class="pillar-desc">MSSR 身教晨讀 · PAIR 論文發表</span>
             </div>
           </div>
         </div>
 
-        <!-- 典藏數據儀表板 -->
+        <!-- 典藏數據儀表板 (十二色點分級色彩) -->
         <div class="hero-stats-row">
           <div class="stat-card" data-stat="items">
-            <span class="stat-number">${processedPortfolio.items.length}</span>
+            <div class="stat-header-row">
+              <span class="stat-number">${processedPortfolio.items.length}</span>
+              <span class="stat-dot" title="十二色點・藍（4.1-4.5 四上）">🔵</span>
+            </div>
             <span class="stat-label">筆成果典藏</span>
           </div>
           <div class="stat-card" data-stat="sections">
-            <span class="stat-number">27</span>
+            <div class="stat-header-row">
+              <span class="stat-number">43</span>
+              <span class="stat-dot" title="十二色點・紫（5.1-5.5 五上）">🟣</span>
+            </div>
             <span class="stat-label">項專業向度</span>
           </div>
           <div class="stat-card" data-stat="spotlights">
-            <span class="stat-number">3+5</span>
+            <div class="stat-header-row">
+              <span class="stat-number">4+6</span>
+              <span class="stat-dot" title="十二色點・橙（2.6-3.0 二下）">🟠</span>
+            </div>
             <span class="stat-label">大專區與策展</span>
           </div>
-          <div class="stat-card" data-stat="plans">
-            <span class="stat-number">13</span>
-            <span class="stat-label">套獲獎課程教案</span>
+          <div class="stat-card" data-stat="albums">
+            <div class="stat-header-row">
+              <span class="stat-number">93</span>
+              <span class="stat-dot" title="十二色點・綠（3.6-4.0 三下）">🟢</span>
+            </div>
+            <span class="stat-label">場永續SDGs相簿</span>
           </div>
-          <div class="stat-card" data-stat="papers">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">篇學術發表 &amp; 期刊</span>
+          <div class="stat-card" data-stat="awards">
+            <div class="stat-header-row">
+              <span class="stat-number">17</span>
+              <span class="stat-dot" title="十二色點・金（6.6+ 六下）">🟡</span>
+            </div>
+            <span class="stat-label">項永續代表大獎</span>
           </div>
           <div class="stat-card" data-stat="offline">
-            <span class="stat-number">100%</span>
+            <div class="stat-header-row">
+              <span class="stat-number">100%</span>
+              <span class="stat-dot" title="十二色點・銅（5.6-6.0 五下）">🟤</span>
+            </div>
             <span class="stat-label">自包含離線預覽</span>
+          </div>
+        </div>
+
+        <!-- 國教署「識字金銀島」十二色點指標體系導覽列 -->
+        <div class="hero-dot-legend">
+          <span class="dot-legend-title">🎨 欄位色彩取材自國教署「識字金銀島」十二色點指標體系：</span>
+          <div class="dot-legend-dots">
+            <span class="color-dot-tag tag-white" title="白：1.0-1.5 一年級上學期"><span class="cd-circle">⚪</span> 白</span>
+            <span class="color-dot-tag tag-black" title="黑：1.6-2.0 一年級下學期"><span class="cd-circle">⚫</span> 黑</span>
+            <span class="color-dot-tag tag-red" title="紅：2.1-2.5 二年級上學期"><span class="cd-circle">🔴</span> 紅</span>
+            <span class="color-dot-tag tag-orange" title="橙：2.6-3.0 二年級下學期"><span class="cd-circle">🟠</span> 橙</span>
+            <span class="color-dot-tag tag-yellow" title="黃：3.1-3.5 三年級上學期"><span class="cd-circle">🟡</span> 黃</span>
+            <span class="color-dot-tag tag-green" title="綠：3.6-4.0 三年級下學期"><span class="cd-circle">🟢</span> 綠</span>
+            <span class="color-dot-tag tag-blue" title="藍：4.1-4.5 四年級上學期"><span class="cd-circle">🔵</span> 藍</span>
+            <span class="color-dot-tag tag-indigo" title="靛：4.6-5.0 四年級下學期"><span class="cd-circle">🟣</span> 靛</span>
+            <span class="color-dot-tag tag-purple" title="紫：5.1-5.5 五年級上學期"><span class="cd-circle">🟣</span> 紫</span>
+            <span class="color-dot-tag tag-bronze" title="銅：5.6-6.0 五年級下學期"><span class="cd-circle">🟤</span> 銅</span>
+            <span class="color-dot-tag tag-silver" title="銀：6.1-6.5 六年級上學期"><span class="cd-circle">⚪</span> 銀</span>
+            <span class="color-dot-tag tag-gold" title="金：6.6以上 六年級下學期"><span class="cd-circle">🟡</span> 金</span>
           </div>
         </div>
 
