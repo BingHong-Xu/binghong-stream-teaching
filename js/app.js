@@ -978,8 +978,9 @@
     }
 
     // Bento 2.0: sustainability & science serve as the Dual Hero 6-column wide flagship cards on Row 1,
-    // followed by succulent, aesthetic, reading, international on Row 2
-    const priorityOrder = ['sustainability', 'science', 'succulent', 'aesthetic', 'reading', 'international'];
+    // followed by learning_map as the 12-column full-width interactive showcase on Row 2,
+    // and succulent, aesthetic, reading, international on Row 3
+    const priorityOrder = ['sustainability', 'science', 'learning_map', 'succulent', 'aesthetic', 'reading', 'international'];
     const features = [...rawFeatures].sort((a, b) => {
       const idxA = priorityOrder.indexOf(a.id);
       const idxB = priorityOrder.indexOf(b.id);
@@ -989,6 +990,7 @@
     const themeEmojis = {
       sustainability: '🌍',
       science: '🔬',
+      learning_map: '🗺️',
       succulent: '🌵',
       aesthetic: '📐',
       reading: '📖',
@@ -996,6 +998,7 @@
     };
 
     el.spotlightCardsGrid.innerHTML = features.map(feat => {
+      const isFull = feat.id === 'learning_map';
       const isWide = feat.id === 'sustainability' || feat.id === 'science';
       const emoji = themeEmojis[feat.id] || '✨';
 
@@ -1019,7 +1022,7 @@
         : (feat.photos ? feat.photos.length : 0) + (feat.documents ? feat.documents.length : 0);
 
       return `
-        <article class="spotlight-card ${isWide ? 'bento-wide' : ''}" data-spotlight="${feat.id}" data-theme="${feat.id}">
+        <article class="spotlight-card ${isFull ? 'bento-full' : (isWide ? 'bento-wide' : '')}" data-spotlight="${feat.id}" data-theme="${feat.id}">
           <div class="spotlight-banner">
             <img src="${feat.heroImage}" alt="${escapeHtml(feat.title)}" class="spotlight-img" referrerpolicy="no-referrer" onerror="this.src='downloads/site_assets/avatar.jpg';">
             <div class="spotlight-award-tag" title="${escapeHtml(feat.award)}">${escapeHtml(primaryAward)}</div>

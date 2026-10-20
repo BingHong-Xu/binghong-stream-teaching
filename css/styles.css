@@ -6038,4 +6038,264 @@ html, body {
   transform: translateZ(0);
 }
 
+/* ==========================================================================
+   永貞六甲多元智能 × SDGs 永續學習地圖專欄樣式 (Learning Map Spotlight)
+   ========================================================================== */
+.spotlight-card[data-theme="learning_map"] {
+  border-left: 4px solid #059669;
+}
+.spotlight-card[data-theme="learning_map"]:hover {
+  border-color: #059669;
+  box-shadow: 0 12px 30px rgba(5, 150, 105, 0.22);
+}
+.spotlight-card[data-theme="learning_map"] .spotlight-award-tag {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+  border: 1px solid rgba(5, 150, 105, 0.35);
+}
+[data-theme="dark"] .spotlight-card[data-theme="learning_map"] .spotlight-award-tag {
+  background: rgba(5, 150, 105, 0.22);
+  color: #6ee7b7;
+  border-color: rgba(5, 150, 105, 0.45);
+}
+
+.spotlight-grid.bento-grid > .spotlight-card.bento-full {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 46% 54%;
+}
+@media (max-width: 1024px) {
+  .spotlight-grid.bento-grid > .spotlight-card.bento-full {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Learning Map Multiple Intelligences Grid */
+.lm-intelligences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 880px) {
+  .lm-intelligences-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lm-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.35rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.lm-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+.lm-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.lm-card-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lm-card-icon {
+  font-size: 1.45rem;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.lm-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+.lm-card-eng {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.lm-card-sdgs {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+.lm-sdg-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+.lm-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+.lm-card-focus {
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.85rem;
+}
+.lm-card-honors {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.lm-card-honors li {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text-main);
+  position: relative;
+  padding-left: 1.15rem;
+}
+.lm-card-honors li::before {
+  content: "•";
+  position: absolute;
+  left: 0.25rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+/* 3 Strategic Navigation Axes */
+.lm-axes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
+  margin-top: 1.25rem;
+}
+@media (max-width: 900px) {
+  .lm-axes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.lm-axis-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.2rem;
+  border-top-width: 4px;
+}
+.lm-axis-card h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.lm-axis-tags {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.65rem;
+}
+.lm-axis-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+.lm-axis-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Class Highlights */
+.lm-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-top: 1.15rem;
+}
+.lm-hl-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem;
+  text-align: center;
+}
+.lm-hl-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.35rem;
+}
+.lm-hl-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+.lm-hl-grade {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #059669;
+  background: rgba(5, 150, 105, 0.12);
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.35rem;
+}
+.lm-hl-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Student Roster Tag Cloud */
+.lm-student-stars-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+.lm-student-star-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  box-shadow: var(--shadow-xs);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.lm-student-star-pill:hover {
+  transform: translateY(-2px);
+  border-color: #059669;
+}
+.lm-student-name {
+  font-weight: 800;
+  color: var(--text-main);
+}
+.lm-student-honors {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
 

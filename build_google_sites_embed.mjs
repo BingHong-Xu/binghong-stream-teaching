@@ -529,7 +529,7 @@ ${googleSitesExtraCss}
       <div class="spotlight-title-group">
         <div class="bento-badge-pill">
           <span class="pulse-dot"></span>
-          <span>🔬 STREAM 跨域與教育創新 · 5 大旗艦策展</span>
+          <span>🔬 STREAM 跨域與永續教育創新 · 7 大旗艦策展</span>
         </div>
         <h2>
           <span>🌟 教學紀錄精粹：STREAM（STEM+A+R）教育策展</span>
@@ -538,7 +538,7 @@ ${googleSitesExtraCss}
       </div>
       <div>
         <span class="hero-tag" style="background: var(--primary-light); color: var(--primary); font-weight: 700; border-radius: var(--radius-full); padding: 0.4rem 0.95rem; font-size: 0.82rem; border: 1px solid rgba(var(--primary-rgb), 0.25);">
-          ✨ 5 大色彩識別 · SDGs 永續對應 · 現場紀實相簿
+          ✨ 7 大色彩識別 · SDGs 永續對應 · 現場紀實相簿
         </span>
       </div>
     </div>
@@ -611,6 +611,7 @@ ${googleSitesExtraCss}
       <!-- Quick Search Chips -->
       <div class="quick-search-chips">
         <span class="quick-search-label">💡 熱門標籤：</span>
+        <button class="quick-chip" data-search="多元智能">🗺️ 六甲多元智能學習地圖</button>
         <button class="quick-chip" data-search="全國第一">🏆 全國第一金獎</button>
         <button class="quick-chip" data-search="TSSCI">📚 TSSCI 核心期刊</button>
         <button class="quick-chip" data-search="火鍋">🥘 火鍋防溢探究</button>
@@ -1281,17 +1282,26 @@ ${googleSitesExtraCss}
       const features = window.SPECIAL_FEATURES || [];
       if (features.length === 0) return;
 
-      const priorityOrder = ['science', 'succulent', 'aesthetic', 'reading', 'international'];
+      const priorityOrder = ['sustainability', 'science', 'learning_map', 'succulent', 'aesthetic', 'reading', 'international'];
       const sorted = [...features].sort((a, b) => {
         const idxA = priorityOrder.indexOf(a.id);
         const idxB = priorityOrder.indexOf(b.id);
         return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
       });
 
-      const emojis = { science: '🔬', succulent: '🌵', aesthetic: '📐', reading: '📖', international: '🏮' };
+      const emojis = {
+        sustainability: '🌍',
+        science: '🔬',
+        learning_map: '🗺️',
+        succulent: '🌵',
+        aesthetic: '📐',
+        reading: '📖',
+        international: '🏮'
+      };
 
       el.spotlightCardsGrid.innerHTML = sorted.map(feat => {
-        const isWide = feat.id === 'science';
+        const isFull = feat.id === 'learning_map';
+        const isWide = feat.id === 'sustainability' || feat.id === 'science';
         const emoji = emojis[feat.id] || '✨';
         const primaryAward = feat.award.includes('·') ? feat.award.split('·')[0].trim() : feat.award;
 
@@ -1308,10 +1318,12 @@ ${googleSitesExtraCss}
 
         const dur = feat.duration ? feat.duration.split('（')[0].replace('課程', '') : '特色課程';
         const tgt = feat.target ? feat.target.split('（')[0] : '國小學童';
-        const count = (feat.photos ? feat.photos.length : 0) + (feat.documents ? feat.documents.length : 0);
+        const count = feat.id === 'sustainability'
+          ? 927
+          : (feat.photos ? feat.photos.length : 0) + (feat.documents ? feat.documents.length : 0);
 
         return \`
-          <article class="spotlight-card \${isWide ? 'bento-wide' : ''}" data-spotlight="\${feat.id}" data-theme="\${feat.id}">
+          <article class="spotlight-card \${isFull ? 'bento-full' : (isWide ? 'bento-wide' : '')}" data-spotlight="\${feat.id}" data-theme="\${feat.id}">
             <div class="spotlight-banner">
               <img src="\${window.resolveAsset(feat.heroImage)}" alt="\${escapeHtml(feat.title)}" class="spotlight-img" referrerpolicy="no-referrer">
               <div class="spotlight-award-tag" title="\${escapeHtml(feat.award)}">\${escapeHtml(primaryAward)}</div>

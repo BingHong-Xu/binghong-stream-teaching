@@ -209,7 +209,7 @@
     <div class="back-nav-row">
       <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,143 筆典藏庫）</a>
       <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-        <a href="special-sustainability.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🌍 傑出永續教育人物</a><a href="special-succulent.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🌵 多肉植癒 SEL</a><a href="special-aesthetic.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🎨 跨域美感標竿</a><a href="special-reading.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; background: #059669; color: #fff; border-color: #059669;">📖 明日閱讀典範</a><a href="special-international.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🏮 蘆竹湳雙語古厝</a><a href="special-science.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🔬 科學探究雙金</a>
+        <a href="special-sustainability.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🌍 傑出永續教育人物</a><a href="special-succulent.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🌵 多肉植癒 SEL</a><a href="special-aesthetic.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🎨 跨域美感標竿</a><a href="special-reading.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; background: #059669; color: #fff; border-color: #059669;">📖 明日閱讀典範</a><a href="special-international.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🏮 蘆竹湳雙語古厝</a><a href="special-science.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🔬 科學探究雙金</a><a href="special-learning_map.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🗺️ 六甲多元智能學習地圖</a>
       </div>
     </div>
 
@@ -517,6 +517,38 @@
         const elCard = document.getElementById('ev-card-' + code);
         if (elCard) elCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
+    };
+
+    let currentBrochureSide = 'inner';
+    window.switchBrochureSide = function(side) {
+      currentBrochureSide = side;
+      const img = document.getElementById('brochureImg');
+      const label = document.getElementById('brochureLabel');
+      const dl = document.getElementById('brochureDownloadBtn');
+      const btnInner = document.getElementById('btnBrochureInner');
+      const btnOuter = document.getElementById('btnBrochureOuter');
+      if (!img) return;
+      if (side === 'inner') {
+        img.src = 'downloads/feature_photos/sdgs_learning_map_inner.jpg';
+        img.alt = '永貞六甲多元智能×SDGs永續學習地圖折頁（內頁全景）';
+        if (label) label.textContent = '🗺️ 折頁內頁全景：創新思維與智慧領航 · 熱血競技與團隊協行 · 內在涵養與永續共榮（八大多元智能完整實踐）';
+        if (dl) dl.href = 'downloads/feature_photos/sdgs_learning_map_inner.jpg';
+        if (btnInner) btnInner.className = 'btn-primary';
+        if (btnOuter) btnOuter.className = 'btn-outline';
+      } else {
+        img.src = 'downloads/feature_photos/sdgs_learning_map_outer.jpg';
+        img.alt = '永貞六甲多元智能×SDGs永續學習地圖折頁（外頁全景）';
+        if (label) label.textContent = '📘 折頁外頁全景：築夢踏實封面 · 班級五大亮點 · 導師簡歷 · 八大智能導覽清單與班級共榮';
+        if (dl) dl.href = 'downloads/feature_photos/sdgs_learning_map_outer.jpg';
+        if (btnInner) btnInner.className = 'btn-outline';
+        if (btnOuter) btnOuter.className = 'btn-primary';
+      }
+    };
+
+    window.openActiveBrochureLightbox = function() {
+      const src = currentBrochureSide === 'inner' ? 'downloads/feature_photos/sdgs_learning_map_inner.jpg' : 'downloads/feature_photos/sdgs_learning_map_outer.jpg';
+      const title = currentBrochureSide === 'inner' ? '永貞六甲多元智能×SDGs永續學習地圖折頁（內頁全景）' : '永貞六甲多元智能×SDGs永續學習地圖折頁（外頁全景）';
+      window.openSpecialLightbox(title, src, 'image', '苗栗縣頭份市永貞國小六年甲班（YES 601）徐秉鴻導師帶領 17 位學童共創之多元智能與 SDGs 永續成果手冊');
     };
 
     window.closeSpecialLightbox = function() {

@@ -32320,6 +32320,60 @@
         "SDG 11",
         "SDG 17"
       ]
+    },
+    {
+      "id": 9500824,
+      "sectionId": 340556981,
+      "sectionTitle": "指導學生獲獎",
+      "categoryId": "mentorship",
+      "categoryName": "指導學生多元展能",
+      "headline": "【永貞六甲多元智能×SDGs永續學習地圖】折頁封面與亮點紀實（外頁全景）",
+      "body": "<p><strong>🗺️ 永貞國小六年甲班 多元智能 × SDGs 永續學習地圖（外頁・封面與班級五大亮點）</strong></p><ul><li><strong>核心理念：</strong>「築夢踏實，夢想起飛」——1 位導師引領 17 位孩子共創全人展能里程碑</li><li><strong>對應理論：</strong>哈佛大學 Howard Gardner 多元智能理論（語文、邏輯數學、空間、肢體動覺、音樂、人際、內省、自然探索）</li><li><strong>班級五大亮點：</strong>深耕本土放眼國際（蘆竹湳走讀、在地踏查）、科技創新智慧學習（Padlet 混成教學、STEAM 數位探究）、全人發展多元展能（文狀元、全國女籃亞軍、科展、陶笛）、環境永續生態守護（校園綠化、環境教育）、愛與榜樣共好同行（親師生攜手共學）</li><li><strong>檔案路徑：</strong><code>downloads/feature_photos/sdgs_learning_map_outer.jpg</code></li></ul>",
+      "createdAt": "2026-06-15T08:00:00.000Z",
+      "isPinned": true,
+      "mediaType": "image",
+      "fileUrl": "downloads/feature_photos/sdgs_learning_map_outer.jpg",
+      "previewImage": "downloads/feature_photos/sdgs_learning_map_outer.jpg",
+      "externalUrl": null,
+      "localFile": "downloads/feature_photos/sdgs_learning_map_outer.jpg",
+      "fileName": "sdgs_learning_map_outer.jpg",
+      "fileSize": 520274,
+      "status": "downloaded",
+      "sdgs": [
+        "SDG 3",
+        "SDG 4",
+        "SDG 11",
+        "SDG 12",
+        "SDG 15",
+        "SDG 17"
+      ]
+    },
+    {
+      "id": 9500825,
+      "sectionId": 340556981,
+      "sectionTitle": "指導學生獲獎",
+      "categoryId": "mentorship",
+      "categoryName": "指導學生多元展能",
+      "headline": "【永貞六甲多元智能×SDGs永續學習地圖】三大主軸與全班17位學童榮譽里程碑（內頁全景）",
+      "body": "<p><strong>🗺️ 永貞國小六年甲班 多元智能 × SDGs 永續學習地圖（內頁・三大主軸與多元智能實踐地圖）</strong></p><ul><li><strong>三大發展主軸：</strong>【創新思維與智慧領航】、【熱血競技與團隊協行】、【內在涵養與永續共榮】</li><li><strong>全班 17 位學生全員榮譽星榜：</strong>饒恩慈、鍾姿涵、陳羽菲、陳祈恩、高靖芸、鍾柏語、林彥彤、徐柏冠、劉千香、黃雅閑、曾庭翊、張姍君、邱建翔、羅丞諺、江烽廷、林奕安、鍾佩蓉、曾芷翔、劉娉珺等 17 位孩子全員獲獎紀實，無一人被遺漏（Leave No One Behind）</li><li><strong>對應指標：</strong>全面接軌聯合國 17 項 SDGs 永續發展目標與 8 大多元智能指標體系</li><li><strong>檔案路徑：</strong><code>downloads/feature_photos/sdgs_learning_map_inner.jpg</code></li></ul>",
+      "createdAt": "2026-06-15T08:00:00.000Z",
+      "isPinned": true,
+      "mediaType": "image",
+      "fileUrl": "downloads/feature_photos/sdgs_learning_map_inner.jpg",
+      "previewImage": "downloads/feature_photos/sdgs_learning_map_inner.jpg",
+      "externalUrl": null,
+      "localFile": "downloads/feature_photos/sdgs_learning_map_inner.jpg",
+      "fileName": "sdgs_learning_map_inner.jpg",
+      "fileSize": 635669,
+      "status": "downloaded",
+      "sdgs": [
+        "SDG 3",
+        "SDG 4",
+        "SDG 11",
+        "SDG 12",
+        "SDG 15",
+        "SDG 17"
+      ]
     }
   ]
 }
