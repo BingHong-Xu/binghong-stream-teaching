@@ -31,7 +31,7 @@ function buildSustainabilityExtraSections(sa) {
   const pObj = info.portraits || {};
   const portraits = [
     { path: pObj.suit || 'downloads/sustainability_award/portrait_suit.jpg', title: '徐秉鴻老師｜STEM 科學探究與跨域教育實踐現場（個人封面形象照）', desc: '秉持「教學維持動能、輔導點燃希望、行政懷抱熱忱」之教育初心，於全國科學教育與 STEM 展覽現場實踐跨域探究教學' },
-    { path: pObj.teaching || 'downloads/sustainability_award/portrait_teaching.jpg', title: '候選人教學實況照（帶領永貞六甲學童跨域實作）', desc: '於永貞國小教室帶領學童進行 STEAM 與美感跨域實作' },
+    { path: pObj.teaching || 'downloads/sustainability_award/portrait_teaching.jpg', title: '候選人教學實況照（帶領學童進行 STREAM 跨域實作）', desc: '於永貞國小教室帶領學童進行 STREAM 跨域實作與班級說書歷程' },
     { path: pObj.award || 'downloads/sustainability_award/portrait_award.jpg', title: '候選人獲獎榮耀照（全國科學探究競賽金獎頒獎典禮）', desc: '指導學生榮獲全國科學探究競賽第一名（金獎）完整頒獎典禮合照' },
     { path: pObj.id || 'downloads/sustainability_award/portrait_id.jpg', title: '候選人科普走讀照（國科會臺灣科普環島列車師生合影）', desc: '帶領全班身穿 SDGs 班服參與國科會臺灣科普環島列車跨域走讀' }
   ];
