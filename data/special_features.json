@@ -392,7 +392,7 @@
     "award": "🎖️ 明日閱讀認證【聊書典範教師】·【明日英文聽讀教師】· 識字英雄榜全國前 20 名",
     "duration": "114-115學年度持續實施",
     "target": "國小全年段（重點深化高年級）",
-    "heroImage": "downloads/feature_photos/reading_mssr_storyteller.jpg",
+    "heroImage": "downloads/feature_photos/reading_nknu_pair_guidance_group.jpg",
     "tags": [
       "圖書館閱讀推動",
       "MSSR身教晨讀",
@@ -443,6 +443,10 @@
       }
     ],
     "photos": [
+      {
+        "url": "downloads/feature_photos/reading_nknu_pair_guidance_group.jpg",
+        "caption": "國立高雄師範大學方金雅教授團隊蒞臨永貞國小指導：徐秉鴻老師與閱讀評量團隊手持 PAIR 及閱讀標語熱情合影"
+      },
       {
         "url": "downloads/feature_photos/reading_mssr_storyteller.jpg",
         "caption": "閱讀推動與明日說書人互動引導活動現場：師生生生互動對話聊書"
