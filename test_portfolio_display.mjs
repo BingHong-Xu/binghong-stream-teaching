@@ -7,11 +7,11 @@ const data = JSON.parse(fs.readFileSync('data/portfolio_data.json', 'utf8'));
 let errors = 0;
 
 // Test 1: Total items and sections
-if (data.items.length !== 1145) {
-  console.error(`❌ Expected 1145 items, got ${data.items.length}`);
+if (data.items.length !== 1144) {
+  console.error(`❌ Expected 1144 items, got ${data.items.length}`);
   errors++;
 } else {
-  console.log(`✅ Item count: 1145 items verified.`);
+  console.log(`✅ Item count: 1144 items verified.`);
 }
 
 if (data.sections.length !== 43) {
@@ -39,7 +39,7 @@ if (missingDates.length > 0) {
   missingDates.forEach(i => console.error(`  - ID: ${i.id}, headline: ${i.headline}`));
   errors++;
 } else {
-  console.log(`✅ Date formatting: All 1145 items have valid createdAt dates (0 NaN).`);
+  console.log(`✅ Date formatting: All 1144 items have valid createdAt dates (0 NaN).`);
 }
 
 // Test 3: Orphan sections

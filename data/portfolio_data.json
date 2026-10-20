@@ -9,7 +9,7 @@
     "localBackground": "downloads/site_assets/background.jpg",
     "totalWishes": 184,
     "totalSections": 27,
-    "totalItems": 1143
+    "totalItems": 1144
   },
   "categories": [
     {
@@ -733,28 +733,6 @@
       "updatedAt": "2026-08-31T11:37:07.515Z",
       "isPinned": true,
       "fileName": "3675123013_國立高雄師範大學 科學教育暨環境教育研究所 碩士班 113級（小學教育學程、環境教育專業人員認證課程.png",
-      "status": "downloaded"
-    },
-    {
-      "id": 3904783455,
-      "headline": "國立高雄師範大學－科學教育暨環境教育研究所 科學教育博士班、閱讀教學微學分學程（2026迄今在讀中）",
-      "body": "",
-      "sectionId": 334513853,
-      "sectionTitle": "學歷背景",
-      "categoryId": "profile",
-      "categoryName": "個人資歷與職務",
-      "mediaType": "image",
-      "fileUrl": "https://u1.padletusercontent.com/uploads/padlet-uploads-usc1/2633604001/b7b839b55bad545cebe578309c915a01/image.png?expiry_token=5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKio2bPgpfz1zCOv5GmYa26UsUYe1r-fLpPtVcCzctRE1zxDOuNd4hSNXe6w_OPKeBpKnQKiYFDa3zEwvyXKipKn1rlBw3IDLlnPges6Tv3LZAYPkArmemJqjqb2sMUSC_XVg==",
-      "localFile": "downloads/sustainability_award/evidence_imgs/image110.png",
-      "externalUrl": null,
-      "previewImage": "downloads/sustainability_award/evidence_imgs/image110.png",
-      "extension": "png",
-      "fileSize": 452266,
-      "sortIndex": -7168,
-      "createdAt": "2026-05-09T13:19:49.715Z",
-      "updatedAt": "2026-08-31T11:37:06.006Z",
-      "isPinned": true,
-      "fileName": "3904783455_國立高雄師範大學 科學教育暨環境教育研究所 科學教育博士班（2026迄今在讀中）.png",
       "status": "downloaded"
     },
     {

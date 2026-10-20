@@ -824,7 +824,7 @@ function createPageHtml(feat) {
   <!-- Article Container -->
   <main class="article-container">
     <div class="back-nav-row">
-      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,145 筆典藏庫）</a>
+      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,144 筆典藏庫）</a>
       <div class="special-nav-pills">
         ${navPillsHtml}
       </div>
@@ -970,7 +970,7 @@ function createPageHtml(feat) {
         &larr; 返回徐秉鴻老師 教學成果主網站
       </a>
       <a href="index.html#portfolio-catalog" class="btn-outline" style="padding: 0.75rem 1.75rem; font-size: 1rem;">
-        🗂️ 檢索 1,145 筆成果典藏庫
+        🗂️ 檢索 1,144 筆成果典藏庫
       </a>
     </div>
   </main>
