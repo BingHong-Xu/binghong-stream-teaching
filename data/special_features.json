@@ -7,7 +7,7 @@
     "award": "🌍 2026 台灣傑出永續教育人物獎（永貞國小推薦參選）· 環境部環境教育人員認證 · 跨域教案首獎",
     "duration": "2017 ～ 2026 跨階段長期深耕（涵蓋 93 場永續活動與 5 大構面）",
     "target": "國小全學段（永貞國小六年甲班核心實踐）、國中與師資培育跨階段推廣",
-    "heroImage": "downloads/sustainability_award/evidence_imgs/image27.jpeg",
+    "heroImage": "downloads/sustainability_award/cover_sustainability.jpg",
     "tags": [
       "2026台灣傑出永續教育人物",
       "環境教育人員認證",
@@ -59,6 +59,10 @@
       }
     ],
     "photos": [
+      {
+        "url": "downloads/sustainability_award/cover_sustainability.jpg",
+        "caption": "【代表性旗艦封面】徐秉鴻老師帶領永貞六甲學童身著專屬 SDGs 戰袍於運動會草坪榮耀合影（全人發展與永續實踐典範）"
+      },
       {
         "url": "downloads/sustainability_award/evidence_imgs/image27.jpeg",
         "caption": "【佐證 1-17】永貞國小校慶運動會拔河決賽：全班身穿右臂印有 SDGs 彩色輪環專屬班服全力奮戰"
