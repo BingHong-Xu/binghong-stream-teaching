@@ -360,11 +360,15 @@ ${googleSitesExtraCss}
       </div>
 
       <div class="hero-content">
-        <!-- 雙軌學術身分徽章列 -->
+        <!-- 四大核心教育實踐榮譽徽章列 -->
         <div class="hero-identity-bar">
-          <span class="identity-badge scholar">🎓 國立高雄師範大學 科學教育博士班</span>
+          <span class="identity-badge sustainability">🌍 2026 台灣傑出永續教育人物 · 環境教育認證</span>
           <span class="identity-divider" style="color: var(--text-subtle);">✕</span>
-          <span class="identity-badge educator">🏫 苗栗縣永貞國小 專任／閱推教師</span>
+          <span class="identity-badge practicum">🎓 高師大師培 × 四維國小</span>
+          <span class="identity-divider" style="color: var(--text-subtle);">✕</span>
+          <span class="identity-badge aesthetic">🎨 教育部標竿學校 · 苗栗縣教案首獎</span>
+          <span class="identity-divider" style="color: var(--text-subtle);">✕</span>
+          <span class="identity-badge reading">📖 永貞國小閱推專任 · 聊書典範教師</span>
         </div>
 
         <h1>徐秉鴻 老師 <span class="hero-title-accent">教學成果與學術典藏</span></h1>
@@ -458,9 +462,9 @@ ${googleSitesExtraCss}
           </div>
         </div>
 
-        <!-- 國教署「識字金銀島」十二色點指標體系導覽列 -->
+        <!-- 國教署與高師大「識字金銀島」十二色點指標體系導覽列 -->
         <div class="hero-dot-legend">
-          <span class="dot-legend-title">🎨 欄位色彩取材自國教署「識字金銀島」十二色點指標體系：</span>
+          <span class="dot-legend-title">🎨 欄位色彩取材自國教署與高師大閱讀評量與教學研究中心研發之「識字金銀島」十二色點指標體系：</span>
           <div class="dot-legend-dots">
             <span class="color-dot-tag tag-white" title="白：1.0-1.5 一年級上學期"><span class="cd-circle">⚪</span> 白</span>
             <span class="color-dot-tag tag-black" title="黑：1.6-2.0 一年級下學期"><span class="cd-circle">⚫</span> 黑</span>
@@ -500,23 +504,23 @@ ${googleSitesExtraCss}
     </div>
   </section>
 
-  <!-- Three Signature Teaching Pillars (三大核心成果專區：小教實習、跨域美感、閱讀推動) -->
+  <!-- Four Signature Teaching Pillars (四大核心成果專區：永續教育、小教實習、跨域美感、閱讀推動) -->
   <section id="teaching-three-pillars" class="teaching-three-pillars-section">
     <div class="pillars-header">
       <div class="pillars-badge-pill">
         <span class="pulse-dot"></span>
-        <span>✨ 旗艦教育實踐 · 三大核心專區 · 師培典範 × 標竿教案 × 閱讀推廣</span>
+        <span>✨ 旗艦教育實踐 · 四大核心專區 · 永續領航 × 標竿美感 × 閱讀典範 × 師培傳承</span>
       </div>
       <h2>
-        <span>🏆 教學成果核心三大專區</span>
+        <span>🏆 教學成果四大核心專區</span>
       </h2>
       <p>
-        深耕教育現場，全方位展現<strong>「小教實習」</strong>（高師大集中實習總召領航）、<strong>「跨域美感」</strong>（教育部標竿學校研發與教案首獎）及<strong>「閱讀推動」</strong>（全校身教式晨讀 MSSR 與識字金銀島學術實證）三大指標性教育實踐歷程。
+        深耕教育現場，全方位展現<strong>「永續教育」</strong>（🌍 2026 台灣傑出永續教育人物 · 環境教育認證）、<strong>「師培傳承」</strong>（🎓 高師大師培 × 四維國小）、<strong>「跨域美感」</strong>（🎨 教育部標竿學校 · 苗栗縣教案首獎）及<strong>「閱讀推動」</strong>（📖 永貞國小閱推專任 · 聊書典範教師）四大指標性教育實踐歷程。
       </p>
     </div>
 
-    <!-- Pillars Cards Grid (3 Columns) -->
-    <div id="teachingPillarsGrid" class="pillars-grid"></div>
+    <!-- Pillars Cards Grid (4 Columns on desktop) -->
+    <div id="teachingPillarsGrid" class="pillars-grid pillars-grid-four"></div>
   </section>
 
   <!-- Featured Teaching Spotlights (STREAM 旗艦專題策展) -->
@@ -1032,7 +1036,12 @@ ${googleSitesExtraCss}
       const pillars = window.THREE_PILLARS || [];
       if (pillars.length === 0) return;
 
-      const themeIcons = { practicum: '🎓', aesthetic: '🎨', reading: '📖' };
+      const themeIcons = {
+        sustainability: '🌱',
+        practicum: '🎓',
+        aesthetic: '🎨',
+        reading: '📖'
+      };
 
       el.teachingPillarsGrid.innerHTML = pillars.map(p => {
         const icon = themeIcons[p.id] || '🌟';
