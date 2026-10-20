@@ -1775,6 +1775,45 @@ button {
   color: #ffffff;
 }
 
+/* ==========================================================================
+   國教署「識字金銀島」十二色點指標體系 - 欄位色彩配置 (Twelve Color Dots Category Tabs)
+   ========================================================================== */
+.tab-btn[data-category="sustainability_sdgs"] { border-left: 3.5px solid var(--dot-green); }
+.tab-btn[data-category="sustainability_sdgs"]:hover { background: var(--dot-green-bg); color: var(--dot-green); border-color: var(--dot-green); }
+.tab-btn[data-category="sustainability_sdgs"].active { background: var(--dot-green); border-color: var(--dot-green); color: #fff; box-shadow: 0 4px 14px var(--dot-green-glow); }
+
+.tab-btn[data-category="honors"] { border-left: 3.5px solid var(--dot-gold); }
+.tab-btn[data-category="honors"]:hover { background: var(--dot-gold-bg); color: var(--dot-gold); border-color: var(--dot-gold); }
+.tab-btn[data-category="honors"].active { background: var(--dot-gold); border-color: var(--dot-gold); color: #fff; box-shadow: 0 4px 14px var(--dot-gold-glow); }
+
+.tab-btn[data-category="aesthetic_art"] { border-left: 3.5px solid var(--dot-purple); }
+.tab-btn[data-category="aesthetic_art"]:hover { background: var(--dot-purple-bg); color: var(--dot-purple); border-color: var(--dot-purple); }
+.tab-btn[data-category="aesthetic_art"].active { background: var(--dot-purple); border-color: var(--dot-purple); color: #fff; box-shadow: 0 4px 14px var(--dot-purple-glow); }
+
+.tab-btn[data-category="research"] { border-left: 3.5px solid var(--dot-indigo); }
+.tab-btn[data-category="research"]:hover { background: var(--dot-indigo-bg); color: var(--dot-indigo); border-color: var(--dot-indigo); }
+.tab-btn[data-category="research"].active { background: var(--dot-indigo); border-color: var(--dot-indigo); color: #fff; box-shadow: 0 4px 14px var(--dot-indigo-glow); }
+
+.tab-btn[data-category="certifications"] { border-left: 3.5px solid var(--dot-bronze); }
+.tab-btn[data-category="certifications"]:hover { background: var(--dot-bronze-bg); color: var(--dot-bronze); border-color: var(--dot-bronze); }
+.tab-btn[data-category="certifications"].active { background: var(--dot-bronze); border-color: var(--dot-bronze); color: #fff; box-shadow: 0 4px 14px var(--dot-bronze-glow); }
+
+.tab-btn[data-category="mentorship"] { border-left: 3.5px solid var(--dot-blue); }
+.tab-btn[data-category="mentorship"]:hover { background: var(--dot-blue-bg); color: var(--dot-blue); border-color: var(--dot-blue); }
+.tab-btn[data-category="mentorship"].active { background: var(--dot-blue); border-color: var(--dot-blue); color: #fff; box-shadow: 0 4px 14px var(--dot-blue-glow); }
+
+.tab-btn[data-category="media"] { border-left: 3.5px solid var(--dot-orange); }
+.tab-btn[data-category="media"]:hover { background: var(--dot-orange-bg); color: var(--dot-orange); border-color: var(--dot-orange); }
+.tab-btn[data-category="media"].active { background: var(--dot-orange); border-color: var(--dot-orange); color: #fff; box-shadow: 0 4px 14px var(--dot-orange-glow); }
+
+.tab-btn[data-category="engagement"] { border-left: 3.5px solid var(--dot-red); }
+.tab-btn[data-category="engagement"]:hover { background: var(--dot-red-bg); color: var(--dot-red); border-color: var(--dot-red); }
+.tab-btn[data-category="engagement"].active { background: var(--dot-red); border-color: var(--dot-red); color: #fff; box-shadow: 0 4px 14px var(--dot-red-glow); }
+
+.tab-btn[data-category="profile"] { border-left: 3.5px solid var(--dot-silver); }
+.tab-btn[data-category="profile"]:hover { background: var(--dot-silver-bg); color: var(--dot-silver); border-color: var(--dot-silver); }
+.tab-btn[data-category="profile"].active { background: var(--dot-silver); border-color: var(--dot-silver); color: #fff; box-shadow: 0 4px 14px var(--dot-silver-glow); }
+
 /* 27 個子向度膠囊清單 (Sub-sections Filter Cloud) */
 .subsections-container {
   display: flex;
@@ -2244,50 +2283,98 @@ button {
   transition: var(--transition);
 }
 
-/* Category-specific tag badges */
-.portfolio-card[data-category="honors"] .card-section-tag {
-  color: #b45309;
-  background: rgba(217, 119, 6, 0.1);
-  border-color: rgba(217, 119, 6, 0.25);
+/* ==========================================================================
+   國教署「識字金銀島」十二色點指標體系 - 卡片欄位色彩 (Twelve Color Dots Cards System)
+   ========================================================================== */
+.portfolio-card[data-category="sustainability_sdgs"] .card-section-tag {
+  color: var(--dot-green);
+  background: var(--dot-green-bg);
+  border-color: var(--dot-green-border);
 }
-.portfolio-card[data-category="research"] .card-section-tag {
-  color: #0284c7;
-  background: rgba(2, 132, 199, 0.1);
-  border-color: rgba(2, 132, 199, 0.25);
-}
-.portfolio-card[data-category="engagement"] .card-section-tag {
-  color: #7c3aed;
-  background: rgba(124, 58, 237, 0.1);
-  border-color: rgba(124, 58, 237, 0.25);
-}
-.portfolio-card[data-category="certifications"] .card-section-tag {
-  color: #059669;
-  background: rgba(5, 150, 105, 0.1);
-  border-color: rgba(5, 150, 105, 0.25);
-}
-.portfolio-card[data-category="media"] .card-section-tag {
-  color: #ea580c;
-  background: rgba(234, 88, 12, 0.1);
-  border-color: rgba(234, 88, 12, 0.25);
-}
-.portfolio-card[data-category="mentorship"] .card-section-tag {
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.1);
-  border-color: rgba(37, 99, 235, 0.25);
-}
-.portfolio-card[data-category="profile"] .card-section-tag {
-  color: #4f46e5;
-  background: rgba(79, 70, 229, 0.1);
-  border-color: rgba(79, 70, 229, 0.25);
+.portfolio-card[data-category="sustainability_sdgs"]:hover {
+  border-color: var(--dot-green);
+  box-shadow: 0 10px 24px var(--dot-green-glow);
 }
 
-[data-theme="dark"] .portfolio-card[data-category="honors"] .card-section-tag { color: #fbbf24; background: rgba(217, 119, 6, 0.22); border-color: rgba(217, 119, 6, 0.4); }
-[data-theme="dark"] .portfolio-card[data-category="research"] .card-section-tag { color: #38bdf8; background: rgba(2, 132, 199, 0.22); border-color: rgba(2, 132, 199, 0.4); }
-[data-theme="dark"] .portfolio-card[data-category="engagement"] .card-section-tag { color: #c084fc; background: rgba(124, 58, 237, 0.22); border-color: rgba(124, 58, 237, 0.4); }
-[data-theme="dark"] .portfolio-card[data-category="certifications"] .card-section-tag { color: #34d399; background: rgba(5, 150, 105, 0.22); border-color: rgba(5, 150, 105, 0.4); }
-[data-theme="dark"] .portfolio-card[data-category="media"] .card-section-tag { color: #fb923c; background: rgba(234, 88, 12, 0.22); border-color: rgba(234, 88, 12, 0.4); }
-[data-theme="dark"] .portfolio-card[data-category="mentorship"] .card-section-tag { color: #60a5fa; background: rgba(37, 99, 235, 0.22); border-color: rgba(37, 99, 235, 0.4); }
-[data-theme="dark"] .portfolio-card[data-category="profile"] .card-section-tag { color: #818cf8; background: rgba(79, 70, 229, 0.22); border-color: rgba(79, 70, 229, 0.4); }
+.portfolio-card[data-category="honors"] .card-section-tag {
+  color: var(--dot-gold);
+  background: var(--dot-gold-bg);
+  border-color: var(--dot-gold-border);
+}
+.portfolio-card[data-category="honors"]:hover {
+  border-color: var(--dot-gold);
+  box-shadow: 0 10px 24px var(--dot-gold-glow);
+}
+
+.portfolio-card[data-category="aesthetic_art"] .card-section-tag {
+  color: var(--dot-purple);
+  background: var(--dot-purple-bg);
+  border-color: var(--dot-purple-border);
+}
+.portfolio-card[data-category="aesthetic_art"]:hover {
+  border-color: var(--dot-purple);
+  box-shadow: 0 10px 24px var(--dot-purple-glow);
+}
+
+.portfolio-card[data-category="research"] .card-section-tag {
+  color: var(--dot-indigo);
+  background: var(--dot-indigo-bg);
+  border-color: var(--dot-indigo-border);
+}
+.portfolio-card[data-category="research"]:hover {
+  border-color: var(--dot-indigo);
+  box-shadow: 0 10px 24px var(--dot-indigo-glow);
+}
+
+.portfolio-card[data-category="certifications"] .card-section-tag {
+  color: var(--dot-bronze);
+  background: var(--dot-bronze-bg);
+  border-color: var(--dot-bronze-border);
+}
+.portfolio-card[data-category="certifications"]:hover {
+  border-color: var(--dot-bronze);
+  box-shadow: 0 10px 24px var(--dot-bronze-glow);
+}
+
+.portfolio-card[data-category="mentorship"] .card-section-tag {
+  color: var(--dot-blue);
+  background: var(--dot-blue-bg);
+  border-color: var(--dot-blue-border);
+}
+.portfolio-card[data-category="mentorship"]:hover {
+  border-color: var(--dot-blue);
+  box-shadow: 0 10px 24px var(--dot-blue-glow);
+}
+
+.portfolio-card[data-category="media"] .card-section-tag {
+  color: var(--dot-orange);
+  background: var(--dot-orange-bg);
+  border-color: var(--dot-orange-border);
+}
+.portfolio-card[data-category="media"]:hover {
+  border-color: var(--dot-orange);
+  box-shadow: 0 10px 24px var(--dot-orange-glow);
+}
+
+.portfolio-card[data-category="engagement"] .card-section-tag {
+  color: var(--dot-red);
+  background: var(--dot-red-bg);
+  border-color: var(--dot-red-border);
+}
+.portfolio-card[data-category="engagement"]:hover {
+  border-color: var(--dot-red);
+  box-shadow: 0 10px 24px var(--dot-red-glow);
+}
+
+.portfolio-card[data-category="profile"] .card-section-tag {
+  color: var(--dot-silver);
+  background: var(--dot-silver-bg);
+  border-color: var(--dot-silver-border);
+}
+.portfolio-card[data-category="profile"]:hover {
+  border-color: var(--dot-silver);
+  box-shadow: 0 10px 24px var(--dot-silver-glow);
+}
 
 .card-title {
   font-size: 1.05rem;
@@ -2586,11 +2673,17 @@ button {
 }
 
 .cv-list li {
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  font-weight: 400;
   color: var(--text-main);
   position: relative;
   padding-left: 1.4rem;
+}
+
+.cv-list li strong {
+  font-weight: 700;
+  color: var(--text-main);
 }
 
 .cv-list li::before {

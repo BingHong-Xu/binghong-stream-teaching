@@ -1085,7 +1085,7 @@
     if (el.spModalExternalSiteWrapper) {
       if (feat.externalSite) {
         const ext = feat.externalSite;
-        const targetUrl = window.location.protocol === 'file:' ? ext.url : (ext.serverUrl || ext.url);
+        const targetUrl = window.location.protocol === 'file:' ? (ext.localUrl || ext.url) : (ext.serverUrl || ext.url || 'https://binghong-xu.github.io/yongzhen-stem-art/');
         el.spModalExternalSiteWrapper.style.display = 'block';
         el.spModalExternalSiteWrapper.innerHTML = `
           <div style="background: linear-gradient(135deg, #090e24 0%, #151b3d 60%, #2e1065 100%); border: 1px solid rgba(168, 85, 247, 0.5); border-radius: var(--radius-lg); padding: 1.35rem; color: #f8fafc; box-shadow: 0 8px 24px -6px rgba(124, 58, 237, 0.35); margin-bottom: 0.5rem;">
@@ -1104,6 +1104,9 @@
               </a>
               <a href="${targetUrl}#gallerySection" target="_blank" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
                 🖼️ 320+ 作品藝廊 ↗
+              </a>
+              <a href="special-aesthetic.html" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
+                🎨 查看標竿專題頁 ↗
               </a>
             </div>
           </div>

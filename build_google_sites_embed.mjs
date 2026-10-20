@@ -646,36 +646,36 @@ ${googleSitesExtraCss}
         <div class="cv-block cv-block-service">
           <h4>🏫 現職與永續教育專業服務</h4>
           <ul class="cv-list">
-            <li><a href="https://yes.mlc.edu.tw/Home/Index.php" target="_blank" rel="noopener"><strong>苗栗縣頭份市永貞國民小學</strong></a>－專任教師（2024迄今）、高年級導師（2024-2026）</li>
-            <li><a href="https://yes.mlc.edu.tw/Home/Index.php" target="_blank" rel="noopener"><strong>苗栗縣頭份市永貞國民小學</strong></a>－兼任<a href="https://cirn.k12ea.gov.tw/web1186/dl_page.aspx?fid=12429" target="_blank" rel="noopener"><strong>圖書館閱讀推動教師</strong></a>（2025迄今）、兼任文書組長（2026迄今）</li>
-            <li><a href="https://iern.mlc.edu.tw/tw/about/index.php?num=26" target="_blank" rel="noopener"><strong>苗栗縣國際教育中心</strong></a>－專業工作人員（2025迄今）</li>
-            <li><strong>環境部認證環境教育人員－學校及社會環境教育領域（字號：(112)環署訓證字第EP106004號）</strong></li>
-            <li><strong>國立高雄師範大學師資培育與就業輔導處－國民小學教學實習總召</strong></li>
-            <li><strong>財團法人永齡教育基金會－希望小學高師大分校優良課輔教師（2020-2024）</strong></li>
+            <li><a href="https://yes.mlc.edu.tw/Home/Index.php" target="_blank" rel="noopener"><strong>苗栗縣頭份市永貞國民小學</strong></a>：專任教師（2024迄今）、高年級導師（2024-2026）</li>
+            <li><a href="https://yes.mlc.edu.tw/Home/Index.php" target="_blank" rel="noopener"><strong>苗栗縣頭份市永貞國民小學</strong></a>：兼任<a href="https://cirn.k12ea.gov.tw/web1186/dl_page.aspx?fid=12429" target="_blank" rel="noopener">圖書館閱讀推動教師</a>（2025迄今）、兼任文書組長（2026迄今）</li>
+            <li><a href="https://iern.mlc.edu.tw/tw/about/index.php?num=26" target="_blank" rel="noopener"><strong>苗栗縣國際教育中心</strong></a>：專業工作人員（2025迄今）</li>
+            <li><strong>環境部認證環境教育人員</strong>：學校及社會環境教育領域（字號：(112)環署訓證字第EP106004號）</li>
+            <li><strong>國立高雄師範大學師培處</strong>：國民小學教學實習總召</li>
+            <li><strong>財團法人永齡教育基金會</strong>：希望小學高師大分校優良課輔教師（2020-2024）</li>
           </ul>
         </div>
 
         <div class="cv-block cv-block-edu">
           <h4>🎓 學歷與多元師資認證</h4>
           <ul class="cv-list">
-            <li><strong>國立高雄師範大學</strong>－科學教育暨環境教育研究所 科學教育博士班、閱讀教學微學分學程（2026迄今在讀中）</li>
-            <li><strong>國立高雄師範大學</strong>－科學教育暨環境教育研究所 碩士班 113級（國民小學教育學程）</li>
-            <li><strong>國立高雄師範大學</strong>－數學系應用數學組 大學部 109級（國中、高中教育學程數學領域）</li>
-            <li><strong>教育部合格教師證書</strong>：中華民國國民小學教師證書（108課綱）、中等學校數學科教師證書（99課綱）</li>
-            <li><strong>專業認證</strong>：客語能力初級認證、教育部學習扶助國小國語／國小數學／國中數學認證、國立臺灣師範大學數學活動師（第四、五期）</li>
+            <li><strong>國立高雄師範大學</strong>：科學教育暨環境教育研究所 科學教育博士班、閱讀教學微學分學程（2026迄今在讀中）</li>
+            <li><strong>國立高雄師範大學</strong>：科學教育暨環境教育研究所 碩士班 113級（國民小學教育學程）</li>
+            <li><strong>國立高雄師範大學</strong>：數學系應用數學組 大學部 109級（國中、高中教育學程數學領域）</li>
+            <li><strong>教育部合格教師證書</strong>：國民小學教師證書（108課綱）、中等學校數學科教師證書（99課綱）</li>
+            <li><strong>多元教育專業認證</strong>：客語能力初級認證、教育部學習扶助（國小國語／國小數學／國中數學）、臺師大數學活動師（第四、五期）</li>
           </ul>
         </div>
 
         <div class="cv-block cv-block-awards">
           <h4>🏆 代表性永續與科學教育榮譽（17項精選）</h4>
           <ul class="cv-list">
-            <li class="highlight-award"><strong>社團法人中華明日閱讀協會 2026</strong>－引領永貞國小榮獲<strong>「明日閱讀典範學校」</strong>全國最高榮譽</li>
-            <li class="highlight-award"><strong>教育部跨領域美感教育卓越領航計畫</strong>－引領永貞國小榮獲 115 學年度<strong>「標竿學校」</strong>、114 學年度<strong>「種子學校」</strong></li>
-            <li class="highlight-award"><strong>國教署 2025 &amp; 2022 全國科學探究競賽</strong>－指導「火鍋防溢探究」、「香蕉假莖探究」雙獲<strong>全國第一名（金獎）</strong></li>
-            <li class="highlight-award-bronze"><strong>國教署 2026 &amp; 2024 全國科學探究競賽</strong>－教師組「多肉校本探究」、大專社會組「視覺立體影像」雙獲<strong>全國第三名（銅獎）</strong></li>
-            <li class="highlight-award"><strong>苗栗縣精進計畫素養導向教案競賽</strong>－跨領域素養導向課程教案設計組<strong>全縣首獎（第一名）</strong></li>
-            <li><strong>教育部 114年品德教育徵稿全國甲組入選</strong>、<strong>112年度人權教育教案全國佳作</strong>、<strong>110年度教育部實習績優獎</strong></li>
-            <li><strong>苗栗縣 115 年度縣長盃樂樂棒球錦標賽</strong>－指導六年級榮獲<strong>全縣雙亞軍（第二名）</strong></li>
+            <li class="highlight-award"><strong>社團法人中華明日閱讀協會（2026）</strong>：引領永貞國小榮獲「明日閱讀典範學校」全國最高榮譽</li>
+            <li class="highlight-award"><strong>教育部跨領域美感教育卓越領航計畫</strong>：引領永貞國小榮獲 115 學年度「標竿學校」、114 學年度「種子學校」</li>
+            <li class="highlight-award"><strong>國教署全國科學探究競賽（2025 &amp; 2022）</strong>：指導「火鍋防溢探究」、「香蕉假莖探究」雙獲全國第一名（金獎）</li>
+            <li class="highlight-award-bronze"><strong>國教署全國科學探究競賽（2026 &amp; 2024）</strong>：教師組「多肉校本探究」、大專社會組「視覺立體影像」雙獲全國第三名（銅獎）</li>
+            <li class="highlight-award"><strong>苗栗縣精進計畫素養導向教案競賽</strong>：跨領域素養導向課程教案設計組全縣首獎（第一名）</li>
+            <li><strong>教育部全國性教案與實習殊榮</strong>：114年品德教育徵稿全國甲組入選、112年度人權教育教案全國佳作、110年度教育部實習績優獎</li>
+            <li><strong>苗栗縣縣長盃樂樂棒球錦標賽（115年度）</strong>：指導六年級團隊榮獲全縣雙亞軍（第二名）</li>
           </ul>
         </div>
 
@@ -684,20 +684,20 @@ ${googleSitesExtraCss}
           <ul class="cv-list">
             <li class="highlight-award"><strong>TSSCI 第一級核心期刊論文（接受刊登）</strong>：蔡執仲*、徐秉鴻(in press)。STEM專題導向探究教學情境中教師專業成長轉化歷程之研究。《科學教育學刊》。【TSSCI I】</li>
             <li class="highlight-award"><strong>TSSCI 第一級核心期刊論文（第一作者）</strong>：徐秉鴻、蔡執仲*(2025)。探討結合STEM議題的5E探究教學模式在設計國中探究與實作課程之研究。《科學教育學刊》，33(1)，39-78。【TSSCI I】</li>
-            <li><strong>碩士論文</strong>：徐秉鴻(2024)。發展STEM議題融入科學探究專題課程之教學實踐研究。國立高雄師範大學。</li>
-            <li><strong>研討會發表</strong>：2026 PAIR 第16屆閱讀評量與教學研討會、2025 TALP 自主學習節研討會、2024 國際素養研討會、2023 ICTE 第11屆師資培育國際研討會、2022 ASET 第38屆科學教育國際研討會。</li>
+            <li><strong>碩士學位論文</strong>：徐秉鴻(2024)。發展STEM議題融入科學探究專題課程之教學實踐研究。國立高雄師範大學。</li>
+            <li><strong>國內外研討會發表</strong>：2026 PAIR 第16屆閱讀評量與教學研討會、2025 TALP 自主學習節研討會、2024 國際素養研討會、2023 ICTE 第11屆師資培育國際研討會、2022 ASET 第38屆科學教育國際研討會。</li>
           </ul>
         </div>
 
         <div class="cv-block cv-block-research" style="grid-column: 1 / -1;">
           <h4>🔬 教育部、國科會與高師大研究計畫執行經歷</h4>
           <ul class="cv-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0.65rem;">
-            <li><strong>國科會計畫</strong>－培養師資生閱讀理解素養的課程規劃與教學模組之實踐研究（高師大 方金雅教授主持）</li>
-            <li><strong>教育部計畫</strong>－持續融入學習評量與實地學習的師培課程「閱讀理解策略」之教學與實踐（高師大 方金雅教授主持）</li>
-            <li><strong>國教署計畫</strong>－國民中小學學生識字能力評估第四、五、六、七期計畫（高師大 方金雅教授主持）</li>
-            <li><strong>教育部計畫</strong>－跨領域美感教育卓越領航計畫 115學年度標竿學校、114學年度種子學校（團隊聯絡人：徐秉鴻教師）</li>
-            <li><strong>高教深耕計畫</strong>－高師大理學院「里山與里海的生態對話」＆ PBL 創新教學「環境教育課程設計研究」（蔡執仲教授主持）</li>
-            <li><strong>國科會科普活動－2025臺灣科普環島列車</strong></li>
+            <li><strong>國科會專題研究計畫</strong>：培養師資生閱讀理解素養的課程規劃與教學模組之實踐研究（高師大 方金雅教授主持）</li>
+            <li><strong>教育部精進師培計畫</strong>：持續融入學習評量與實地學習的師培課程「閱讀理解策略」之教學與實踐（高師大 方金雅教授主持）</li>
+            <li><strong>國教署委託研發計畫</strong>：國民中小學學生識字能力評估第四、五、六、七期計畫（高師大 方金雅教授主持）</li>
+            <li><strong>教育部跨域美感計畫</strong>：跨領域美感教育卓越領航計畫 115學年度標竿學校、114學年度種子學校（團隊聯絡人：徐秉鴻教師）</li>
+            <li><strong>教育部高教深耕計畫</strong>：高師大理學院「里山與里海的生態對話」＆ PBL 創新教學「環境教育課程設計研究」（蔡執仲教授主持）</li>
+            <li><strong>國科會科普推廣活動</strong>：2025 臺灣科普環島列車</li>
           </ul>
         </div>
       </div>
@@ -776,6 +776,9 @@ ${googleSitesExtraCss}
             <span id="spModalDuration" class="spotlight-meta-val">節數資訊</span>
           </div>
         </div>
+
+        <!-- 外部旗艦網站介接展示區 (如 2026 跨領域美感成果網站) -->
+        <div id="spModalExternalSiteWrapper" style="display: none; margin-bottom: 1.5rem;"></div>
 
         <!-- Overview -->
         <div>
@@ -1002,6 +1005,7 @@ ${googleSitesExtraCss}
       spModalAward: document.getElementById('spModalAward'),
       spModalTarget: document.getElementById('spModalTarget'),
       spModalDuration: document.getElementById('spModalDuration'),
+      spModalExternalSiteWrapper: document.getElementById('spModalExternalSiteWrapper'),
       spModalOverview: document.getElementById('spModalOverview'),
       spModalSdgs: document.getElementById('spModalSdgs'),
       spModalModules: document.getElementById('spModalModules'),
@@ -1348,6 +1352,42 @@ ${googleSitesExtraCss}
       if (el.spModalTarget) el.spModalTarget.textContent = feat.target;
       if (el.spModalDuration) el.spModalDuration.textContent = feat.duration;
       if (el.spModalOverview) el.spModalOverview.textContent = feat.overview;
+
+      // External Site Gateway (2026 跨領域美感成果展)
+      if (el.spModalExternalSiteWrapper) {
+        if (feat.externalSite) {
+          const ext = feat.externalSite;
+          const targetUrl = window.location.protocol === 'file:' ? (ext.localUrl || ext.url) : (ext.serverUrl || ext.url || 'https://binghong-xu.github.io/yongzhen-stem-art/');
+          el.spModalExternalSiteWrapper.style.display = 'block';
+          el.spModalExternalSiteWrapper.innerHTML = \`
+            <div style="background: linear-gradient(135deg, #090e24 0%, #151b3d 60%, #2e1065 100%); border: 1px solid rgba(168, 85, 247, 0.5); border-radius: var(--radius-lg); padding: 1.35rem; color: #f8fafc; box-shadow: 0 8px 24px -6px rgba(124, 58, 237, 0.35); margin-bottom: 0.5rem;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.65rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #e9d5ff; background: rgba(168, 85, 247, 0.25); border: 1px solid rgba(168, 85, 247, 0.45); padding: 0.25rem 0.75rem; border-radius: var(--radius-full);">✨ 2026 跨領域美感成果展網站已完整介接</span>
+                <span style="font-size: 0.82rem; color: #94a3b8;">永貞國小六年甲班 × 徐秉鴻老師</span>
+              </div>
+              <h5 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin-bottom: 0.45rem;">\${escapeHtml(ext.title)}</h5>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem;">完整收錄 327+ 件學生原創藝術品（蒙德里安小夜燈、星際自畫像、老屋顏壓花玻璃）、217+ 課堂紀實照片、63+ 部專題影音、18 步實踐歷程與 3 大美感互動實驗室！</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.65rem;">
+                <a href="\${targetUrl}" target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #6366f1, #9333ea); border: none; font-size: 0.85rem; padding: 0.45rem 1.1rem; color: #fff; text-decoration: none; border-radius: var(--radius-md); font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem;">
+                  🚀 開啟 2026 跨領域美感網站全貌 ↗
+                </a>
+                <a href="\${targetUrl}#labs" target="_blank" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
+                  🧪 互動實驗室 ↗
+                </a>
+                <a href="\${targetUrl}#gallerySection" target="_blank" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
+                  🖼️ 320+ 作品藝廊 ↗
+                </a>
+                <a href="special-aesthetic.html" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
+                  🎨 查看標竿專題頁 ↗
+                </a>
+              </div>
+            </div>
+          \`;
+        } else {
+          el.spModalExternalSiteWrapper.style.display = 'none';
+          el.spModalExternalSiteWrapper.innerHTML = '';
+        }
+      }
 
       if (el.spModalSdgs) {
         el.spModalSdgs.innerHTML = (feat.sdgs || []).map(sdg => \`

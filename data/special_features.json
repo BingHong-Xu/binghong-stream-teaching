@@ -237,8 +237,9 @@
     ],
     "externalSite": {
       "title": "永貞國小六年甲班 2026跨領域美感教學成果網站",
-      "url": "../yongzhen-stem-art/index.html",
-      "serverUrl": "/yongzhen-stem-art/",
+      "url": "https://binghong-xu.github.io/yongzhen-stem-art/",
+      "localUrl": "../yongzhen-stem-art/index.html",
+      "serverUrl": "https://binghong-xu.github.io/yongzhen-stem-art/",
       "padletUrl": "https://padlet.com/binghong0124/padlet-yeyaoboypt7yix4w",
       "stats": {
         "artworks": "327+",
