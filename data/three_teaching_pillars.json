@@ -277,7 +277,7 @@
     "school": "苗栗縣頭份市永貞國民小學 六年甲班 (YES 601)",
     "role": "跨領域美感教育專任教師 / 計畫種子與標竿學校團隊聯絡人",
     "mentors": "指導單位：教育部師資培育及藝術教育司、國立臺灣師範大學跨領域美感教育卓越領航計畫團隊",
-    "heroImage": "downloads/feature_photos/classroom_inquiry_02.jpg",
+    "heroImage": "downloads/feature_photos/aesthetic_exhibition_showcase_group.jpg",
     "stats": [
       {
         "label": "原創學生作品",
@@ -329,6 +329,10 @@
       }
     ],
     "gallery": [
+      {
+        "url": "downloads/feature_photos/aesthetic_exhibition_showcase_group.jpg",
+        "caption": "永貞六甲【美數．數美】跨領域美感教育畢業成果展：全班師生手持手拿板於幾何立體光影作品前溫馨合影（師生團隊）"
+      },
       {
         "url": "downloads/feature_photos/classroom_inquiry_02.jpg",
         "caption": "學生上台口語發表與徐老師全班提問互動回饋（師生互動）"

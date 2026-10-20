@@ -226,7 +226,7 @@
     "award": "🏅 教育部核定 115學年度【標竿學校】 · 114學年度【種子學校】",
     "duration": "全學年跨領域校本必修課程（六年級）",
     "target": "國小六年級全體學生 (永貞國小六年甲班)",
-    "heroImage": "downloads/feature_photos/aesthetic_lawn_tetrahedron.jpg",
+    "heroImage": "downloads/feature_photos/aesthetic_exhibition_showcase_group.jpg",
     "tags": [
       "跨領域美感",
       "教育部標竿學校",
@@ -319,6 +319,10 @@
       }
     ],
     "photos": [
+      {
+        "url": "downloads/feature_photos/aesthetic_exhibition_showcase_group.jpg",
+        "caption": "永貞六甲【美數．數美】跨領域美感教育畢業成果展：全班師生手持「永貞之光」「永續貞情」「永貞好棒」於謝爾賓斯基四面體與多面體光影作品前溫馨合影"
+      },
       {
         "url": "downloads/feature_photos/aesthetic_lawn_tetrahedron.jpg",
         "caption": "六年甲班全體師生於校園草地操作「謝爾賓斯基正四面體」碎形幾何夜燈作品與跨領域美感教育多元學習歷程發表合影（草地操作作品與畢業成果展）"
