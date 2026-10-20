@@ -626,6 +626,9 @@ function createPageHtml(feat) {
   <style>
     .article-container {
       max-width: 1180px;
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
       margin: 2rem auto 4.5rem;
       padding: 0 1.75rem;
     }
@@ -636,6 +639,8 @@ function createPageHtml(feat) {
       flex-wrap: wrap;
       gap: 0.75rem;
       margin-bottom: 1.5rem;
+      width: 100%;
+      min-width: 0;
     }
     .back-nav {
       display: inline-flex;
@@ -737,6 +742,11 @@ function createPageHtml(feat) {
         margin: 1rem auto 2.5rem;
         padding: 0 0.85rem;
       }
+      .back-nav-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.85rem;
+      }
       .article-hero img {
         height: 220px;
       }
@@ -775,8 +785,9 @@ function createPageHtml(feat) {
         </div>
       </a>
       <div class="header-actions">
-        <a href="index.html" class="btn-primary" style="font-size: 0.85rem; padding: 0.48rem 0.95rem;">
-          &larr; 返回成果首頁
+        <a href="index.html" class="btn-primary header-back-btn" style="font-size: 0.85rem; padding: 0.48rem 0.95rem;">
+          <span class="btn-back-text-full">&larr; 返回成果首頁</span>
+          <span class="btn-back-text-short">&larr; 首頁</span>
         </a>
 
         <!-- 三大風格切換選單 (Global Skill 3-Archetypes) -->
@@ -791,7 +802,7 @@ function createPageHtml(feat) {
               <span class="style-item-icon">🌍</span>
               <div class="style-item-text">
                 <span class="style-item-title">1. 永續教育 × STREAM 旗艦版</span>
-                <span class="style-item-desc">傑出永續教育人物策展與 1,143 筆檢索庫</span>
+                <span class="style-item-desc">傑出永續教育人物策展與 1,144 筆成果檔案庫</span>
               </div>
             </a>
             <a href="academic.html" class="style-menu-item">
@@ -814,7 +825,7 @@ function createPageHtml(feat) {
         <button id="themeToggleBtn" class="btn-icon" title="切換深淺模式">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <button onclick="window.print()" class="btn-icon" title="列印此專題">
+        <button onclick="window.print()" class="btn-icon hide-on-mobile" title="列印此專題">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
         </button>
       </div>

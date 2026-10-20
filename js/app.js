@@ -643,6 +643,7 @@
     const backdrop = document.getElementById('literacyDotsModalBackdrop');
     if (!backdrop) return;
     backdrop.style.display = 'flex';
+    backdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
 
     renderLiteracyTabs();
@@ -652,6 +653,7 @@
   window.closeLiteracyModal = function() {
     const backdrop = document.getElementById('literacyDotsModalBackdrop');
     if (!backdrop) return;
+    backdrop.classList.remove('open');
     backdrop.style.display = 'none';
     document.body.style.overflow = '';
   };

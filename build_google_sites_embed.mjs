@@ -330,12 +330,16 @@ ${googleSitesExtraCss}
   <nav id="mobileNavMenu" class="mobile-nav-menu" style="display: none;" aria-label="行動端選單">
     <div class="mobile-nav-inner">
       <div class="mobile-nav-section-title">網站專題與資料庫捷徑</div>
+      <a href="#sustainability-showcase" class="mobile-nav-link" onclick="window.closeMobileNav()" style="background: rgba(5,150,105,0.08); border-color: rgba(5,150,105,0.28);">
+        <span>🌍 2026 台灣傑出永續教育人物旗艦策展</span>
+        <span>&rarr;</span>
+      </a>
       <a href="#teaching-three-pillars" class="mobile-nav-link" onclick="window.closeMobileNav()">
-        <span>🏆 教學成果核心三大專區</span>
+        <span>🏆 教學成果四大核心專區</span>
         <span>&rarr;</span>
       </a>
       <a href="#teaching-spotlights" class="mobile-nav-link" onclick="window.closeMobileNav()">
-        <span>🌟 5 大旗艦教學專題 (STREAM 策展)</span>
+        <span>🌟 7 大旗艦教學專題 (STREAM 策展)</span>
         <span>&rarr;</span>
       </a>
       <a href="#portfolio-catalog" class="mobile-nav-link" onclick="window.closeMobileNav()">
@@ -523,11 +527,11 @@ ${googleSitesExtraCss}
         <div class="hero-cta-group">
           <a href="#teaching-three-pillars" class="btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            🏆 教學成果三大專區
+            🏆 教學成果四大核心專區
           </a>
           <a href="#teaching-spotlights" class="btn-outline">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            🌟 5 大旗艦專題
+            🌟 7 大旗艦專題
           </a>
           <a href="#portfolio-catalog" class="btn-outline">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -1499,6 +1503,7 @@ ${googleSitesExtraCss}
       const backdrop = document.getElementById('literacyDotsModalBackdrop');
       if (!backdrop) return;
       backdrop.style.display = 'flex';
+      backdrop.classList.add('open');
       document.body.style.overflow = 'hidden';
 
       renderLiteracyTabs();
@@ -1508,6 +1513,7 @@ ${googleSitesExtraCss}
     window.closeLiteracyModal = function() {
       const backdrop = document.getElementById('literacyDotsModalBackdrop');
       if (!backdrop) return;
+      backdrop.classList.remove('open');
       backdrop.style.display = 'none';
       document.body.style.overflow = '';
     };
