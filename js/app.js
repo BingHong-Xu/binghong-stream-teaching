@@ -1360,8 +1360,13 @@
 
   function isAwardItem(item) {
     if (item.evidenceCode) return true;
-    const text = (item.headline + ' ' + item.sectionTitle + ' ' + item.body).toLowerCase();
-    return text.includes('第一') || text.includes('第三') || text.includes('金獎') || text.includes('首獎') || text.includes('特優') || text.includes('優等') || text.includes('佳作') || text.includes('殊榮') || text.includes('獲獎') || text.includes('錦標賽') || text.includes('典範學校') || text.includes('標竿學校');
+    if (item.categoryId === 'honors' || item.categoryId === 'mentorship') return true;
+    const secTitle = item.sectionTitle || '';
+    if (secTitle.includes('殊榮') || secTitle.includes('獲獎') || secTitle.includes('競賽') || secTitle.includes('指導學生獲獎')) return true;
+    if (item.categoryId === 'research' || item.categoryId === 'certifications') return false;
+    const headline = item.headline || '';
+    const awardWords = ['第一名', '第二名', '第三名', '第四名', '第五名', '第六名', '第七名', '第八名', '全國第一', '全縣第一', '金獎', '銀獎', '銅獎', '首獎', '特優', '優等', '佳作', '秀才', '狀元', '冠軍', '亞軍', '季軍', '殿軍', '殊榮', '獲獎', '錦標賽', '典範學校', '標竿學校', '得獎', '表揚', '頒獎', '榮譽', '稱冠', '奪冠', '獲冠'];
+    return awardWords.some(w => headline.includes(w));
   }
 
   // 5. Render results to grid or timeline (with smooth batch pagination)
@@ -1552,12 +1557,12 @@
     }
 
     const actionBtnText = item.mediaType === 'pdf'
-      ? '📄 預覽 PDF 文件 &rarr;'
+      ? (isTssci ? '📄 預覽論文全文 &rarr;' : '📄 預覽 PDF 文件 &rarr;')
       : (item.mediaType === 'video'
         ? '🎬 觀看影音報導 &rarr;'
         : (item.mediaType === 'link' || item.externalUrl
           ? '🌐 檢視專題報導 &rarr;'
-          : (item.evidenceCode ? '📌 檢視官方佐證 &rarr;' : (isAward ? '🏆 檢視得獎證書 &rarr;' : '🖼️ 檢視成果照片 &rarr;'))));
+          : (item.evidenceCode ? '📌 檢視官方佐證 &rarr;' : (isAward && item.categoryId === 'honors' ? '🏆 檢視得獎證書 &rarr;' : '🖼️ 檢視成果照片 &rarr;'))));
 
     return `
       <article class="portfolio-card ${isAward || isTssci ? 'is-award-winner' : ''}" data-index="${index}" data-category="${item.categoryId || ''}">
@@ -1568,7 +1573,7 @@
           ${snippet ? `<p class="card-snippet">${snippet}</p>` : ''}
           <div class="card-footer">
             <span class="card-footer-meta">
-              <span>📅 ${dateFormatted}</span>
+              ${dateFormatted ? `<span>📅 ${dateFormatted}</span>` : ''}
               ${item.localFile ? '<span class="card-badge-local" title="已離線保存原件">💾 本機原件</span>' : ''}
             </span>
             <span class="card-action-btn">${actionBtnText}</span>
@@ -1591,7 +1596,7 @@
         <div class="timeline-content">
           <div class="timeline-meta">
             <span style="color: var(--primary); font-weight: 600;">[${escapeHtml(item.sectionTitle)}]</span>
-            <span>📅 ${dateFormatted}</span>
+            ${dateFormatted ? `<span>📅 ${dateFormatted}</span>` : ''}
             <span>📂 ${escapeHtml(item.categoryName)}</span>
           </div>
           <h3 class="timeline-title">${title}</h3>
@@ -1800,7 +1805,8 @@
     }
 
     // Metadata
-    el.modalMetaDate.textContent = `發布時間：${formatDate(item.createdAt)} · 所屬章節：${item.sectionTitle}`;
+    const modalDateStr = formatDate(item.createdAt);
+    el.modalMetaDate.textContent = `${modalDateStr ? `發布時間：${modalDateStr} · ` : ''}所屬章節：${item.sectionTitle}`;
 
     // Download action
     if (item.localFile) {
@@ -2103,7 +2109,7 @@
   }
 
   function getMediaBadge(item) {
-    const isPdf = item.mediaType === 'pdf' || (item.fileName || '').toLowerCase().endsWith('.pdf');
+    const isPdf = item.mediaType === 'pdf' || (item.fileName || '').toLowerCase().endsWith('.pdf') || (item.localFile || '').toLowerCase().endsWith('.pdf') || (item.fileUrl || '').toLowerCase().includes('.pdf');
     if (isPdf) return '<span class="media-type-badge" style="background: #dc2626; color: white;">📄 PDF 成果檔案</span>';
     if (item.evidenceCode) return `<span class="media-type-badge" style="background: #059669; color: white;">🏅 永續評選佐證</span>`;
     if (item.albumId) return `<span class="media-type-badge" style="background: #0d9488; color: white;">📸 永續SDGs相簿</span>`;
@@ -2117,6 +2123,7 @@
     if (!isoStr) return '';
     try {
       const d = new Date(isoStr);
+      if (isNaN(d.getTime())) return '';
       return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
     } catch {
       return '';

@@ -134,207 +134,207 @@
       "title": "個人簡介",
       "sortIndex": 0,
       "categoryId": "profile",
-      "itemCount": 0
+      "itemCount": 4
     },
     {
       "id": "338502813",
       "title": "專長與特色",
       "sortIndex": 256,
       "categoryId": "profile",
-      "itemCount": 0
+      "itemCount": 2
     },
     {
       "id": "334513759",
-      "title": "現職",
+      "title": "現職與專業經歷",
       "sortIndex": 2048,
       "categoryId": "profile",
-      "itemCount": 0
+      "itemCount": 5
     },
     {
       "id": "334513853",
       "title": "學歷背景",
       "sortIndex": 4096,
       "categoryId": "profile",
-      "itemCount": 0
+      "itemCount": 3
     },
     {
       "id": "334513871",
       "title": "教育專業證書",
       "sortIndex": 6144,
       "categoryId": "certifications",
-      "itemCount": 0
+      "itemCount": 21
     },
     {
       "id": "334519140",
       "title": "閱讀教學專業人員證書",
       "sortIndex": 6656,
       "categoryId": "certifications",
-      "itemCount": 0
+      "itemCount": 10
     },
     {
       "id": "334513922",
       "title": "全國性競賽個人殊榮",
       "sortIndex": 8192,
       "categoryId": "honors",
-      "itemCount": 0
+      "itemCount": 5
     },
     {
       "id": "334528876",
       "title": "全國性競賽團隊殊榮",
       "sortIndex": 9216,
       "categoryId": "honors",
-      "itemCount": 0
+      "itemCount": 6
     },
     {
       "id": "334516948",
       "title": "地區性競賽殊榮",
       "sortIndex": 10240,
       "categoryId": "honors",
-      "itemCount": 0
+      "itemCount": 5
     },
     {
       "id": "334521344",
       "title": "師培院校競賽殊榮",
       "sortIndex": 11264,
       "categoryId": "honors",
-      "itemCount": 0
+      "itemCount": 5
     },
     {
       "id": "334513960",
       "title": "學術研究著作",
       "sortIndex": 11776,
       "categoryId": "research",
-      "itemCount": 0
+      "itemCount": 11
     },
     {
       "id": "334514050",
       "title": "課程設計著作",
       "sortIndex": 440702782,
       "categoryId": "research",
-      "itemCount": 0
+      "itemCount": 17
     },
     {
       "id": "335104169",
       "title": "創新課程教學研究",
       "sortIndex": 1762774338,
       "categoryId": "research",
-      "itemCount": 0
+      "itemCount": 1
     },
     {
       "id": "334517445",
       "title": "教育類志工服務",
       "sortIndex": 1762774449,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 5
     },
     {
       "id": "334518486",
       "title": "學習扶助",
       "sortIndex": 1762774559,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 8
     },
     {
       "id": "334518993",
       "title": "台師大數學教育中心",
       "sortIndex": 1762774724,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 4
     },
     {
       "id": "334521120",
       "title": "教育部計畫與行政認證",
       "sortIndex": 1762775388,
       "categoryId": "aesthetic_art",
-      "itemCount": 0
+      "itemCount": 3
     },
     {
       "id": "334522503",
       "title": "教育服務感謝狀",
       "sortIndex": 1762775779,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 8
     },
     {
       "id": "334522990",
       "title": "廣播電台分享",
       "sortIndex": 1762775913,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 2
     },
     {
       "id": "334523254",
       "title": "研習證明",
       "sortIndex": 1762775981,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 9
     },
     {
       "id": "334524885",
       "title": "教育類研究執行經歷",
       "sortIndex": 1762776402,
       "categoryId": "engagement",
-      "itemCount": 0
+      "itemCount": 1
     },
     {
       "id": "336350442",
       "title": "新聞媒體專訪",
       "sortIndex": 1763462729,
       "categoryId": "media",
-      "itemCount": 0
+      "itemCount": 3
     },
     {
       "id": "336351275",
       "title": "新聞媒體文章",
       "sortIndex": 1763462794,
       "categoryId": "media",
-      "itemCount": 0
+      "itemCount": 8
     },
     {
       "id": "368085085",
       "title": "新聞媒體受訪",
       "sortIndex": 1763462826,
       "categoryId": "media",
-      "itemCount": 0
+      "itemCount": 5
     },
     {
       "id": "340556981",
       "title": "指導學生獲獎",
       "sortIndex": 1763462858,
       "categoryId": "mentorship",
-      "itemCount": 0
+      "itemCount": 6
     },
     {
       "id": "386094464",
       "title": "指導語文競賽獲獎",
       "sortIndex": 1775819498,
       "categoryId": "mentorship",
-      "itemCount": 0
+      "itemCount": 12
     },
     {
       "id": "386094343",
       "title": "指導體育競賽獲獎",
       "sortIndex": 1788176138,
       "categoryId": "mentorship",
-      "itemCount": 0
+      "itemCount": 3
     },
     {
       "id": "334521121",
       "categoryId": "aesthetic_art",
       "title": "創課方案教案與專題展廳",
-      "itemCount": 0
+      "itemCount": 9
     },
     {
       "id": "334521123",
       "categoryId": "aesthetic_art",
       "title": "課堂合作探究與美感策展剪影",
-      "itemCount": 0
+      "itemCount": 12
     },
     {
       "id": "334521124",
       "categoryId": "aesthetic_art",
       "title": "教學微電影影音全紀錄",
-      "itemCount": 0
+      "itemCount": 6
     },
     {
       "id": 334521125,
@@ -436,8 +436,8 @@
       "sectionTitle": "學術研究著作",
       "categoryId": "research",
       "categoryName": "學術著作與課程設計",
-      "mediaType": "document",
-      "fileUrl": null,
+      "mediaType": "pdf",
+      "fileUrl": "downloads/attachments/3980000001_科學教育學刊_刊登證明_蔡執仲_徐秉鴻_STEM專題導向探究教學情境中教師專業成長轉化歷程之研究.pdf",
       "localFile": "downloads/attachments/3980000001_科學教育學刊_刊登證明_蔡執仲_徐秉鴻_STEM專題導向探究教學情境中教師專業成長轉化歷程之研究.pdf",
       "previewImage": "downloads/attachments/3980000001_科學教育學刊_刊登證明_蔡執仲_徐秉鴻_STEM專題導向探究教學情境中教師專業成長轉化歷程之研究.jpg",
       "extension": "pdf",
@@ -455,11 +455,11 @@
       "title": "苗栗縣國際教育中心－專業工作人員（2025迄今）",
       "body": "<p><strong>【苗栗縣政府聘書・115學年度國際教育中心專業工作人員】</strong></p>\n<p><strong>聘任機關：</strong>苗栗縣政府（縣長 鍾東錦）</p>\n<p><strong>聘書字號：</strong>府教務字第 1150175625C 號</p>\n<p><strong>聘任職務：</strong>苗栗縣 115 學年度國際教育中心 專業工作人員（Professional Staff, Miaoli County Compulsory Education International Education Center）</p>\n<p><strong>任期：</strong>自民國 115 年 8 月 1 日至 116 年 7 月 31 日止（August 1, 2026 to July 31, 2027）</p>\n<p><strong>核定日期：</strong>中華民國 115 年 8 月 1 日</p>\n<p><strong>專業任務：</strong>協助全縣推動中小學國際教育 2.0 課程發展、跨國多語交流、在地文化轉譯與雙語走讀導覽培力。</p>",
       "sectionId": 334513759,
-      "sectionTitle": "現職",
+      "sectionTitle": "現職與專業經歷",
       "categoryId": "profile",
       "categoryName": "個人資歷與職務",
-      "mediaType": "document",
-      "fileUrl": null,
+      "mediaType": "pdf",
+      "fileUrl": "downloads/attachments/3980000002_苗栗縣政府聘書_苗栗縣115學年度國際教育中心專業工作人員_徐秉鴻.pdf",
       "localFile": "downloads/attachments/3980000002_苗栗縣政府聘書_苗栗縣115學年度國際教育中心專業工作人員_徐秉鴻.pdf",
       "previewImage": "downloads/attachments/3980000002_苗栗縣政府聘書_苗栗縣115學年度國際教育中心專業工作人員_徐秉鴻.jpg",
       "extension": "pdf",
@@ -476,8 +476,8 @@
       "headline": "國立高雄師範大學師資培育與就業輔導處－國民小學教學實習總召",
       "title": "國立高雄師範大學師資培育與就業輔導處－國民小學教學實習總召",
       "body": "<p><strong>【國立高雄師範大學師資培育與就業輔導處・國民小學教學實習總召】</strong></p>\n<p><strong>服務機關：</strong>國立高雄師範大學 師資培育與就業輔導處</p>\n<p><strong>擔任職位：</strong>國民小學教學實習【總召】／實習校長</p>\n<p><strong>實習場域：</strong>高雄市四維國民小學</p>\n<p><strong>實踐成果：</strong>統籌四維國小低中高年級共 24 位師資生與 12 個實習班級之集中入班實習、跨領域教學研討與結訓典禮，榮獲教育部實習績優獎【全國實習學生優良獎】最高榮譽肯定。</p>",
-      "sectionId": 334513853,
-      "sectionTitle": "曾任職務",
+      "sectionId": 334513759,
+      "sectionTitle": "現職與專業經歷",
       "categoryId": "profile",
       "categoryName": "個人資歷與職務",
       "mediaType": "image",
@@ -502,10 +502,10 @@
       "categoryId": "profile",
       "categoryName": "個人資歷與職務",
       "mediaType": "image",
-      "fileUrl": "https://u1.padletusercontent.com/uploads/padlet-uploads-usc1/2633604001/be82531877cb06ee1fef9fc12ded0d1d/AdobeExpressPhotos_8722d5271dd74c71ac74f10ce3f81663_CopyEdited.png?expiry_token=5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKio2bPgpfz1zCOv5GmYa26UsXWxG8KHBb-N0rQpi2IRPpQI42ahAqwEvFGl4qENy-67vIJUm2VdjTsbkEWS44zNF5yyb2Ru8fPxiAh92OAs3pAXFjBIItbCVMmrNPe92M3rWNWGEcflyf8wX-IjZn8dJpPtrCrFoe3mr6tTf2xi24nxoGzJoJJkxlVF_Q2BkaUPGE7n6-rJFOURV0mmD6MsVU=",
-      "localFile": "downloads/attachments/3703109921_空白.jpg",
+      "fileUrl": "downloads/attachments/3681017918_徐秉鴻.jpg",
+      "localFile": "downloads/attachments/3681017918_徐秉鴻.jpg",
       "externalUrl": null,
-      "previewImage": "downloads/attachments/3703109921_空白.jpg",
+      "previewImage": "downloads/attachments/3681017918_徐秉鴻.jpg",
       "extension": "png",
       "fileSize": 5404656,
       "sortIndex": -154624,
@@ -600,7 +600,7 @@
       "createdAt": "2026-05-29T14:00:39.378Z",
       "updatedAt": "2026-08-31T11:36:06.895Z",
       "isPinned": false,
-      "fileName": "3934656789_Empty.pdf",
+      "fileName": "The_Explorer_Textbook.pdf",
       "status": "downloaded"
     },
     {
@@ -622,15 +622,15 @@
       "createdAt": "2026-05-29T14:00:26.846Z",
       "updatedAt": "2026-08-31T11:36:06.866Z",
       "isPinned": false,
-      "fileName": "3934656615_Empty.pdf",
+      "fileName": "The_Warm_Explorer_Notebook.pdf",
       "status": "downloaded"
     },
     {
       "id": 3675122362,
-      "headline": "苗栗縣國際教育中心－專業工作",
+      "headline": "苗栗縣國際教育中心－專業工作人員（2025迄今）",
       "body": "<ul><li><p>苗栗縣國際教育中心－專業工作人員（2025迄今）</p></li></ul>",
       "sectionId": 334513759,
-      "sectionTitle": "現職",
+      "sectionTitle": "現職與專業經歷",
       "categoryId": "profile",
       "categoryName": "個人資歷與職務",
       "mediaType": "image",
@@ -652,7 +652,7 @@
       "headline": "苗栗縣國際教育中心－專業工作人員（2025迄今）",
       "body": "",
       "sectionId": 334513759,
-      "sectionTitle": "現職",
+      "sectionTitle": "現職與專業經歷",
       "categoryId": "profile",
       "categoryName": "個人資歷與職務",
       "mediaType": "image",
@@ -674,7 +674,7 @@
       "headline": "苗栗縣頭份市永貞國民小學－專任教師（2024迄今）、兼任導師（2024-2026）、兼任圖書館閱讀推動教師（2025迄今）、兼任文書組長（2026迄今）",
       "body": "",
       "sectionId": 334513759,
-      "sectionTitle": "現職",
+      "sectionTitle": "現職與專業經歷",
       "categoryId": "profile",
       "categoryName": "個人資歷與職務",
       "mediaType": "image",
@@ -4065,8 +4065,8 @@
       "id": 3675158121,
       "headline": "TSSCI 核心期刊《科學教育學刊》第 33 卷第 1 期 正式接受刊登證明書",
       "body": "<p>中華民國科學教育學會《科學教育學刊》正式接受刊登證明：徐秉鴻、蔡執仲（2025）。探討結合STEM議題的5E探究教學模式在設計國中探究與實作課程之研究。</p>",
-      "sectionId": 334514026,
-      "sectionTitle": "學術期刊與研討會論文",
+      "sectionId": 334513960,
+      "sectionTitle": "學術研究著作",
       "categoryId": "research",
       "categoryName": "學術著作與課程設計",
       "mediaType": "image",
@@ -4076,7 +4076,8 @@
       "extension": "jpg",
       "fileSize": 1412291,
       "fileName": "3675158121_接受刊登證明_33卷1期_徐秉鴻_蔡執仲.jpg",
-      "status": "downloaded"
+      "status": "downloaded",
+      "createdAt": "2025-10-06T00:00:00.000Z"
     },
     {
       "id": 4062820972,
@@ -4093,7 +4094,8 @@
       "extension": "pdf",
       "fileSize": 5001721,
       "fileName": "4062820972_114-1學年度跨領域美感創課方案4.2_美數數美幾何與比例探索.pdf",
-      "status": "downloaded"
+      "status": "downloaded",
+      "createdAt": "2025-09-01T08:00:00.000Z"
     },
     {
       "id": 3967445401,
@@ -4110,7 +4112,8 @@
       "extension": "pdf",
       "fileSize": 6153914,
       "fileName": "3967445401_苗栗縣國際教育優良課程方案教案全文_紅磚牆外的世界窗.pdf",
-      "status": "downloaded"
+      "status": "downloaded",
+      "createdAt": "2025-08-25T08:00:00.000Z"
     },
     {
       "id": 4046257032,
@@ -4127,7 +4130,8 @@
       "extension": "pdf",
       "fileSize": 956941,
       "fileName": "4046257032_永貞國小_徐秉鴻_教育部閱讀推手甄選方案.pdf",
-      "status": "downloaded"
+      "status": "downloaded",
+      "createdAt": "2025-10-15T08:00:00.000Z"
     },
     {
       "id": 4090000001,
@@ -4623,7 +4627,8 @@
       "fileSize": 4967788,
       "fileName": "4062820973_114-2學年度跨領域美感創課方案4.2_美數數美幾何光影與版畫實作.pdf",
       "status": "downloaded",
-      "isPinned": false
+      "isPinned": false,
+      "createdAt": "2026-02-15T08:00:00.000Z"
     },
     {
       "id": 4090000009,
@@ -4657,7 +4662,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_01_color_awareness.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 519902
+      "fileSize": 519902,
+      "createdAt": "2025-09-12T02:00:00.000Z"
     },
     {
       "id": 4090000102,
@@ -4673,7 +4679,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_02_sel_palette.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 482305
+      "fileSize": 482305,
+      "createdAt": "2025-09-26T02:00:00.000Z"
     },
     {
       "id": 4090000103,
@@ -4689,7 +4696,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_03_fibonacci_rect.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 366331
+      "fileSize": 366331,
+      "createdAt": "2025-10-17T02:00:00.000Z"
     },
     {
       "id": 4090000104,
@@ -4705,7 +4713,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_04_mondrian_balance.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 526209
+      "fileSize": 526209,
+      "createdAt": "2025-10-31T02:00:00.000Z"
     },
     {
       "id": 4090000105,
@@ -4721,7 +4730,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_05_proportion_sketch.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 511031
+      "fileSize": 511031,
+      "createdAt": "2025-11-14T02:00:00.000Z"
     },
     {
       "id": 4090000106,
@@ -4737,7 +4747,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_06_cutting_cellophane.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 415746
+      "fileSize": 415746,
+      "createdAt": "2025-11-28T02:00:00.000Z"
     },
     {
       "id": 4090000107,
@@ -4753,7 +4764,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_07_lead_strip_border.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 562830
+      "fileSize": 562830,
+      "createdAt": "2025-12-12T02:00:00.000Z"
     },
     {
       "id": 4090000108,
@@ -4769,7 +4781,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_1_08_padlet_reflection.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 803397
+      "fileSize": 803397,
+      "createdAt": "2025-12-26T02:00:00.000Z"
     },
     {
       "id": 4090000201,
@@ -4785,7 +4798,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_01_stellar_grid.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 499498
+      "fileSize": 499498,
+      "createdAt": "2026-02-20T02:00:00.000Z"
     },
     {
       "id": 4090000202,
@@ -4801,7 +4815,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_02_3d_nightlight_folding.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 291684
+      "fileSize": 291684,
+      "createdAt": "2026-03-06T02:00:00.000Z"
     },
     {
       "id": 4090000203,
@@ -4817,7 +4832,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_03_led_circuit_soldering.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 403944
+      "fileSize": 403944,
+      "createdAt": "2026-03-20T02:00:00.000Z"
     },
     {
       "id": 4090000204,
@@ -4833,7 +4849,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_04_tetrahedron_kite_skeleton.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 366701
+      "fileSize": 366701,
+      "createdAt": "2026-04-10T02:00:00.000Z"
     },
     {
       "id": 4090000205,
@@ -4849,7 +4866,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_05_luzhunan_printmaking_plate.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 316139
+      "fileSize": 316139,
+      "createdAt": "2026-04-24T02:00:00.000Z"
     },
     {
       "id": 4090000206,
@@ -4865,7 +4883,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_06_printmaking_rubbing.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 288969
+      "fileSize": 288969,
+      "createdAt": "2026-05-08T02:00:00.000Z"
     },
     {
       "id": 4090000207,
@@ -4881,7 +4900,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_07_student_curator_tour_01.jpg",
       "extension": "jpg",
       "isPinned": true,
-      "fileSize": 546166
+      "fileSize": 546166,
+      "createdAt": "2026-05-22T02:00:00.000Z"
     },
     {
       "id": 4090000208,
@@ -4897,7 +4917,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_08_student_curator_tour_02.jpg",
       "extension": "jpg",
       "isPinned": true,
-      "fileSize": 553410
+      "fileSize": 553410,
+      "createdAt": "2026-05-22T04:00:00.000Z"
     },
     {
       "id": 4090000209,
@@ -4913,7 +4934,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_09_expert_workshop_prof_luo.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 323332
+      "fileSize": 323332,
+      "createdAt": "2026-05-25T02:00:00.000Z"
     },
     {
       "id": 4090000210,
@@ -4929,7 +4951,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_10_expert_interaction_feedback.jpg",
       "extension": "jpg",
       "isPinned": false,
-      "fileSize": 416812
+      "fileSize": 416812,
+      "createdAt": "2026-05-25T05:00:00.000Z"
     },
     {
       "id": 4090000211,
@@ -4945,7 +4968,8 @@
       "fileUrl": "downloads/feature_photos/aesthetic_learn_114_2_11_class_group_completion.jpg",
       "extension": "jpg",
       "isPinned": true,
-      "fileSize": 862440
+      "fileSize": 862440,
+      "createdAt": "2026-05-29T08:00:00.000Z"
     },
     {
       "id": 9000101,

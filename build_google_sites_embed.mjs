@@ -152,6 +152,7 @@ const processedPortfolio = {
       categoryName: item.categoryName || '',
       mediaType: item.mediaType || 'document',
       fileUrl: item.fileUrl || '',
+      localFile: item.localFile || '',
       previewImage: previewImage,
       externalUrl: item.externalUrl || '',
       extension: item.extension || '',
@@ -561,7 +562,7 @@ ${googleSitesExtraCss}
             專業向度細項：
           </span>
           <button id="subsectionsToggleBtn" class="subsections-toggle-btn" type="button" aria-expanded="false" title="展開或收合向度標籤">
-            <span class="toggle-text">展開全部向度 (27)</span>
+            <span class="toggle-text">展開全部向度 (${processedPortfolio.sections.length})</span>
             <svg class="toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
         </div>
@@ -911,7 +912,7 @@ ${googleSitesExtraCss}
       <div class="footer-meta">
         <strong style="color: var(--text-main);">徐秉鴻老師 教學成果與專業資歷數位典藏庫</strong>
         <span>苗栗縣頭份市永貞國民小學｜國立高雄師範大學 科學教育暨環境教育研究所博士班</span>
-        <span style="font-size: 0.8rem;">雲端 Padlet 資料即時同步｜收錄 ${processedPortfolio.items.length} 筆教育成果紀錄｜27 大向度全面索引</span>
+        <span style="font-size: 0.8rem;">雲端 Padlet 資料即時同步｜收錄 ${processedPortfolio.items.length} 筆教育成果紀錄｜${processedPortfolio.sections.length} 大向度全面索引</span>
       </div>
 
       <div class="footer-links">
@@ -1630,8 +1631,14 @@ ${googleSitesExtraCss}
     }
 
     function isAwardItem(item) {
-      const text = (item.headline + ' ' + item.sectionTitle + ' ' + item.body).toLowerCase();
-      return text.includes('第一') || text.includes('第三') || text.includes('金獎') || text.includes('首獎') || text.includes('特優') || text.includes('優等') || text.includes('佳作') || text.includes('殊榮') || text.includes('獲獎') || text.includes('錦標賽');
+      if (item.evidenceCode) return true;
+      if (item.categoryId === 'honors' || item.categoryId === 'mentorship') return true;
+      const secTitle = item.sectionTitle || '';
+      if (secTitle.includes('殊榮') || secTitle.includes('獲獎') || secTitle.includes('競賽') || secTitle.includes('指導學生獲獎')) return true;
+      if (item.categoryId === 'research' || item.categoryId === 'certifications') return false;
+      const headline = item.headline || '';
+      const awardWords = ['第一名', '第二名', '第三名', '第四名', '第五名', '第六名', '第七名', '第八名', '全國第一', '全縣第一', '金獎', '銀獎', '銅獎', '首獎', '特優', '優等', '佳作', '秀才', '狀元', '冠軍', '亞軍', '季軍', '殿軍', '殊榮', '獲獎', '錦標賽', '典範學校', '標竿學校', '得獎', '表揚', '頒獎', '榮譽', '稱冠', '奪冠', '獲冠'];
+      return awardWords.some(w => headline.includes(w));
     }
 
     function renderResults() {
@@ -1741,9 +1748,11 @@ ${googleSitesExtraCss}
       const dateFormatted = formatDate(item.createdAt);
       const isAward = isAwardItem(item);
       const isTssci = (itemTitle + ' ' + (item.body || '')).includes('TSSCI');
-      const ribbonHtml = isTssci
-        ? '<div class="award-ribbon">📚 TSSCI 核心期刊</div>'
-        : (isAward ? '<div class="award-ribbon">🏆 榮譽殊榮</div>' : '');
+      const ribbonHtml = item.evidenceCode
+        ? \`<div class="award-ribbon" style="background: linear-gradient(135deg, #059669, #0d9488);">📌 佐證 \${escapeHtml(item.evidenceCode)}</div>\`
+        : (isTssci
+          ? '<div class="award-ribbon">📚 TSSCI 核心期刊</div>'
+          : (isAward ? '<div class="award-ribbon">🏆 榮譽殊榮</div>' : ''));
 
       let mediaHtml = '';
       const rawSrc = item.previewImage || item.fileUrl;
@@ -1823,6 +1832,14 @@ ${googleSitesExtraCss}
         \`;
       }
 
+      const actionBtnText = item.mediaType === 'pdf'
+        ? (isTssci ? '📄 預覽論文全文 &rarr;' : '📄 預覽 PDF 文件 &rarr;')
+        : (item.mediaType === 'video'
+          ? '🎬 觀看影音報導 &rarr;'
+          : (item.mediaType === 'link' || item.externalUrl
+            ? '🌐 檢視專題報導 &rarr;'
+            : (item.evidenceCode ? '📌 檢視官方佐證 &rarr;' : (isAward && item.categoryId === 'honors' ? '🏆 檢視得獎證書 &rarr;' : '📄 預覽成果檔案 &rarr;'))));
+
       return \`
         <article class="portfolio-card \${isAward || isTssci ? 'is-award-winner' : ''}" data-index="\${index}" data-category="\${item.categoryId || ''}">
           \${mediaHtml}
@@ -1832,10 +1849,10 @@ ${googleSitesExtraCss}
             \${snippet ? \`<p class="card-snippet">\${snippet}</p>\` : ''}
             <div class="card-footer">
               <span class="card-footer-meta">
-                <span>📅 \${dateFormatted}</span>
-                \${item.fileUrl ? '<span class="card-badge-local" title="已雲端同步">☁️ 雲端原件</span>' : ''}
+                \${dateFormatted ? \`<span>📅 \${dateFormatted}</span>\` : ''}
+                \${item.fileUrl || item.localFile ? '<span class="card-badge-local" title="已雲端同步">☁️ 雲端原件</span>' : ''}
               </span>
-              <span class="card-action-btn">\${item.mediaType === 'pdf' ? '📄 預覽 PDF 文件 &rarr;' : '📄 預覽成果檔案 &rarr;'}</span>
+              <span class="card-action-btn">\${actionBtnText}</span>
             </div>
           </div>
         </article>
@@ -1858,7 +1875,7 @@ ${googleSitesExtraCss}
           <div class="timeline-content">
             <div class="timeline-meta">
               <span style="color: var(--primary); font-weight: 600;">[\${escapeHtml(item.sectionTitle)}]</span>
-              <span>📅 \${dateFormatted}</span>
+              \${dateFormatted ? \`<span>📅 \${dateFormatted}</span>\` : ''}
               <span>📂 \${escapeHtml(item.categoryName)}</span>
             </div>
             <h3 class="timeline-title">\${title}</h3>
@@ -1887,7 +1904,7 @@ ${googleSitesExtraCss}
       const isPdf = item.mediaType === 'pdf' || (item.fileName || '').toLowerCase().endsWith('.pdf') || (item.fileUrl || '').toLowerCase().includes('.pdf');
 
       if (isPdf) {
-        const pdfSrc = item.fileUrl || '';
+        const pdfSrc = item.fileUrl || item.localFile || '';
         viewerContent = \`
           <div class="pdf-viewer-wrapper">
             <div class="pdf-viewer-toolbar">
@@ -2022,7 +2039,8 @@ ${googleSitesExtraCss}
         el.modalBodyText.parentElement.style.display = 'none';
       }
 
-      el.modalMetaDate.textContent = \`發布時間：\${formatDate(item.createdAt)} · 所屬向度：\${item.sectionTitle}\`;
+      const modalDateStr = formatDate(item.createdAt);
+      el.modalMetaDate.textContent = \`\${modalDateStr ? \`發布時間：\${modalDateStr} · \` : ''}所屬向度：\${item.sectionTitle}\`;
 
       if (item.fileUrl) {
         el.modalDownloadLink.style.display = 'inline-flex';
@@ -2248,8 +2266,10 @@ ${googleSitesExtraCss}
     }
 
     function getMediaBadge(item) {
-      const isPdf = item.mediaType === 'pdf' || (item.fileName || '').toLowerCase().endsWith('.pdf');
+      const isPdf = item.mediaType === 'pdf' || (item.fileName || '').toLowerCase().endsWith('.pdf') || (item.localFile || '').toLowerCase().endsWith('.pdf') || (item.fileUrl || '').toLowerCase().includes('.pdf');
       if (isPdf) return '<span class="media-type-badge" style="background: #dc2626; color: white;">📄 PDF 成果檔案</span>';
+      if (item.evidenceCode) return '<span class="media-type-badge" style="background: #059669; color: white;">🏅 永續評選佐證</span>';
+      if (item.albumId) return '<span class="media-type-badge" style="background: #0d9488; color: white;">📸 永續SDGs相簿</span>';
       if (item.mediaType === 'image') return '<span class="media-type-badge" style="background: #2563eb; color: white;">🖼️ 成果相片／證書原件</span>';
       if (item.mediaType === 'video') return '<span class="media-type-badge" style="background: rgba(234, 88, 12, 0.9);">🎬 影音報導</span>';
       if (item.externalUrl) return '<span class="media-type-badge" style="background: rgba(14, 165, 233, 0.9);">🌐 外部專題</span>';
@@ -2260,6 +2280,7 @@ ${googleSitesExtraCss}
       if (!isoStr) return '';
       try {
         const d = new Date(isoStr);
+        if (isNaN(d.getTime())) return '';
         return \`\${d.getFullYear()}/\${String(d.getMonth() + 1).padStart(2, '0')}/\${String(d.getDate()).padStart(2, '0')}\`;
       } catch {
         return '';

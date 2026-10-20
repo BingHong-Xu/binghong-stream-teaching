@@ -17,6 +17,7 @@ google-sites-embed*.html
 !generate_spotlight_pages.mjs
 !build_google_sites_embed.mjs
 !build_site_data_js.mjs
+!test_portfolio_display.mjs
 *.ps1
 
 *.DNG
