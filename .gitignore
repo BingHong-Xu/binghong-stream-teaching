@@ -19,3 +19,12 @@ google-sites-embed*.html
 
 *.DNG
 *.dng
+
+endpoint_success.json
+all_sections.json
+manifest.json
+data/manifest.json
+data/**/content.json
+data/**/feed.xml
+data/**/raw_wishes.json
+.github/

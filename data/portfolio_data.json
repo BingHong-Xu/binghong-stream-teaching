@@ -8,7 +8,8 @@
     "localAvatar": "downloads/site_assets/avatar.jpg",
     "localBackground": "downloads/site_assets/background.jpg",
     "totalWishes": 184,
-    "totalSections": 27
+    "totalSections": 27,
+    "totalItems": 1143
   },
   "categories": [
     {
@@ -132,188 +133,220 @@
       "id": "334512940",
       "title": "個人簡介",
       "sortIndex": 0,
-      "categoryId": "profile"
+      "categoryId": "profile",
+      "itemCount": 0
     },
     {
       "id": "338502813",
       "title": "專長與特色",
       "sortIndex": 256,
-      "categoryId": "profile"
+      "categoryId": "profile",
+      "itemCount": 0
     },
     {
       "id": "334513759",
       "title": "現職",
       "sortIndex": 2048,
-      "categoryId": "profile"
+      "categoryId": "profile",
+      "itemCount": 0
     },
     {
       "id": "334513853",
       "title": "學歷背景",
       "sortIndex": 4096,
-      "categoryId": "profile"
+      "categoryId": "profile",
+      "itemCount": 0
     },
     {
       "id": "334513871",
       "title": "教育專業證書",
       "sortIndex": 6144,
-      "categoryId": "certifications"
+      "categoryId": "certifications",
+      "itemCount": 0
     },
     {
       "id": "334519140",
       "title": "閱讀教學專業人員證書",
       "sortIndex": 6656,
-      "categoryId": "certifications"
+      "categoryId": "certifications",
+      "itemCount": 0
     },
     {
       "id": "334513922",
       "title": "全國性競賽個人殊榮",
       "sortIndex": 8192,
-      "categoryId": "honors"
+      "categoryId": "honors",
+      "itemCount": 0
     },
     {
       "id": "334528876",
       "title": "全國性競賽團隊殊榮",
       "sortIndex": 9216,
-      "categoryId": "honors"
+      "categoryId": "honors",
+      "itemCount": 0
     },
     {
       "id": "334516948",
       "title": "地區性競賽殊榮",
       "sortIndex": 10240,
-      "categoryId": "honors"
+      "categoryId": "honors",
+      "itemCount": 0
     },
     {
       "id": "334521344",
       "title": "師培院校競賽殊榮",
       "sortIndex": 11264,
-      "categoryId": "honors"
+      "categoryId": "honors",
+      "itemCount": 0
     },
     {
       "id": "334513960",
       "title": "學術研究著作",
       "sortIndex": 11776,
-      "categoryId": "research"
+      "categoryId": "research",
+      "itemCount": 0
     },
     {
       "id": "334514050",
       "title": "課程設計著作",
       "sortIndex": 440702782,
-      "categoryId": "research"
+      "categoryId": "research",
+      "itemCount": 0
     },
     {
       "id": "335104169",
       "title": "創新課程教學研究",
       "sortIndex": 1762774338,
-      "categoryId": "research"
+      "categoryId": "research",
+      "itemCount": 0
     },
     {
       "id": "334517445",
       "title": "教育類志工服務",
       "sortIndex": 1762774449,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "334518486",
       "title": "學習扶助",
       "sortIndex": 1762774559,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "334518993",
       "title": "台師大數學教育中心",
       "sortIndex": 1762774724,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "334521120",
       "title": "教育部計畫與行政認證",
       "sortIndex": 1762775388,
-      "categoryId": "aesthetic_art"
+      "categoryId": "aesthetic_art",
+      "itemCount": 0
     },
     {
       "id": "334522503",
       "title": "教育服務感謝狀",
       "sortIndex": 1762775779,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "334522990",
       "title": "廣播電台分享",
       "sortIndex": 1762775913,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "334523254",
       "title": "研習證明",
       "sortIndex": 1762775981,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "334524885",
       "title": "教育類研究執行經歷",
       "sortIndex": 1762776402,
-      "categoryId": "engagement"
+      "categoryId": "engagement",
+      "itemCount": 0
     },
     {
       "id": "336350442",
       "title": "新聞媒體專訪",
       "sortIndex": 1763462729,
-      "categoryId": "media"
+      "categoryId": "media",
+      "itemCount": 0
     },
     {
       "id": "336351275",
       "title": "新聞媒體文章",
       "sortIndex": 1763462794,
-      "categoryId": "media"
+      "categoryId": "media",
+      "itemCount": 0
     },
     {
       "id": "368085085",
       "title": "新聞媒體受訪",
       "sortIndex": 1763462826,
-      "categoryId": "media"
+      "categoryId": "media",
+      "itemCount": 0
     },
     {
       "id": "340556981",
       "title": "指導學生獲獎",
       "sortIndex": 1763462858,
-      "categoryId": "mentorship"
+      "categoryId": "mentorship",
+      "itemCount": 0
     },
     {
       "id": "386094464",
       "title": "指導語文競賽獲獎",
       "sortIndex": 1775819498,
-      "categoryId": "mentorship"
+      "categoryId": "mentorship",
+      "itemCount": 0
     },
     {
       "id": "386094343",
       "title": "指導體育競賽獲獎",
       "sortIndex": 1788176138,
-      "categoryId": "mentorship"
+      "categoryId": "mentorship",
+      "itemCount": 0
     },
     {
       "id": "334521121",
       "categoryId": "aesthetic_art",
-      "title": "創課方案教案與專題展廳"
+      "title": "創課方案教案與專題展廳",
+      "itemCount": 0
     },
     {
       "id": "334521123",
       "categoryId": "aesthetic_art",
-      "title": "課堂合作探究與美感策展剪影"
+      "title": "課堂合作探究與美感策展剪影",
+      "itemCount": 0
     },
     {
       "id": "334521124",
       "categoryId": "aesthetic_art",
-      "title": "教學微電影影音全紀錄"
+      "title": "教學微電影影音全紀錄",
+      "itemCount": 0
     },
     {
       "id": 334521125,
       "categoryId": "aesthetic_art",
-      "title": "114-1 學生課堂學習與探究實作歷程"
+      "title": "114-1 學生課堂學習與探究實作歷程",
+      "itemCount": 8
     },
     {
       "id": 334521126,
       "categoryId": "aesthetic_art",
-      "title": "114-2 學生課堂學習與探究實作歷程"
+      "title": "114-2 學生課堂學習與探究實作歷程",
+      "itemCount": 11
     },
     {
       "id": 900001,
@@ -394,6 +427,72 @@
     }
   ],
   "items": [
+    {
+      "id": 3980000001,
+      "headline": "蔡執仲*、徐秉鴻(in press)。STEM專題導向探究教學情境中教師專業成長轉化歷程之研究。科學教育學刊。【TSSCI I】",
+      "title": "蔡執仲*、徐秉鴻(in press)。STEM專題導向探究教學情境中教師專業成長轉化歷程之研究。科學教育學刊。【TSSCI I】",
+      "body": "<p><strong>【TSSCI 第一級核心期刊論文（正式接受刊登）】</strong></p>\n<p><strong>論文題目：</strong>〈STEM專題導向探究教學情境中教師專業成長轉化歷程之研究〉（The Transformative Process of Teacher Professional Growth in STEM Project-Based Inquiry Teaching Contexts）</p>\n<p><strong>作者群：</strong>蔡執仲*（通訊作者）、徐秉鴻</p>\n<p><strong>刊物名稱：</strong>《科學教育學刊》（Contemporary Journal of Science Education, CJSE）</p>\n<p><strong>學術級別：</strong>TSSCI 第一級核心期刊【TSSCI I】（國科會人文社會科學研究中心核心期刊）</p>\n<p><strong>審查決議：</strong>業經本刊雙向匿名同儕專業審查通過，並決議接受刊登（in press），刊載之卷期將後續通知。</p>\n<p><strong>刊登證明簽署：</strong>中華民國科學教育學會（ASET）／科學教育學刊總編輯 楊芳瑩 謹啟（中華民國 115 年 10 月 06 日）</p>",
+      "sectionId": 334513960,
+      "sectionTitle": "學術研究著作",
+      "categoryId": "research",
+      "categoryName": "學術著作與課程設計",
+      "mediaType": "document",
+      "fileUrl": null,
+      "localFile": "downloads/attachments/3980000001_科學教育學刊_刊登證明_蔡執仲_徐秉鴻_STEM專題導向探究教學情境中教師專業成長轉化歷程之研究.pdf",
+      "previewImage": "downloads/attachments/3980000001_科學教育學刊_刊登證明_蔡執仲_徐秉鴻_STEM專題導向探究教學情境中教師專業成長轉化歷程之研究.jpg",
+      "extension": "pdf",
+      "fileSize": 198325,
+      "sortIndex": -37000,
+      "createdAt": "2026-10-06T00:00:00.000Z",
+      "updatedAt": "2026-10-20T12:00:00.000Z",
+      "isPinned": true,
+      "status": "downloaded",
+      "fileName": "3980000001_科學教育學刊_刊登證明_蔡執仲_徐秉鴻_STEM專題導向探究教學情境中教師專業成長轉化歷程之研究.pdf"
+    },
+    {
+      "id": 3980000002,
+      "headline": "苗栗縣國際教育中心－專業工作人員115",
+      "title": "苗栗縣國際教育中心－專業工作人員115",
+      "body": "<p><strong>【苗栗縣政府聘書・115學年度國際教育中心專業工作人員】</strong></p>\n<p><strong>聘任機關：</strong>苗栗縣政府（縣長 鍾東錦）</p>\n<p><strong>聘書字號：</strong>府教務字第 1150175625C 號</p>\n<p><strong>聘任職務：</strong>苗栗縣 115 學年度國際教育中心 專業工作人員（Professional Staff, Miaoli County Compulsory Education International Education Center）</p>\n<p><strong>任期：</strong>自民國 115 年 8 月 1 日至 116 年 7 月 31 日止（August 1, 2026 to July 31, 2027）</p>\n<p><strong>核定日期：</strong>中華民國 115 年 8 月 1 日</p>\n<p><strong>專業任務：</strong>協助全縣推動中小學國際教育 2.0 課程發展、跨國多語交流、在地文化轉譯與雙語走讀導覽培力。</p>",
+      "sectionId": 334513759,
+      "sectionTitle": "現職",
+      "categoryId": "profile",
+      "categoryName": "個人資歷與職務",
+      "mediaType": "document",
+      "fileUrl": null,
+      "localFile": "downloads/attachments/3980000002_苗栗縣政府聘書_苗栗縣115學年度國際教育中心專業工作人員_徐秉鴻.pdf",
+      "previewImage": "downloads/attachments/3980000002_苗栗縣政府聘書_苗栗縣115學年度國際教育中心專業工作人員_徐秉鴻.jpg",
+      "extension": "pdf",
+      "fileSize": 1405763,
+      "sortIndex": -33800,
+      "createdAt": "2026-08-01T00:00:00.000Z",
+      "updatedAt": "2026-10-20T12:00:00.000Z",
+      "isPinned": true,
+      "status": "downloaded",
+      "fileName": "3980000002_苗栗縣政府聘書_苗栗縣115學年度國際教育中心專業工作人員_徐秉鴻.pdf"
+    },
+    {
+      "id": 3980000003,
+      "headline": "國立高雄師範大學師資培育與就業輔導處－國民小學教學實習總召",
+      "title": "國立高雄師範大學師資培育與就業輔導處－國民小學教學實習總召",
+      "body": "<p><strong>【國立高雄師範大學師資培育與就業輔導處・國民小學教學實習總召】</strong></p>\n<p><strong>服務機關：</strong>國立高雄師範大學 師資培育與就業輔導處</p>\n<p><strong>擔任職位：</strong>國民小學教學實習【總召】／實習校長</p>\n<p><strong>實習場域：</strong>高雄市四維國民小學</p>\n<p><strong>實踐成果：</strong>統籌四維國小低中高年級共 24 位師資生與 12 個實習班級之集中入班實習、跨領域教學研討與結訓典禮，榮獲教育部實習績優獎【全國實習學生優良獎】最高榮譽肯定。</p>",
+      "sectionId": 334513853,
+      "sectionTitle": "曾任職務",
+      "categoryId": "profile",
+      "categoryName": "個人資歷與職務",
+      "mediaType": "image",
+      "fileUrl": null,
+      "localFile": "downloads/sdgs_gallery/04_師資培育與教學實習/2023年12月9日-四維國小實習休業式夢想共聲52赫茲/2023年12月9日-1-四維國小實習休業式夢想共聲52赫茲.jpg",
+      "previewImage": "downloads/sdgs_gallery/04_師資培育與教學實習/2023年12月9日-四維國小實習休業式夢想共聲52赫茲/2023年12月9日-1-四維國小實習休業式夢想共聲52赫茲.jpg",
+      "extension": "jpg",
+      "fileSize": 450000,
+      "sortIndex": -45000,
+      "createdAt": "2023-12-09T00:00:00.000Z",
+      "updatedAt": "2026-10-20T12:00:00.000Z",
+      "isPinned": true,
+      "status": "downloaded",
+      "fileName": "國立高雄師範大學師資培育與就業輔導處－國民小學教學實習總召.jpg"
+    },
     {
       "id": 3904794906,
       "headline": "徐秉鴻老師｜教育創新與跨域永續教學專業實績總覽",
@@ -1364,8 +1463,8 @@
     },
     {
       "id": 3675139861,
-      "headline": "鴻海永齡－【2023永齡希望小學】－優良課輔教師",
-      "body": "<p><a rel=\"noopener noreferrer nofollow\" href=\"https://m.facebook.com/story.php?story_fbid=pfbid0TFssc4WkM2WSTpNiq1JB5wS8kUh6gMYHCUuG6kYcaqNQ137QPU1GzHbN81qaTZWSl&amp;id=100001386874413&amp;mibextid=Nif5oz\">https://m.facebook.com/story.php?story_fbid=pfbid0TFssc4WkM2WSTpNiq1JB5wS8kUh6gMYHCUuG6kYcaqNQ137QPU1GzHbN81qaTZWSl&amp;id=100001386874413&amp;mibextid=Nif5oz</a></p>",
+      "headline": "財團法人永齡教育基金會－希望小學高師大分校優良課輔教師（2020-2024）",
+      "body": "<p><strong>【財團法人永齡教育基金會・希望小學高師大分校優良課輔教師（2020-2024）】</strong></p>\n<p>連續多年深耕永齡希望小學課輔與學習扶助弱勢學童陪伴，獲頒永齡教育基金會「優良課輔教師」殊榮肯定。</p>",
       "sectionId": 334513922,
       "sectionTitle": "全國性競賽個人殊榮",
       "categoryId": "honors",
@@ -1382,7 +1481,8 @@
       "updatedAt": "2026-08-31T11:37:07.768Z",
       "isPinned": false,
       "fileName": "3675139861_鴻海永齡－【2023永齡希望小學】－優良課輔教師.jpg",
-      "status": "downloaded"
+      "status": "downloaded",
+      "title": "財團法人永齡教育基金會－希望小學高師大分校優良課輔教師（2020-2024）"
     },
     {
       "id": 3675134240,
@@ -3476,8 +3576,8 @@
     },
     {
       "id": 3904788379,
-      "headline": "【2025臺灣科普環島列車】Day1",
-      "body": "",
+      "headline": "國科會科普活動－2025臺灣科普環島列車",
+      "body": "<p><strong>【國科會科普活動－2025臺灣科普環島列車】</strong></p>\n<p>指導單位：國家科學及技術委員會（國科會）。率領永貞國小師生團隊代表苗栗縣擔任科普環島列車科學關主，於月台與車廂向全台學子與民眾推廣全民科普探究與永續素養。</p>",
       "sectionId": 368085085,
       "sectionTitle": "新聞媒體受訪",
       "categoryId": "media",
@@ -3494,7 +3594,8 @@
       "updatedAt": "2026-08-31T11:36:06.659Z",
       "isPinned": true,
       "status": "external_link",
-      "fileName": "3904788379_【2025臺灣科普環島列車】Day1.jpg"
+      "fileName": "3904788379_【2025臺灣科普環島列車】Day1.jpg",
+      "title": "國科會科普活動－2025臺灣科普環島列車"
     },
     {
       "id": 3904788028,

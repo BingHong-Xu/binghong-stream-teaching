@@ -394,7 +394,7 @@ function createPageHtml(feat) {
               <span class="style-item-icon">🌍</span>
               <div class="style-item-text">
                 <span class="style-item-title">1. 永續教育 × STREAM 旗艦版</span>
-                <span class="style-item-desc">傑出永續教育人物策展與 1,140 筆檢索庫</span>
+                <span class="style-item-desc">傑出永續教育人物策展與 1,143 筆檢索庫</span>
               </div>
             </a>
             <a href="academic.html" class="style-menu-item">
@@ -427,7 +427,7 @@ function createPageHtml(feat) {
   <!-- Article Container -->
   <main class="article-container">
     <div class="back-nav-row">
-      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,140 筆典藏庫）</a>
+      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,143 筆典藏庫）</a>
       <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
         ${navPillsHtml}
       </div>
@@ -544,7 +544,7 @@ function createPageHtml(feat) {
         &larr; 返回徐秉鴻老師 教學成果主網站
       </a>
       <a href="index.html#portfolio-catalog" class="btn-outline" style="padding: 0.75rem 1.75rem; font-size: 1rem;">
-        🗂️ 檢索 1,140 筆成果典藏庫
+        🗂️ 檢索 1,143 筆成果典藏庫
       </a>
     </div>
   </main>
