@@ -408,7 +408,7 @@ function buildLearningMapSections(feat) {
           <h2 style="margin: 0.5rem 0 0.25rem;"><span>🗺️ 永貞六甲多元智能×SDGs永續學習地圖摺頁展廳</span></h2>
           <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">點擊切換折頁「內頁全景（八大智能成果地圖）」或「外頁全景（封面、五大亮點與導師簡歷）」，點擊圖片即可開啟高解析燈箱放大檢視。</p>
         </div>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <div class="lm-brochure-nav">
           <button id="btnBrochureInner" class="btn-primary" style="font-size: 0.85rem; padding: 0.45rem 1rem;" onclick="switchBrochureSide('inner')">
             🗺️ 檢視折頁內頁（成果地圖）
           </button>
@@ -418,7 +418,7 @@ function buildLearningMapSections(feat) {
         </div>
       </div>
 
-      <div style="background: var(--bg-surface); border: 2px solid var(--border); border-radius: 18px; padding: 1.25rem; box-shadow: var(--shadow-sm); text-align: center;">
+      <div class="lm-brochure-container">
         <div id="brochureStage" style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;" onclick="openActiveBrochureLightbox()">
           <img id="brochureImg" src="downloads/feature_photos/sdgs_learning_map_inner.jpg" alt="永貞六甲多元智能×SDGs永續學習地圖折頁（內頁全景）" style="width: 100%; max-height: 720px; object-fit: contain; border-radius: 12px; transition: transform 0.3s ease; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
           <div style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.75); color: #fff; font-size: 0.8rem; font-weight: 700; padding: 0.35rem 0.8rem; border-radius: 999px; backdrop-filter: blur(6px); display: flex; align-items: center; gap: 0.35rem;">
@@ -429,8 +429,8 @@ function buildLearningMapSections(feat) {
           <span id="brochureLabel" style="font-weight: 800; color: var(--text-main); font-size: 0.95rem;">
             🗺️ 折頁內頁全景：創新思維與智慧領航 · 熱血競技與團隊協行 · 內在涵養與永續共榮（八大多元智能完整實踐）
           </span>
-          <div style="display: flex; gap: 0.5rem;">
-            <a id="brochureDownloadBtn" href="downloads/feature_photos/sdgs_learning_map_inner.jpg" download class="btn-outline" style="font-size: 0.82rem; padding: 0.35rem 0.85rem;">
+          <div style="display: flex; gap: 0.5rem; width: auto;" class="lm-brochure-footer-btn-wrap">
+            <a id="brochureDownloadBtn" href="downloads/feature_photos/sdgs_learning_map_inner.jpg" download class="btn-outline lm-brochure-footer-btn" style="font-size: 0.82rem; padding: 0.35rem 0.85rem;">
               💾 下載目前高清原檔
             </a>
           </div>
@@ -441,7 +441,7 @@ function buildLearningMapSections(feat) {
     <!-- Section 2: Educational Vision & Class Highlights -->
     <section class="article-section">
       <h2><span>🌟 班級願景、教育心聲與班級五大亮點</span></h2>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem;">
+      <div class="lm-vision-grid">
         <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(6, 182, 212, 0.08)); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 16px; padding: 1.5rem;">
           <div style="font-size: 0.82rem; font-weight: 800; color: #059669; margin-bottom: 0.4rem;">🌈 築夢踏實 · 夢想起飛</div>
           <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.65rem;">教育心聲</h3>
@@ -731,6 +731,11 @@ function createPageHtml(feat) {
       padding-bottom: 0.85rem;
       letter-spacing: -0.01em;
     }
+    @media (max-width: 1024px) {
+      .article-hero img {
+        height: 320px;
+      }
+    }
     @media (max-width: 768px) {
       .article-container {
         margin: 1rem auto 2.5rem;
@@ -749,6 +754,11 @@ function createPageHtml(feat) {
       }
       .article-section {
         padding: 1.25rem 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .article-hero img {
+        height: 190px;
       }
     }
   </style>
@@ -818,8 +828,8 @@ function createPageHtml(feat) {
   <!-- Article Container -->
   <main class="article-container">
     <div class="back-nav-row">
-      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,143 筆典藏庫）</a>
-      <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,145 筆典藏庫）</a>
+      <div class="special-nav-pills">
         ${navPillsHtml}
       </div>
     </div>
@@ -964,7 +974,7 @@ function createPageHtml(feat) {
         &larr; 返回徐秉鴻老師 教學成果主網站
       </a>
       <a href="index.html#portfolio-catalog" class="btn-outline" style="padding: 0.75rem 1.75rem; font-size: 1rem;">
-        🗂️ 檢索 1,143 筆成果典藏庫
+        🗂️ 檢索 1,145 筆成果典藏庫
       </a>
     </div>
   </main>

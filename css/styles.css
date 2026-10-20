@@ -1445,7 +1445,8 @@ button {
   margin-bottom: 0.65rem;
 }
 
-.spotlight-card.bento-wide h3 {
+.spotlight-card.bento-wide h3,
+.spotlight-card.bento-full h3 {
   font-size: 1.45rem;
 }
 
@@ -1461,7 +1462,8 @@ button {
   flex: 1;
 }
 
-.spotlight-card.bento-wide .spotlight-overview {
+.spotlight-card.bento-wide .spotlight-overview,
+.spotlight-card.bento-full .spotlight-overview {
   -webkit-line-clamp: 4;
 }
 
@@ -3581,7 +3583,8 @@ mark.highlight {
     gap: 1.25rem;
   }
 
-  .spotlight-card.bento-wide {
+  .spotlight-card.bento-wide,
+  .spotlight-card.bento-full {
     grid-column: span 2 !important;
   }
 
@@ -3751,13 +3754,15 @@ mark.highlight {
     gap: 1.25rem;
   }
 
-  .spotlight-card.bento-wide {
+  .spotlight-card.bento-wide,
+  .spotlight-card.bento-full {
     grid-column: span 1 !important;
     display: flex !important;
     flex-direction: column !important;
   }
 
-  .spotlight-card.bento-wide .spotlight-banner {
+  .spotlight-card.bento-wide .spotlight-banner,
+  .spotlight-card.bento-full .spotlight-banner {
     height: 190px !important;
     min-height: 190px !important;
   }
@@ -3770,7 +3775,9 @@ mark.highlight {
     padding: 1.25rem;
   }
 
-  .spotlight-card h3 {
+  .spotlight-card h3,
+  .spotlight-card.bento-wide h3,
+  .spotlight-card.bento-full h3 {
     font-size: 1.18rem;
   }
 
@@ -3887,8 +3894,10 @@ mark.highlight {
   }
 
   .modal-dialog {
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     max-height: 94vh;
+    max-height: calc(100dvh - 0.75rem);
     border-radius: 20px 20px 0 0;
     margin: 0;
     transform: translateY(100%);
@@ -4155,13 +4164,15 @@ mark.highlight {
 
   .spotlight-btn-group {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
   }
 
   .spotlight-btn-group .spotlight-btn,
   .spotlight-btn-group .spotlight-link-direct {
+    flex: 1 1 calc(50% - 0.25rem);
+    min-width: 105px;
     justify-content: center;
     text-align: center;
     padding: 0.48rem 0.65rem;
@@ -6064,10 +6075,18 @@ html, body {
   display: grid;
   grid-template-columns: 46% 54%;
 }
+.spotlight-grid.bento-grid > .spotlight-card.bento-full .spotlight-banner {
+  height: 100%;
+  min-height: 340px;
+}
 @media (max-width: 1024px) {
   .spotlight-grid.bento-grid > .spotlight-card.bento-full {
     display: flex;
     flex-direction: column;
+  }
+  .spotlight-grid.bento-grid > .spotlight-card.bento-full .spotlight-banner {
+    height: 240px;
+    min-height: 240px;
   }
 }
 
@@ -6296,6 +6315,146 @@ html, body {
 .lm-student-honors {
   font-size: 0.76rem;
   color: var(--text-muted);
+}
+
+/* Learning Map Educational Vision Grid */
+.lm-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .lm-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Learning Map Brochure Interactive Showcase */
+.lm-brochure-container {
+  background: var(--bg-surface);
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .lm-brochure-container {
+    padding: 0.75rem 0.5rem;
+    border-radius: 14px;
+  }
+  .lm-brochure-container img {
+    max-height: 420px !important;
+  }
+  .lm-brochure-nav {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  .lm-brochure-nav button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .lm-brochure-footer-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Learning Map Highlights Grid (Responsive) */
+@media (max-width: 480px) {
+  .lm-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+  .lm-hl-card {
+    padding: 0.75rem 0.45rem;
+  }
+  .lm-hl-title {
+    font-size: 0.82rem;
+  }
+  .lm-hl-grade {
+    font-size: 0.76rem;
+  }
+  .lm-hl-desc {
+    font-size: 0.72rem;
+  }
+}
+@media (max-width: 360px) {
+  .lm-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Student Stars Roster Responsive Enhancements */
+.lm-student-star-pill {
+  max-width: 100%;
+  line-height: 1.45;
+}
+@media (max-width: 640px) {
+  .lm-student-stars-wrap {
+    gap: 0.45rem;
+  }
+  .lm-student-star-pill {
+    width: 100%;
+    border-radius: 12px;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.82rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+}
+
+/* Special Spotlight Pages Nav Pills (Swipeable on Mobile) */
+.special-nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+@media (max-width: 768px) {
+  .special-nav-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 0.35rem;
+    width: 100%;
+  }
+  .special-nav-pills::-webkit-scrollbar {
+    display: none;
+  }
+  .special-nav-pills a {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.78rem !important;
+    padding: 0.35rem 0.75rem !important;
+  }
+}
+
+/* Touch targets and safe padding for small mobile screens (<= 380px) */
+@media (max-width: 380px) {
+  .hero-container {
+    padding: 1.5rem 0.75rem 2rem;
+  }
+  .hero-content h1 {
+    font-size: 1.65rem;
+  }
+  .hero-identity-bar {
+    font-size: 0.76rem;
+  }
+  .dot-legend-title {
+    font-size: 0.75rem;
+  }
+  .color-dot-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.45rem;
+  }
 }
 
 
