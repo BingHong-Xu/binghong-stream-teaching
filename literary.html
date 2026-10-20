@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>徐秉鴻老師 教學歷程 - 自然走讀、環境教育與書香人文版 | 永貞國小</title>
+  <meta name="description" content="苗栗縣永貞國小 徐秉鴻老師 自然走讀、2026台灣傑出永續教育人物獎、環境教育與圖書館閱讀推動教學歷程專屬網站－自然走讀與書香人文版。" />
+  <link rel="icon" href="downloads/site_assets/avatar.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme-utilities.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #fdfbf7;
+      color: #2b2d42;
+    }
+    .serif-font {
+      font-family: 'Noto Serif TC', Georgia, serif;
+    }
+    .nature-card {
+      background: #ffffff;
+      border: 1px solid #e8e3d5;
+      border-radius: 1.5rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 16px -4px rgba(43, 45, 66, 0.05);
+    }
+    .nature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 30px -10px rgba(45, 106, 79, 0.15);
+      border-color: #2d6a4f;
+    }
+  </style>
+</head>
+
+<body class="bg-sand-50 min-h-screen flex flex-col text-stone-800 antialiased selection:bg-forest-700 selection:text-white">
+
+  <!-- 頂部導覽列 (RWD 響應式支援手機/平板抽屜選單) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="brand-wrapper" aria-label="回到頁首">
+        <div class="brand-avatar-container">
+          <img src="downloads/site_assets/avatar.jpg" alt="徐秉鴻老師｜STEM 科學探究與跨域教育實踐現場" class="brand-avatar">
+          <span class="brand-status-dot" title="環境部認證環境教育人員 · 2026台灣傑出永續教育人物參選典範"></span>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name serif-font">徐秉鴻 自然走讀與書香人文 <span class="brand-sust-pill">🌿 走讀人文版</span></span>
+          <span class="brand-role">苗栗縣永貞國小 · 2026 台灣傑出永續教育人物</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn-outline hide-on-mobile" title="切換回永續 × STREAM 旗艦主站">
+          <span>✨ 旗艦主站</span>
+        </a>
+        <a href="#sustainability-nature" class="btn-sust-nav hide-on-mobile" title="2026 台灣傑出永續教育人物獎・93 場 SDGs 走讀相簿">
+          <span>🌍</span>
+          <span>傑出永續教育人物</span>
+        </a>
+        <a href="#mssr" class="btn-outline hide-on-mobile">
+          <span>📚 晨讀 MSSR 與走讀</span>
+        </a>
+        <a href="#portfolio-catalog" class="btn-outline hide-on-mobile">
+          <span>🗂️ 數位典藏 (1,140)</span>
+        </a>
+
+        <!-- 三大風格切換選單 -->
+        <div class="relative-dropdown" id="styleSwitcherWrapper">
+          <button type="button" id="styleSwitcherBtn" class="btn-outline style-switcher-btn" aria-label="切換版型風格">
+            <span>🌿 風格 (3)</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="styleSwitcherMenu" class="style-dropdown-menu">
+            <a href="index.html" class="style-menu-item">
+              <span class="style-item-icon">🌍</span>
+              <div class="style-item-text">
+                <span class="style-item-title">1. 永續教育 × STREAM 旗艦版</span>
+                <span class="style-item-desc">傑出永續教育人物策展與 1,140 筆檢索庫</span>
+              </div>
+            </a>
+            <a href="academic.html" class="style-menu-item">
+              <span class="style-item-icon">🏛️</span>
+              <div class="style-item-text">
+                <span class="style-item-title">2. 學院卓越智庫版</span>
+                <span class="style-item-desc">TSSCI 論文發表與學術研究專用</span>
+              </div>
+            </a>
+            <a href="literary.html" class="style-menu-item active">
+              <span class="style-item-icon">🌿</span>
+              <div class="style-item-text">
+                <span class="style-item-title">3. 自然走讀與書香人文版</span>
+                <span class="style-item-desc">環境教育、走讀古厝與晨讀推廣</span>
+              </div>
+              <span class="style-item-badge">目前</span>
+            </a>
+          </div>
+        </div>
+
+        <button id="printBtn" class="btn-icon hide-on-mobile" title="列印或另存 PDF">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+        <button id="themeToggleBtn" class="btn-icon" title="切換深淺模式">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- 行動端導覽選單按鈕 -->
+        <button id="mobileMenuBtn" class="btn-icon show-on-mobile" aria-label="展開行動端導覽選單" title="專題與章節選單">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 行動端下拉抽屜選單 -->
+  <nav id="mobileNavMenu" class="mobile-nav-menu" style="display: none;" aria-label="行動端選單">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-section-title">走讀人文版章節與專題捷徑</div>
+      <a href="index.html" class="mobile-nav-link">
+        <span>✨ 切換回永續 × STREAM 旗艦主站</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#sustainability-nature" class="mobile-nav-link" onclick="window.closeMobileNav()" style="background: rgba(5,150,105,0.08); border-color: rgba(5,150,105,0.28);">
+        <span>🌍 五大永續走讀與生命教育脈絡</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="special-sustainability.html" class="mobile-nav-link">
+        <span>🏅 傑出永續教育人物獨立全頁專刊</span>
+        <span>↗</span>
+      </a>
+      <a href="#mssr" class="mobile-nav-link" onclick="window.closeMobileNav()">
+        <span>📚 晨讀 MSSR 與多肉植癒特寫</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#portfolio-catalog" class="mobile-nav-link" onclick="window.closeMobileNav()">
+        <span>🗂️ 檢索 1,140 筆成果檔案庫</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- 主內容 -->
+  <main class="flex-grow pt-8 pb-16 space-y-12 sm:space-y-16">
+    
+    <!-- 自然走讀與書香人文 Hero -->
+    <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="nature-card p-6 sm:p-10 relative overflow-hidden bg-gradient-to-br from-white via-[#fcfaf5] to-forest-50/70 border border-forest-100">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4 sm:space-y-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-forest-100 text-forest-800 border border-forest-200">
+                🌍 2026 台灣傑出永續教育人物獎
+              </span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-200">
+                📚 教育部 114 年閱讀磐石學校核心推手
+              </span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-stone-100 text-stone-700">
+                🌱 環境部認證環境教育人員
+              </span>
+            </div>
+
+            <div>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-forest-800 tracking-tight leading-tight serif-font">
+                徐秉鴻 老師
+                <span class="block mt-2 text-xl sm:text-2xl lg:text-3xl text-terracotta-600 font-normal">
+                  自然走讀探究、圖書館閱讀推動與 SDGs 永續綠生活
+                </span>
+              </h1>
+              <p class="text-xs sm:text-sm text-stone-600 mt-2 italic serif-font">
+                「以土地為師，走讀中港溪在地文史；以閱讀為翼，涵養孩子對萬物的同理與永續素養。」
+              </p>
+            </div>
+
+            <p class="text-sm sm:text-base text-stone-700 leading-relaxed max-w-3xl font-medium">
+              國立高雄師範大學科學教育暨環境教育研究所博士班在讀。現任苗栗縣永貞國小專任教師兼圖書館閱讀推動教師、文書組長，兼任苗栗縣國際教育中心專員。深耕中港溪流域走讀、多肉植物氣候行動、明日閱讀 MSSR 晨讀與跨國文化共學，全站完整典藏 9 大領域 43 向度共 1,140 筆真實教學紀錄。
+            </p>
+
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a href="special-sustainability.html" class="px-5 py-3 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all">
+                🌱 閱讀「傑出永續教育人物」完整事蹟與 99 項佐證
+              </a>
+              <a href="#portfolio-catalog" class="px-5 py-3 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all">
+                🗂️ 探索 1,140 筆走讀與教學典藏
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4">
+            <div class="p-4 rounded-2xl bg-forest-50 border border-forest-100 space-y-3 text-center">
+              <img src="downloads/site_assets/avatar.jpg" alt="徐秉鴻老師｜STEM 科學探究與跨域教育實踐現場" class="w-full object-cover rounded-xl shadow-sm" style="aspect-ratio: 1 / 1;" />
+              <div class="grid grid-cols-2 gap-2 text-center pt-1">
+                <div class="p-2.5 rounded-xl bg-white border border-forest-100">
+                  <span class="text-xl font-black text-forest-700 font-mono">1,140</span>
+                  <p class="text-[11px] text-stone-600 font-bold">數位典藏檔案</p>
+                </div>
+                <div class="p-2.5 rounded-xl bg-white border border-forest-100">
+                  <span class="text-xl font-black text-terracotta-600 font-mono">93 場</span>
+                  <p class="text-[11px] text-stone-600 font-bold">SDGs 走讀相簿</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 永續走讀與五大主題相簿精選 -->
+    <section id="sustainability-nature" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold text-forest-700 uppercase tracking-wider">🌱 SDGs Fieldwork & Sustainability</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-forest-800 serif-font mt-1">五大永續走讀與生命教育實踐脈絡（93 場活動相簿 • 823 張紀實）</h2>
+        </div>
+        <a href="index.html#sustainability-showcase" class="text-xs font-bold text-forest-700 hover:underline">前往互動相簿策展台 →</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="nature-card p-5 space-y-2 border-t-4 border-t-emerald-600">
+          <span class="text-xs font-bold text-emerald-700">01 • 生態環境與永續農業</span>
+          <h3 class="font-bold text-base text-stone-900 serif-font">多肉植物與節水綠生活</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">結合 CAM 景天酸代謝耐旱探究、落葉堆肥、有機菜園與綠美化實作，落實 SDG 13 氣候行動。</p>
+        </div>
+        <div class="nature-card p-5 space-y-2 border-t-4 border-t-amber-600">
+          <span class="text-xs font-bold text-amber-800">02 • 在地文化與社區踏查</span>
+          <h3 class="font-bold text-base text-stone-900 serif-font">中港溪走讀與永貞宮文史</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">帶領孩子踏查頭份蘆竹湳古厝、永貞宮客家聚落與社區信仰，深耕 SDG 11 永續城鄉。</p>
+        </div>
+        <div class="nature-card p-5 space-y-2 border-t-4 border-t-sky-600">
+          <span class="text-xs font-bold text-sky-700">03 • 科學探究與跨域實作</span>
+          <h3 class="font-bold text-base text-stone-900 serif-font">科展指導與 STEAM 創客</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">全國科學探究競賽第一名、苗栗縣科展第二名暨鄉土教材獎，實踐 SDG 4 優質教育。</p>
+        </div>
+        <div class="nature-card p-5 space-y-2 border-t-4 border-t-purple-600">
+          <span class="text-xs font-bold text-purple-700">04 • 閱讀素養與圖書推廣</span>
+          <h3 class="font-bold text-base text-stone-900 serif-font">閱讀磐石與 MSSR 晨讀</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">榮獲教育部 114 年閱讀磐石學校，辦理世界書香日、SDGs 繪本策展與走讀寫作。</p>
+        </div>
+        <div class="nature-card p-5 space-y-2 border-t-4 border-t-rose-600">
+          <span class="text-xs font-bold text-rose-700">05 • 國際教育與生命關懷</span>
+          <h3 class="font-bold text-base text-stone-900 serif-font">跨國共學與孝道品格</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">連結日本、韓國、越南跨國交流，推動教育部孝道教育行動學校優等與性平人權教育。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 晨讀 MSSR 與走讀特寫 -->
+    <section id="mssr" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="nature-card p-6 sm:p-8 space-y-3.5 border-l-4 border-l-forest-700">
+        <div class="flex items-center justify-between">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-forest-100 text-forest-800">明日閱讀 MSSR • 閱讀磐石</span>
+          <span class="text-xs text-stone-400 font-bold">身教式持續安靜閱讀</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-forest-800 serif-font">晨讀 10 分鐘 • 讓閱讀成為永續生活的呼吸</h3>
+        <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+          推動全校晨讀 MSSR，教師以身作則共同沉浸書海，結合「閱讀存摺」、圖書館每月 SDGs 主題策展與雙語繪本共讀，榮獲教育部 114 年度閱讀磐石學校殊榮。
+        </p>
+        <a href="special-reading.html" class="inline-block text-xs font-bold text-forest-700 hover:underline pt-1">進入閱讀推廣獨立專頁 →</a>
+      </div>
+
+      <div class="nature-card p-6 sm:p-8 space-y-3.5 border-l-4 border-l-terracotta-500">
+        <div class="flex items-center justify-between">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900">多肉植物療癒 × 美感教育</span>
+          <span class="text-xs text-stone-400 font-bold">永貞國小在地探究</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-stone-900 serif-font">走進自然與聚落 • 培養真實情境感知與生命韌性</h3>
+        <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+          結合環境教育人員認證、跨領域美感教案優選與地方文史，帶領學童親手繁殖多肉植物、踏查頭份永貞生態脈絡，將美感與永續落實於校園每個角落。
+        </p>
+        <a href="special-succulent.html" class="inline-block text-xs font-bold text-terracotta-600 hover:underline pt-1">進入多肉植物與環境永續專頁 →</a>
+      </div>
+    </section>
+
+    <!-- 歷程成果即時檢索庫 (與 js/app.js 完整連動，支援 1,140 筆與 9 大領域) -->
+    <section class="main-container" id="portfolio-catalog">
+      <div class="section-header" style="margin-bottom: 1.25rem;">
+        <div>
+          <span class="text-xs font-bold text-forest-700 uppercase tracking-wider">Fieldwork, Reading & Sustainability Archive</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-forest-800 serif-font mt-1">走讀、閱讀與永續教育數位典藏庫（1,140 筆）</h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-1">涵蓋「永續教育與SDGs、個人簡歷、跨領域美感、多元活動、公開課程、素養評量、閱讀推動、多肉永續、科學探究」9 大領域 43 個專業向度。</p>
+        </div>
+      </div>
+
+      <div class="controls-wrapper">
+        <!-- 9 Top Level Category Tabs -->
+        <nav class="category-tabs-container" id="categoryTabs" aria-label="成果分類"></nav>
+
+        <!-- Sub-section Pills (Dynamic based on selected category) -->
+        <div class="subsections-container" id="subsectionsWrapper" style="display: none;">
+          <div class="subsections-header">
+            <span class="subsections-header-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              專業向度細項：
+            </span>
+            <button id="subsectionsToggleBtn" class="subsections-toggle-btn" type="button" aria-expanded="false" title="展開或收合向度標籤">
+              <span class="toggle-text">展開全部向度 (43)</span>
+              <svg class="toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="subsections-scroll-track">
+            <div id="subsectionsList" class="subsections-list"></div>
+          </div>
+        </div>
+
+        <!-- Search & Filters Toolbar -->
+        <div class="search-filter-bar">
+          <div class="search-box-wrapper">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="即時搜尋 1,140 筆典藏：例如「走讀」、「閱讀」、「多肉」、「SDGs」、「佐證 3-01」...">
+            <button id="searchClearBtn" class="search-clear-btn" title="清除搜尋">&times;</button>
+          </div>
+
+          <div class="filter-actions">
+            <select id="mediaFilter" class="select-filter" aria-label="附件格式篩選">
+              <option value="all">📁 全部附件格式</option>
+              <option value="award">🏆 競賽得獎與官方佐證</option>
+              <option value="image">🖼️ 證書、活動照片與截圖</option>
+              <option value="pdf">📄 PDF 報告、論文與教案</option>
+              <option value="video">🎬 影音報導與專訪</option>
+              <option value="link">🌐 外部專題報導</option>
+            </select>
+
+            <select id="sortSelect" class="select-filter" aria-label="排序方式">
+              <option value="default">📌 預設向度排序</option>
+              <option value="newest">📅 最新發布優先</option>
+              <option value="oldest">📅 早期紀錄優先</option>
+              <option value="title">🔤 標題名稱排序</option>
+            </select>
+
+            <div class="view-toggle" role="group" aria-label="檢視模式切換">
+              <button id="viewGridBtn" class="view-btn active" title="網格卡片檢視">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                卡片
+              </button>
+              <button id="viewTimelineBtn" class="view-btn" title="履歷清單檢視">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                清單
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Search Chips -->
+        <div class="quick-search-chips">
+          <span class="quick-search-label">💡 熱門標籤：</span>
+          <button class="quick-chip" data-search="閱讀">📖 明日閱讀典範</button>
+          <button class="quick-chip" data-search="多肉">🌱 多肉植癒 SEL</button>
+          <button class="quick-chip" data-search="佐證">🏅 五大構面99項佐證</button>
+          <button class="quick-chip" data-search="剩食">♻️ 搶救剩食大作戰</button>
+          <button class="quick-chip" data-search="竹節蟲">🦋 竹節蟲黃二探究</button>
+          <button class="quick-chip" data-search="高美濕地">🌊 高美濕地與風電</button>
+          <button class="quick-chip" data-search="美數">🎨 美數跨領域幾何</button>
+        </div>
+
+        <!-- Results Count Info -->
+        <div class="results-meta">
+          <div id="resultsCount" class="results-count">載入中...</div>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <button class="btn-outline" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="window.clearAllFilters()">重設篩選</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Items Grid / List Container -->
+      <div id="itemsContainer" class="cards-grid"></div>
+
+      <!-- Batch Load More Controls -->
+      <div id="loadMoreContainer" class="load-more-container" style="display: none;"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <strong>徐秉鴻老師 自然走讀、書香人文與「2026 台灣傑出永續教育人物」數位典藏庫</strong>
+        <span>苗栗縣頭份市永貞國民小學｜國立高雄師範大學 科學教育暨環境教育研究所博士班｜環境部認證環境教育人員</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">STEAM 旗艦主站</a>
+        <a href="special-sustainability.html">🌍 傑出永續教育人物專頁</a>
+        <a href="徐秉鴻老師_教學成果檔案清單.md" target="_blank">📄 Markdown 檔案總表</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox / Viewer -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span id="modalSectionBadge" class="modal-section-badge">向度類別</span>
+          <h2 id="modalTitle" class="modal-title">成果標題</h2>
+        </div>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="關閉視窗">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div id="modalViewerContainer" class="modal-viewer-container"></div>
+        <div class="modal-details">
+          <div id="modalBodyText" class="modal-body-text"></div>
+        </div>
+      </div>
+
+      <div id="modalFilmstrip" class="modal-filmstrip" style="display: none;"></div>
+
+      <div class="modal-footer">
+        <div class="modal-nav-btns">
+          <button id="modalPrevBtn" class="btn-outline" title="上一筆成果 (&larr;)">
+            &larr; 上一筆
+          </button>
+          <button id="modalNextBtn" class="btn-outline" title="下一筆成果 (&rarr;)">
+            下一筆 &rarr;
+          </button>
+        </div>
+
+        <div style="font-size: 0.8rem; color: var(--text-muted);" id="modalMetaDate"></div>
+
+        <div class="modal-download-actions">
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            🌐 開啟外部專題
+          </a>
+          <a id="modalDownloadLink" href="#" class="btn-primary" download>
+            💾 下載本機原件
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="回到頂部">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

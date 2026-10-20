@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>徐秉鴻老師 學術歷程與永續教育專網 | 學院卓越智庫版</title>
+  <meta name="description" content="徐秉鴻老師學術研究、2026台灣傑出永續教育人物獎與教學歷程專屬網站－學院卓越智庫版。收錄TSSCI核心期刊第一作者發表、全國科學探究第一名指導、環境部認證環境教育人員及 9 大領域 43 向度共 1,140 筆數位典藏。" />
+  <link rel="icon" href="downloads/site_assets/avatar.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme-utilities.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .academic-serif { font-family: 'Noto Serif TC', Georgia, serif; }
+  </style>
+</head>
+
+<body class="bg-[#fcfaf7] min-h-screen flex flex-col text-slate-800 antialiased selection:bg-amber-700 selection:text-white">
+
+  <!-- 學院頂部導覽列 (RWD 響應式支援手機/平板抽屜選單) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="brand-wrapper" aria-label="回到頁首">
+        <div class="brand-avatar-container">
+          <img src="downloads/site_assets/avatar.jpg" alt="徐秉鴻老師｜STEM 科學探究與跨域教育實踐現場" class="brand-avatar">
+          <span class="brand-status-dot" title="環境部認證環境教育人員 · 2026台灣傑出永續教育人物參選典範"></span>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name academic-serif">徐秉鴻 學術研究智庫 <span class="brand-sust-pill">🏛️ 學院智庫版</span></span>
+          <span class="brand-role">高師大科環所博士生 · 2026 台灣傑出永續教育人物</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn-outline hide-on-mobile" title="切換回永續 × STREAM 旗艦主站">
+          <span>✨ 旗艦主站</span>
+        </a>
+        <a href="#sustainability-academic" class="btn-sust-nav hide-on-mobile" title="2026 台灣傑出永續教育人物獎・五大構面">
+          <span>🌍</span>
+          <span>傑出永續教育人物</span>
+        </a>
+        <a href="#publications" class="btn-outline hide-on-mobile">
+          <span>📄 期刊與論文</span>
+        </a>
+        <a href="#honors" class="btn-outline hide-on-mobile">
+          <span>🏆 17項代表榮譽</span>
+        </a>
+        <a href="#portfolio-catalog" class="btn-outline hide-on-mobile">
+          <span>🗂️ 數位典藏 (1,140)</span>
+        </a>
+
+        <!-- 三大風格切換選單 -->
+        <div class="relative-dropdown" id="styleSwitcherWrapper">
+          <button type="button" id="styleSwitcherBtn" class="btn-outline style-switcher-btn" aria-label="切換版型風格">
+            <span>🏛️ 風格 (3)</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="styleSwitcherMenu" class="style-dropdown-menu">
+            <a href="index.html" class="style-menu-item">
+              <span class="style-item-icon">🌍</span>
+              <div class="style-item-text">
+                <span class="style-item-title">1. 永續教育 × STREAM 旗艦版</span>
+                <span class="style-item-desc">傑出永續教育人物策展與 1,140 筆檢索庫</span>
+              </div>
+            </a>
+            <a href="academic.html" class="style-menu-item active">
+              <span class="style-item-icon">🏛️</span>
+              <div class="style-item-text">
+                <span class="style-item-title">2. 學院卓越智庫版</span>
+                <span class="style-item-desc">TSSCI 論文發表與學術研究專用</span>
+              </div>
+              <span class="style-item-badge">目前</span>
+            </a>
+            <a href="literary.html" class="style-menu-item">
+              <span class="style-item-icon">🌿</span>
+              <div class="style-item-text">
+                <span class="style-item-title">3. 自然走讀與書香人文版</span>
+                <span class="style-item-desc">環境教育、走讀古厝與晨讀推廣</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <button id="printBtn" class="btn-icon hide-on-mobile" title="列印或另存 PDF">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+        <button id="themeToggleBtn" class="btn-icon" title="切換深淺模式">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- 行動端導覽選單按鈕 -->
+        <button id="mobileMenuBtn" class="btn-icon show-on-mobile" aria-label="展開行動端導覽選單" title="專題與章節選單">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 行動端下拉抽屜選單 -->
+  <nav id="mobileNavMenu" class="mobile-nav-menu" style="display: none;" aria-label="行動端選單">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-section-title">學院智庫版章節與專題捷徑</div>
+      <a href="index.html" class="mobile-nav-link">
+        <span>✨ 切換回永續 × STREAM 旗艦主站</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#sustainability-academic" class="mobile-nav-link" onclick="window.closeMobileNav()" style="background: rgba(5,150,105,0.08); border-color: rgba(5,150,105,0.28);">
+        <span>🌍 2026 台灣傑出永續教育人物五大構面</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="special-sustainability.html" class="mobile-nav-link">
+        <span>🏅 傑出永續教育人物獨立全頁專刊</span>
+        <span>↗</span>
+      </a>
+      <a href="#publications" class="mobile-nav-link" onclick="window.closeMobileNav()">
+        <span>📄 核心期刊 (TSSCI) 與學位論文</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#honors" class="mobile-nav-link" onclick="window.closeMobileNav()">
+        <span>🏆 17 項代表性獲獎紀錄表</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#portfolio-catalog" class="mobile-nav-link" onclick="window.closeMobileNav()">
+        <span>🗂️ 檢索 1,140 筆成果檔案庫</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="flex-grow space-y-12 sm:space-y-16">
+    
+    <!-- 學院卓越 Hero -->
+    <section id="hero" class="py-12 sm:py-16 border-b border-amber-900/10 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold">
+                🌍 2026 台灣傑出永續教育人物獎（學校教育類）
+              </span>
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold">
+                🏛️ 學術研究與教育實踐智庫
+              </span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight academic-serif">
+              徐秉鴻 <span class="text-xl sm:text-3xl font-sans font-normal text-slate-300">/ Bing-Hong Xu</span>
+              <span class="block mt-2 text-2xl sm:text-3xl text-amber-400 font-serif">
+                科學教育實踐研究、永續教育與跨領域教學成果
+              </span>
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
+              國立高雄師範大學科學教育暨環境教育研究所博士班在讀／碩士班113級／數學系109級。現任苗栗縣永貞國小專任教師兼圖書館閱讀推動教師、文書組長，兼任苗栗縣國際教育中心專員、環境部認證環境教育人員。以《科學教育學刊》（TSSCI）第一作者實證研究為基底，深耕 STEAM 5E 探究、UN SDGs 永續教育與跨域美感實踐。
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="special-sustainability.html" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black text-xs sm:text-sm shadow-lg transition-all">
+                🌍 進入「2026 傑出永續教育人物」專頁
+              </a>
+              <a href="#portfolio-catalog" class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs sm:text-sm shadow-lg transition-all">
+                🗂️ 檢索全部 1,140 筆學術與教學典藏
+              </a>
+              <a href="#publications" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all">
+                📄 檢視期刊論文 (TSSCI)
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-white/15 space-y-4">
+            <div class="flex items-center gap-4 pb-3 border-b border-white/10">
+              <img src="downloads/site_assets/avatar.jpg" alt="徐秉鴻老師｜STEM 科學探究與跨域教育實踐現場" class="w-24 h-24 object-cover rounded-xl border border-amber-400/50" style="width: 88px; height: 88px; flex-shrink: 0;" />
+              <div>
+                <h3 class="text-amber-400 font-bold text-xs uppercase tracking-wider">Academic Credentials</h3>
+                <p class="text-white font-bold text-base mt-0.5">徐秉鴻 老師</p>
+                <p class="text-emerald-300 text-xs font-semibold">環境部認證環境教育人員</p>
+              </div>
+            </div>
+            <div class="space-y-3 text-xs text-slate-200">
+              <div class="pb-2 border-b border-white/10">
+                <span class="text-slate-400 block">博士班在讀</span>
+                <span class="font-bold text-white text-sm">國立高雄師範大學 科學教育暨環境教育研究所</span>
+              </div>
+              <div class="pb-2 border-b border-white/10">
+                <span class="text-slate-400 block">期刊核心發表</span>
+                <span class="font-bold text-amber-300 text-sm">《科學教育學刊》第一作者 (TSSCI)</span>
+              </div>
+              <div class="pb-2 border-b border-white/10">
+                <span class="text-slate-400 block">合格教師證書</span>
+                <span class="font-bold text-white">中等學校數學科 / 國民小學合格教師證書</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block">專業證照與榮譽</span>
+                <span class="font-bold text-white">2026 台灣傑出永續教育人物參選 / Gemini 認證</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2026 台灣傑出永續教育人物 學院專區摘要 -->
+    <section id="sustainability-academic" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 text-white p-6 sm:p-10 shadow-xl border border-emerald-500/30 space-y-6">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-white/10 pb-6">
+          <div class="space-y-2">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-xs font-bold">
+              🏆 2026 台灣傑出永續教育人物獎 • 五大評選構面與實證典藏
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black academic-serif text-white">
+              以科學探究為經、美感閱讀為緯，織就從在地泥土連通國際舞台的永續教育網
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+              完整收錄推薦報名表、個人簡歷、5,000 字事蹟報告、99 項編號佐證資料【佐證 1-01 ~ 5-25】及 93 個 UN SDGs 活動相簿（823 件現場紀實影像）。
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2.5 shrink-0">
+            <a href="special-sustainability.html" class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm transition-all">
+              📖 閱讀完整 5,000 字報告與 99 項佐證
+            </a>
+            <a href="index.html#sustainability-showcase" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all">
+              🎛️ 開啟 UN SDGs 互動策展台
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <span class="text-xs font-bold text-emerald-400">第一構面 (19項佐證)</span>
+            <h3 class="font-bold text-sm text-white">長期投入與理念實踐</h3>
+            <p class="text-xs text-slate-300">環境部認證環教人員、永貞國小跨年段教學與實習輔導傳承。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <span class="text-xs font-bold text-sky-400">第二構面 (26項佐證)</span>
+            <h3 class="font-bold text-sm text-white">課程創新與探究實作</h3>
+            <p class="text-xs text-slate-300">TSSCI 第一作者、全國科學探究競賽第一名、多肉植物氣候行動。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <span class="text-xs font-bold text-amber-400">第三構面 (11項佐證)</span>
+            <h3 class="font-bold text-sm text-white">校園文化與閱讀推廣</h3>
+            <p class="text-xs text-slate-300">教育部閱讀磐石學校核心推手、MSSR 晨讀與 SDGs 主題書展。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <span class="text-xs font-bold text-purple-400">第四構面 (18項佐證)</span>
+            <h3 class="font-bold text-sm text-white">社區走讀與國際夥伴</h3>
+            <p class="text-xs text-slate-300">中港溪流域走讀、苗栗國際教育中心專員、台日韓越跨國共學。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <span class="text-xs font-bold text-rose-400">第五構面 (25項佐證)</span>
+            <h3 class="font-bold text-sm text-white">實質影響與榮譽肯定</h3>
+            <p class="text-xs text-slate-300">17 項全國與縣市級代表榮譽、媒體報導、跨校公開授課擴散。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 期刊與學術發表專區 -->
+    <section id="publications" class="py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs font-black text-amber-700 uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full">Publications & Research</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 academic-serif">核心學術期刊、碩士論文與官方審查文件</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-l-amber-600 shadow-sm space-y-3 border border-slate-200">
+          <div class="flex items-center justify-between text-xs">
+            <span class="px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 font-bold">TSSCI 核心期刊 • 佐證 2-02</span>
+            <span class="font-mono text-slate-400">2025.03</span>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 leading-snug">
+            探討結合STEM議題的5E探究教學模式在設計國中探究與實作課程之研究
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>刊物</strong>：《科學教育學刊》，33(1)，39-78。<br>
+            <strong>作者</strong>：徐秉鴻、蔡執仲*（第一作者）
+          </p>
+          <a href="https://doi.org/10.6173/CJSE.202503_33(1).0002" target="_blank" class="text-xs font-bold text-amber-700 hover:underline inline-flex items-center gap-1">
+            查看 DOI 論文出版 ↗
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-l-slate-800 shadow-sm space-y-3 border border-slate-200">
+          <div class="flex items-center justify-between text-xs">
+            <span class="px-2.5 py-0.5 rounded bg-purple-100 text-purple-800 font-bold">碩士學位論文 • 佐證 1-03</span>
+            <span class="font-mono text-slate-400">2024.06</span>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 leading-snug">
+            發展STEM議題融入科學探究專題課程之教學實踐研究
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>學位</strong>：國立高雄師範大學科學教育暨環境教育研究所碩士論文。<br>
+            <strong>作者</strong>：徐秉鴻（指導教授：蔡執仲博士）
+          </p>
+          <a href="https://hdl.handle.net/11296/dp5una" target="_blank" class="text-xs font-bold text-amber-700 hover:underline inline-flex items-center gap-1">
+            臺灣博碩士論文知識加值系統 ↗
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-l-emerald-600 shadow-sm space-y-3 border border-slate-200">
+          <div class="flex items-center justify-between text-xs">
+            <span class="px-2.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">永續教育專書報告 • 完整 PDF</span>
+            <span class="font-mono text-slate-400">2026</span>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 leading-snug">
+            2026 台灣傑出永續教育人物獎：推薦報名表、事蹟報告與佐證彙編
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            收錄 01 推薦報名表、02 個人簡歷、03 事蹟與貢獻報告、04 佐證資料彙編、05 授權同意書共 5 份完整審查 PDF。
+          </p>
+          <a href="downloads/sustainability_award/03_附件三_永續教育成果報告_徐秉鴻_微調契合版.pdf" target="_blank" class="text-xs font-bold text-emerald-700 hover:underline inline-flex items-center gap-1">
+            下載 03.永續教育成果報告 PDF ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 項代表性獲獎與全國殊榮 -->
+    <section id="honors" class="py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-black text-amber-700 uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full">17 Representative Honors</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 academic-serif mt-2">個人重要獲獎紀錄表（17 項代表殊榮）</h2>
+        </div>
+        <a href="special-sustainability.html" class="text-xs font-bold text-emerald-700 hover:underline">查看全部 99 項佐證圖檔 →</a>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto">
+        <table class="award-table">
+          <thead>
+            <tr>
+              <th>序號</th>
+              <th>獲獎／榮譽名稱</th>
+              <th>核發／主辦單位</th>
+              <th>獲獎年月</th>
+              <th>對應佐證</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><strong>環境教育人員認證（經歷認證）</strong></td><td>環境部（原行政院環境保護署）</td><td>2024-2029</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 1-04</a></td></tr>
+            <tr><td>2</td><td><strong>《科學教育學刊》（TSSCI）第一作者期刊論文發表</strong></td><td>中華民國科學教育學會</td><td>2025.03</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 2-02</a></td></tr>
+            <tr><td>3</td><td><strong>2023 全國科學探究競賽－這樣教我就懂 教師組 第一名</strong></td><td>教育部國民及學前教育署／國研院國網中心</td><td>2023.06</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 2-03</a></td></tr>
+            <tr><td>4</td><td><strong>教育部 114 年度閱讀磐石學校（永貞國小閱讀推動核心團隊）</strong></td><td>教育部</td><td>2025.05</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 3-01</a></td></tr>
+            <tr><td>5</td><td><strong>教育部跨領域美感教育卓越領航計畫－優良教案選拔 優選</strong></td><td>教育部／國立臺灣師範大學</td><td>2025.10</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 5-04</a></td></tr>
+            <tr><td>6</td><td><strong>苗栗縣第 65 屆國民中小學科學展覽會 國小組數學科 第二名＆鄉土教材獎</strong></td><td>苗栗縣政府</td><td>2025.04</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 2-08</a></td></tr>
+            <tr><td>7</td><td><strong>2025 全國科學探究競賽 指導國小組三隊晉級決賽（最佳人氣獎、入選獎）</strong></td><td>教育部國教署／國立自然科學博物館</td><td>2025.05</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 2-05</a></td></tr>
+            <tr><td>8</td><td><strong>113 年度教育部國民及學前教育署 孝道教育行動學校 優等獎</strong></td><td>教育部國民及學前教育署</td><td>2024.11</td><td><a href="special-sustainability.html" class="ev-inline-pill">📌 佐證 5-06</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 歷程成果檢索庫 (與 js/app.js 完整連動，支援 1,140 筆與 9 大領域) -->
+    <section class="main-container" id="portfolio-catalog">
+      <div class="section-header" style="margin-bottom: 1.25rem;">
+        <div>
+          <span class="text-xs font-black text-amber-700 uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full">Digital Archive & Evidence Repository</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 academic-serif mt-2">全領域教學與永續實證數位典藏庫（1,140 筆）</h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">涵蓋「永續教育與SDGs、個人簡歷、跨領域美感、多元活動、公開課程、素養評量、閱讀推動、多肉永續、科學探究」9 大領域 43 個專業向度。</p>
+        </div>
+      </div>
+
+      <div class="controls-wrapper">
+        <!-- 9 Top Level Category Tabs -->
+        <nav class="category-tabs-container" id="categoryTabs" aria-label="成果分類"></nav>
+
+        <!-- Sub-section Pills (Dynamic based on selected category) -->
+        <div class="subsections-container" id="subsectionsWrapper" style="display: none;">
+          <div class="subsections-header">
+            <span class="subsections-header-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              專業向度細項：
+            </span>
+            <button id="subsectionsToggleBtn" class="subsections-toggle-btn" type="button" aria-expanded="false" title="展開或收合向度標籤">
+              <span class="toggle-text">展開全部向度 (43)</span>
+              <svg class="toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="subsections-scroll-track">
+            <div id="subsectionsList" class="subsections-list"></div>
+          </div>
+        </div>
+
+        <!-- Search & Filters Toolbar -->
+        <div class="search-filter-bar">
+          <div class="search-box-wrapper">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="即時搜尋 1,140 筆典藏：例如「佐證 2-02」、「TSSCI」、「永續」、「科學探究」、「多肉」...">
+            <button id="searchClearBtn" class="search-clear-btn" title="清除搜尋">&times;</button>
+          </div>
+
+          <div class="filter-actions">
+            <select id="mediaFilter" class="select-filter" aria-label="附件格式篩選">
+              <option value="all">📁 全部附件格式</option>
+              <option value="award">🏆 競賽得獎與官方佐證</option>
+              <option value="image">🖼️ 證書、活動照片與截圖</option>
+              <option value="pdf">📄 PDF 報告、論文與教案</option>
+              <option value="video">🎬 影音報導與專訪</option>
+              <option value="link">🌐 外部專題報導</option>
+            </select>
+
+            <select id="sortSelect" class="select-filter" aria-label="排序方式">
+              <option value="default">📌 預設向度排序</option>
+              <option value="newest">📅 最新發布優先</option>
+              <option value="oldest">📅 早期紀錄優先</option>
+              <option value="title">🔤 標題名稱排序</option>
+            </select>
+
+            <div class="view-toggle" role="group" aria-label="檢視模式切換">
+              <button id="viewGridBtn" class="view-btn active" title="網格卡片檢視">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                卡片
+              </button>
+              <button id="viewTimelineBtn" class="view-btn" title="履歷清單檢視">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                清單
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Search Chips -->
+        <div class="quick-search-chips">
+          <span class="quick-search-label">💡 熱門標籤：</span>
+          <button class="quick-chip" data-search="佐證">🏅 五大構面99項佐證</button>
+          <button class="quick-chip" data-search="TSSCI">📚 TSSCI 核心期刊</button>
+          <button class="quick-chip" data-search="全國第一">🏆 全國第一金獎</button>
+          <button class="quick-chip" data-search="多肉">🌱 多肉植癒 SEL</button>
+          <button class="quick-chip" data-search="竹節蟲">🦋 竹節蟲黃二探究</button>
+          <button class="quick-chip" data-search="剩食">♻️ 搶救剩食大作戰</button>
+          <button class="quick-chip" data-search="高美濕地">🌊 高美濕地與風電</button>
+          <button class="quick-chip" data-search="閱讀">📖 明日閱讀典範</button>
+        </div>
+
+        <!-- Results Count Info -->
+        <div class="results-meta">
+          <div id="resultsCount" class="results-count">載入中...</div>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <button class="btn-outline" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="window.clearAllFilters()">重設篩選</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Items Grid / List Container -->
+      <div id="itemsContainer" class="cards-grid"></div>
+
+      <!-- Batch Load More Controls -->
+      <div id="loadMoreContainer" class="load-more-container" style="display: none;"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <strong>徐秉鴻老師 學術研究與「2026 台灣傑出永續教育人物」數位典藏庫</strong>
+        <span>苗栗縣頭份市永貞國民小學｜國立高雄師範大學 科學教育暨環境教育研究所博士班｜環境部認證環境教育人員</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">STEAM 旗艦主站</a>
+        <a href="special-sustainability.html">🌍 傑出永續教育人物專頁</a>
+        <a href="徐秉鴻老師_教學成果檔案清單.md" target="_blank">📄 Markdown 檔案總表</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox / Viewer -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span id="modalSectionBadge" class="modal-section-badge">向度類別</span>
+          <h2 id="modalTitle" class="modal-title">成果標題</h2>
+        </div>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="關閉視窗">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div id="modalViewerContainer" class="modal-viewer-container"></div>
+        <div class="modal-details">
+          <div id="modalBodyText" class="modal-body-text"></div>
+        </div>
+      </div>
+
+      <div id="modalFilmstrip" class="modal-filmstrip" style="display: none;"></div>
+
+      <div class="modal-footer">
+        <div class="modal-nav-btns">
+          <button id="modalPrevBtn" class="btn-outline" title="上一筆成果 (&larr;)">
+            &larr; 上一筆
+          </button>
+          <button id="modalNextBtn" class="btn-outline" title="下一筆成果 (&rarr;)">
+            下一筆 &rarr;
+          </button>
+        </div>
+
+        <div style="font-size: 0.8rem; color: var(--text-muted);" id="modalMetaDate"></div>
+
+        <div class="modal-download-actions">
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            🌐 開啟外部專題
+          </a>
+          <a id="modalDownloadLink" href="#" class="btn-primary" download>
+            💾 下載本機原件
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="回到頂部">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

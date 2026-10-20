@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>從晨讀 MSSR 到數位適性識字金銀島 - 徐秉鴻老師旗艦教學與永續教育專題</title>
+  <meta name="description" content="永貞國小圖書館閱讀推動與科技化學習扶助教學實踐。苗栗縣頭份市永貞國小徐秉鴻老師教學成果專題。">
+  <link rel="icon" href="downloads/site_assets/avatar.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function() {
+      var savedTheme = 'light';
+      try {
+        savedTheme = (window.localStorage && window.localStorage.getItem('theme')) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {}
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <style>
+    .article-container {
+      max-width: 1180px;
+      margin: 2rem auto 4.5rem;
+      padding: 0 1.75rem;
+    }
+    .back-nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.92rem;
+    }
+    .article-hero {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      margin-bottom: 2.25rem;
+      position: relative;
+      background: #0f172a;
+      box-shadow: var(--shadow-lg);
+    }
+    .article-hero img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      object-position: center 25%;
+      opacity: 0.94;
+      display: block;
+    }
+    .article-hero-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: var(--gold-gradient);
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-full);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .article-header {
+      margin-bottom: 2rem;
+    }
+    .article-header-tag {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: var(--theme-reading-bg);
+      color: var(--theme-reading);
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(var(--primary-rgb), 0.2);
+    }
+    .article-header h1 {
+      font-size: clamp(1.45rem, 4.5vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.28;
+      color: var(--text-main);
+      margin-bottom: 0.65rem;
+      letter-spacing: -0.02em;
+    }
+    .article-header p.sub {
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      color: var(--theme-reading);
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .article-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .article-section h2 {
+      font-size: clamp(1.15rem, 3vw, 1.45rem);
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 1.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.85rem;
+      letter-spacing: -0.01em;
+    }
+    @media (max-width: 768px) {
+      .article-container {
+        margin: 1rem auto 2.5rem;
+        padding: 0 0.85rem;
+      }
+      .article-hero img {
+        height: 220px;
+      }
+      .article-hero-badge {
+        position: static;
+        border-radius: 0;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.85rem;
+        width: 100%;
+        justify-content: center;
+      }
+      .article-section {
+        padding: 1.25rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-avatar-container">
+          <img src="downloads/site_assets/avatar.jpg" alt="徐秉鴻老師｜STEM 科學探究與跨域教育實踐現場" class="brand-avatar">
+          <span class="brand-status-dot"></span>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">徐秉鴻 老師 <span class="brand-sust-pill">🌱 傑出永續教育人物</span></span>
+          <span class="brand-role">苗栗縣永貞國小 · 高師大科環所博士班 · 環境教育人員</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn-primary" style="font-size: 0.85rem; padding: 0.48rem 0.95rem;">
+          &larr; 返回成果首頁
+        </a>
+        <button id="themeToggleBtn" class="btn-icon" title="切換深淺模式">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button onclick="window.print()" class="btn-icon" title="列印此專題">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Container -->
+  <main class="article-container">
+    <div class="back-nav-row">
+      <a href="index.html" class="back-nav">&larr; 返回成果首頁（1,140 筆典藏庫）</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+        <a href="special-sustainability.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🌍 傑出永續教育人物</a><a href="special-succulent.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🌵 多肉植癒 SEL</a><a href="special-aesthetic.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🎨 跨域美感標竿</a><a href="special-reading.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; background: #059669; color: #fff; border-color: #059669;">📖 明日閱讀典範</a><a href="special-international.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🏮 蘆竹湳雙語古厝</a><a href="special-science.html" class="btn-outline" style="font-size: 0.8rem; padding: 0.38rem 0.85rem; ">🔬 科學探究雙金</a>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="downloads/feature_photos/reading_mssr_storyteller.jpg" alt="從晨讀 MSSR 到數位適性識字金銀島">
+      <div class="article-hero-badge">🏆 🎖️ 明日閱讀認證【聊書典範教師】·【明日英文聽讀教師】· 識字英雄榜全國前 20 名</div>
+    </div>
+
+    <div class="article-header">
+      <span class="article-header-tag">圖書閱讀推動 × 適性化學習 × 行動研究</span>
+      <h1>從晨讀 MSSR 到數位適性識字金銀島</h1>
+      <p class="sub">永貞國小圖書館閱讀推動與科技化學習扶助教學實踐</p>
+    </div>
+
+    <!-- Meta Card -->
+    <div class="spotlight-meta-grid" style="margin-bottom: 2rem;">
+      <div class="spotlight-meta-item">
+        <span class="spotlight-meta-label">殊榮競賽與認證</span>
+        <span class="spotlight-meta-val" style="color: var(--gold);">🎖️ 明日閱讀認證【聊書典範教師】·【明日英文聽讀教師】· 識字英雄榜全國前 20 名</span>
+      </div>
+      <div class="spotlight-meta-item">
+        <span class="spotlight-meta-label">課程實施對象</span>
+        <span class="spotlight-meta-val">國小全年段（重點深化高年級）</span>
+      </div>
+      <div class="spotlight-meta-item">
+        <span class="spotlight-meta-label">實施節數 / 期程</span>
+        <span class="spotlight-meta-val">114-115學年度持續實施</span>
+      </div>
+    </div>
+
+    <!-- Section 1: Overview -->
+    <section class="article-section">
+      <h2><span>📖 專題設計緣起與核心精神</span></h2>
+      <p style="font-size: 1.02rem; line-height: 1.85; color: var(--text-main); margin-bottom: 1.5rem;">
+        徐秉鴻老師兼任永貞國小圖書館閱讀推動教師，積極導入中央大學『明日閱讀 MSSR』模式，以身教示範帶動全校沉浸式閱讀。同時結合高雄師範大學研發之『識字金銀島』平台，推動國小語文適性化教學與學習扶助，將課堂實踐轉化為兩篇全國學術研討會論文！
+      </p>
+      <div class="spotlight-tags-row">
+        <span class="spotlight-pill"># 圖書館閱讀推動</span><span class="spotlight-pill"># MSSR身教晨讀</span><span class="spotlight-pill"># 聊書典範教師</span><span class="spotlight-pill"># 識字金銀島</span><span class="spotlight-pill"># 學習扶助</span><span class="spotlight-pill"># 研討會發表</span><span class="spotlight-pill"># 圖書館改建</span>
+      </div>
+    </section>
+
+    <!-- Section 2: SDGs Alignment -->
+    <section class="article-section">
+      <h2><span>🌍 核心素養與聯合國永續指標 (SDGs) 對應</span></h2>
+      <div class="sdg-grid">
+        
+          <div class="sdg-box">
+            <span class="sdg-code">閱讀核心 1</span>
+            <h5>身教式持續安靜閱讀 (MSSR)</h5>
+            <p>全校每日晨讀，教師以身作則共同沉浸書海，建立閱讀習慣與自主學習動力。</p>
+          </div>
+        
+          <div class="sdg-box">
+            <span class="sdg-code">閱讀核心 2</span>
+            <h5>聊書典範與深層理解</h5>
+            <p>引導學生從單純閱讀進階為深度討論，交流思辨觀點，獲中央大學聊書典範教師認證。</p>
+          </div>
+        
+          <div class="sdg-box">
+            <span class="sdg-code">閱讀核心 3</span>
+            <h5>識字金銀島數位診斷</h5>
+            <p>精準診斷弱勢學童識字難點，提供適性化補救教學，大幅提升語文自信。</p>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- Section 3: Core Modules -->
+    <section class="article-section">
+      <h2><span>🧩 核心模組與教學實踐架構</span></h2>
+      <div class="modules-list">
+        
+          <div class="module-box">
+            <h4>面向一：全校晨讀 MSSR 與主題閱讀策展</h4>
+            <div class="module-focus">全校性閱讀習慣奠定與情境營造</div>
+            <p>全面推行每日晨讀 15-20 分鐘，營造零壓力閱讀氛圍；規劃『世界書香日』、『主題書展』、『作家有約』與全校圖書館巡迴，讓閱讀成為孩子的生活常態。</p>
+          </div>
+        
+          <div class="module-box">
+            <h4>面向二：識字金銀島線上適性教學與扶助</h4>
+            <div class="module-focus">數位平台輔助與學習弱點即時反饋</div>
+            <p>應用國教署『國民中小學學生識字能力評估第四、五、六、七期計畫』與高師大方金雅教授研發之『識字金銀島』系統，結合部首、字形、字音、字義階梯診斷，指導學生自主闖關學習，顯著提昇語文識字量。</p>
+          </div>
+        
+          <div class="module-box">
+            <h4>面向三：學術研究驗證與研討會論文口頭發表</h4>
+            <div class="module-focus">教學實務與理論研究相長</div>
+            <p>先後於 2025 TALP 教育部自主學習節、2025/2026 PAIR 全國閱讀評量與教學研討會口頭發表 3 篇實踐論文，以嚴謹數據分析數位識字平台對學童學習成效與行為的正面影響。</p>
+          </div>
+        
+          <div class="module-box">
+            <h4>面向四：永貞圖書館空間美學活化與 AI 輔助</h4>
+            <div class="module-focus">校園閱讀空間優化與未來智慧圖書館</div>
+            <p>主責規劃 115 年永貞國小圖書館整修工程與空間環境改善案；並著手撰擬『如何利用 AI 協助國小閱讀推廣』先導實施計畫。</p>
+          </div>
+        
+      </div>
+    </section>
+
+    
+      <!-- Section 4: Authentic Gallery -->
+      <section class="article-section">
+        <h2><span>📸 教學現場紀實與成果照片（點擊放大檢視）</span></h2>
+        <div class="spotlight-gallery">
+          
+            <div class="spotlight-gallery-item" style="cursor: pointer;" onclick="window.openSpecialLightbox('閱讀推動與明日說書人互動引導活動現場：師生生生互動對話聊書', 'downloads/feature_photos/reading_mssr_storyteller.jpg', 'image', '')">
+              <img src="downloads/feature_photos/reading_mssr_storyteller.jpg" alt="閱讀推動與明日說書人互動引導活動現場：師生生生互動對話聊書" class="spotlight-gallery-img" loading="lazy">
+              <div class="spotlight-gallery-caption">🔍 閱讀推動與明日說書人互動引導活動現場：師生生生互動對話聊書</div>
+            </div>
+          
+            <div class="spotlight-gallery-item" style="cursor: pointer;" onclick="window.openSpecialLightbox('班級身教式持續安靜閱讀 MSSR 實施現場：全班專注沉浸書海', 'downloads/feature_photos/reading_classroom_01.jpg', 'image', '')">
+              <img src="downloads/feature_photos/reading_classroom_01.jpg" alt="班級身教式持續安靜閱讀 MSSR 實施現場：全班專注沉浸書海" class="spotlight-gallery-img" loading="lazy">
+              <div class="spotlight-gallery-caption">🔍 班級身教式持續安靜閱讀 MSSR 實施現場：全班專注沉浸書海</div>
+            </div>
+          
+            <div class="spotlight-gallery-item" style="cursor: pointer;" onclick="window.openSpecialLightbox('中央大學明日閱讀認證－聊書典範教師證書', 'downloads/attachments/3994245610_明日閱讀認證-聊書典範教師.png', 'image', '')">
+              <img src="downloads/attachments/3994245610_明日閱讀認證-聊書典範教師.png" alt="中央大學明日閱讀認證－聊書典範教師證書" class="spotlight-gallery-img" loading="lazy">
+              <div class="spotlight-gallery-caption">🔍 中央大學明日閱讀認證－聊書典範教師證書</div>
+            </div>
+          
+            <div class="spotlight-gallery-item" style="cursor: pointer;" onclick="window.openSpecialLightbox('114學年度明日英文聽讀教師認證', 'downloads/attachments/3994245317_114學年度-明日英文聽讀教師認證.png', 'image', '')">
+              <img src="downloads/attachments/3994245317_114學年度-明日英文聽讀教師認證.png" alt="114學年度明日英文聽讀教師認證" class="spotlight-gallery-img" loading="lazy">
+              <div class="spotlight-gallery-caption">🔍 114學年度明日英文聽讀教師認證</div>
+            </div>
+          
+            <div class="spotlight-gallery-item" style="cursor: pointer;" onclick="window.openSpecialLightbox('學生榮獲識字金銀島全國英雄榜積分前20名', 'downloads/attachments/3961316206_🏆 114-1「識字英雄榜積分前20名」.png', 'image', '')">
+              <img src="downloads/attachments/3961316206_🏆 114-1「識字英雄榜積分前20名」.png" alt="學生榮獲識字金銀島全國英雄榜積分前20名" class="spotlight-gallery-img" loading="lazy">
+              <div class="spotlight-gallery-caption">🔍 學生榮獲識字金銀島全國英雄榜積分前20名</div>
+            </div>
+          
+        </div>
+      </section>
+
+      <!-- Section 5: Documents -->
+      
+        <section class="article-section">
+          <h2><span>📑 相關獲獎證明與教案原件</span></h2>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
+                  <span style="font-weight: 700; color: var(--text-main);">📑 教育部閱讀推手甄選方案申報書全文（《蘆映書香．碼上啟航》STREAM 探究與數位適性閱讀）</span>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('教育部閱讀推手甄選方案申報書全文（《蘆映書香．碼上啟航》STREAM 探究與數位適性閱讀）', 'downloads/attachments/4046257032_永貞國小_徐秉鴻_教育部閱讀推手甄選方案.pdf', 'pdf', '')">
+                      🔍 線上預覽
+                    </button>
+                    <a href="downloads/attachments/4046257032_永貞國小_徐秉鴻_教育部閱讀推手甄選方案.pdf" target="_blank" download class="btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">
+                      💾 下載原件 &rarr;
+                    </a>
+                  </div>
+                </div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
+                  <span style="font-weight: 700; color: var(--text-main);">📑 教育部中央大學明日閱讀認證－【聊書典範教師】證書</span>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('教育部中央大學明日閱讀認證－【聊書典範教師】證書', 'downloads/attachments/3994245610_明日閱讀認證-聊書典範教師.png', 'image', '')">
+                      🔍 線上預覽
+                    </button>
+                    <a href="downloads/attachments/3994245610_明日閱讀認證-聊書典範教師.png" target="_blank" download class="btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">
+                      💾 下載原件 &rarr;
+                    </a>
+                  </div>
+                </div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
+                  <span style="font-weight: 700; color: var(--text-main);">📑 教育部夢的Ｎ次方【課堂實踐家】發表證明書</span>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('教育部夢的Ｎ次方【課堂實踐家】發表證明書', 'downloads/attachments/4062826860_夢的Ｎ次方【課堂實踐家】發表證明書.png', 'image', '')">
+                      🔍 線上預覽
+                    </button>
+                    <a href="downloads/attachments/4062826860_夢的Ｎ次方【課堂實踐家】發表證明書.png" target="_blank" download class="btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">
+                      💾 下載原件 &rarr;
+                    </a>
+                  </div>
+                </div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
+                  <span style="font-weight: 700; color: var(--text-main);">📑 教育部 115 年度圖書館閱讀推動教師國小初階研習證明書</span>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('教育部 115 年度圖書館閱讀推動教師國小初階研習證明書', 'downloads/attachments/4046257031_115年度圖書教師國小初階研習證明書.png', 'image', '')">
+                      🔍 線上預覽
+                    </button>
+                    <a href="downloads/attachments/4046257031_115年度圖書教師國小初階研習證明書.png" target="_blank" download class="btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">
+                      💾 下載原件 &rarr;
+                    </a>
+                  </div>
+                </div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
+                  <span style="font-weight: 700; color: var(--text-main);">📑 2025 PAIR 閱讀評量與教學國際研討會 論文發表證明「『識字金銀島』數位適性學習實踐」</span>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('2025 PAIR 閱讀評量與教學國際研討會 論文發表證明「『識字金銀島』數位適性學習實踐」', 'downloads/attachments/3675158470_2025 PAIR【第15屆閱讀評量與教學理論與實務研討會＠國立高雄師範大學】論文發表「『識字金銀島.png', 'image', '')">
+                      🔍 線上預覽
+                    </button>
+                    <a href="downloads/attachments/3675158470_2025 PAIR【第15屆閱讀評量與教學理論與實務研討會＠國立高雄師範大學】論文發表「『識字金銀島.png" target="_blank" download class="btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">
+                      💾 下載原件 &rarr;
+                    </a>
+                  </div>
+                </div>
+              
+          </div>
+        </section>
+      
+    
+
+    <div style="text-align: center; margin-top: 3.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="index.html" class="btn-primary" style="padding: 0.75rem 2.25rem; font-size: 1rem;">
+        &larr; 返回徐秉鴻老師 教學成果主網站
+      </a>
+      <a href="index.html#portfolio-catalog" class="btn-outline" style="padding: 0.75rem 1.75rem; font-size: 1rem;">
+        🗂️ 檢索 1,140 筆成果典藏庫
+      </a>
+    </div>
+  </main>
+
+  <!-- Built-in Lightbox Modal for Standalone Page -->
+  <div id="specialLightbox" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-section-badge">圖書閱讀推動 × 適性化學習 × 行動研究</span>
+          <h2 id="slTitle" class="modal-title">預覽</h2>
+        </div>
+        <button class="modal-close-btn" onclick="window.closeSpecialLightbox()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="slViewer" class="modal-viewer-container"></div>
+        <div id="slDescWrap" class="modal-details" style="display: none;">
+          <div id="slDesc" class="modal-body-text"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span style="font-size: 0.82rem; color: var(--text-muted);">徐秉鴻老師教學成果與永續教育數位典藏</span>
+        <div style="display: flex; gap: 0.5rem;">
+          <a id="slDownload" href="#" download class="btn-primary">💾 下載原件</a>
+          <button class="btn-outline" onclick="window.closeSpecialLightbox()">關閉視窗</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <strong>徐秉鴻老師 教學成果與「2026 台灣傑出永續教育人物」數位典藏庫</strong>
+        <span>苗栗縣頭份市永貞國民小學｜國立高雄師範大學 科學教育暨環境教育研究所博士班｜環境部認證環境教育人員</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">成果首頁</a>
+        <a href="special-sustainability.html">🌍 傑出永續教育人物專頁</a>
+        <a href="徐秉鴻老師_教學成果檔案清單.md">Markdown 檔案目錄</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const ALL_EVIDENCES = [];
+
+    const themeBtn = document.getElementById('themeToggleBtn');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const cur = document.documentElement.getAttribute('data-theme');
+        const nxt = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', nxt);
+        try { if (window.localStorage) window.localStorage.setItem('theme', nxt); } catch (_) {}
+      });
+    }
+
+    window.openSpecialLightbox = function(title, src, type, desc) {
+      const lb = document.getElementById('specialLightbox');
+      document.getElementById('slTitle').textContent = title;
+      const viewer = document.getElementById('slViewer');
+      if (type === 'pdf' || (src || '').toLowerCase().endsWith('.pdf')) {
+        viewer.innerHTML = '<div class="pdf-viewer-wrapper">' +
+          '<div class="pdf-mobile-fallback-bar">' +
+            '<span>📱 若行動裝置或 Google Sites 內嵌視窗無法直接捲動多頁 PDF：</span>' +
+            '<a href="' + src + '" target="_blank" rel="noopener noreferrer" class="pdf-mobile-open-btn">↗ 點此於新分頁開啟高畫質完整 PDF</a>' +
+          '</div>' +
+          '<iframe src="' + src + '#toolbar=1" class="modal-viewer-pdf" style="width:100%;height:70vh;border:none;"></iframe>' +
+        '</div>';
+      } else {
+        viewer.innerHTML = '<div class="photo-viewer-wrapper"><div class="photo-viewer-stage"><img src="' + src + '" alt="' + title + '" class="photo-viewer-img"></div></div>';
+      }
+      const descWrap = document.getElementById('slDescWrap');
+      const descEl = document.getElementById('slDesc');
+      if (desc) {
+        descEl.textContent = desc;
+        descWrap.style.display = 'block';
+      } else {
+        descWrap.style.display = 'none';
+      }
+      const dl = document.getElementById('slDownload');
+      dl.href = src;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.openSpecialEvidence = function(code) {
+      const ev = ALL_EVIDENCES.find(x => x.code === code);
+      if (ev) {
+        window.openSpecialLightbox('【佐證 ' + ev.code + '】' + (ev.headline || ev.title), ev.localFile, 'image', ev.description);
+      } else {
+        const elCard = document.getElementById('ev-card-' + code);
+        if (elCard) elCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    };
+
+    window.closeSpecialLightbox = function() {
+      const lb = document.getElementById('specialLightbox');
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    document.getElementById('specialLightbox')?.addEventListener('click', (e) => {
+      if (e.target.id === 'specialLightbox') window.closeSpecialLightbox();
+    });
+  </script>
+
+</body>
+</html>

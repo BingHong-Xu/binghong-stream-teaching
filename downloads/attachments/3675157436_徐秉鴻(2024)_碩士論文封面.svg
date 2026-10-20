@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1275" viewBox="0 0 600 850">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="850" fill="url(#bg)" rx="16"/>
+  <rect x="24" y="24" width="552" height="802" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2" rx="12"/>
+  
+  <text x="300" y="100" text-anchor="middle" fill="#94a3b8" font-family="'Noto Sans TC', sans-serif" font-size="20" font-weight="600" letter-spacing="4">國立高雄師範大學</text>
+  <text x="300" y="135" text-anchor="middle" fill="#cbd5e1" font-family="'Noto Sans TC', sans-serif" font-size="18" font-weight="500">科學教育暨環境教育研究所</text>
+  <text x="300" y="170" text-anchor="middle" fill="url(#gold)" font-family="'Noto Sans TC', sans-serif" font-size="22" font-weight="700" letter-spacing="2">碩 士 論 文</text>
+
+  <line x1="120" y1="210" x2="480" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- Icon / Badge -->
+  <circle cx="300" cy="300" r="60" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="2"/>
+  <text x="300" y="315" text-anchor="middle" font-size="52">🎓</text>
+
+  <!-- Title -->
+  <text x="300" y="420" text-anchor="middle" fill="#ffffff" font-family="'Noto Sans TC', sans-serif" font-size="24" font-weight="800">發展 STEM 議題融入科學探究</text>
+  <text x="300" y="460" text-anchor="middle" fill="#ffffff" font-family="'Noto Sans TC', sans-serif" font-size="24" font-weight="800">專題課程之教學實踐研究</text>
+
+  <rect x="180" y="500" width="240" height="36" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="1.5" rx="18"/>
+  <text x="300" y="524" text-anchor="middle" fill="#fcd34d" font-family="'Noto Sans TC', sans-serif" font-size="15" font-weight="700">★ 榮獲碩士學位優良論文 ★</text>
+
+  <!-- Author & Advisor -->
+  <text x="210" y="620" text-anchor="end" fill="#94a3b8" font-family="'Noto Sans TC', sans-serif" font-size="18">研　究　生：</text>
+  <text x="230" y="620" text-anchor="start" fill="#f8fafc" font-family="'Noto Sans TC', sans-serif" font-size="20" font-weight="700">徐秉鴻</text>
+
+  <text x="210" y="670" text-anchor="end" fill="#94a3b8" font-family="'Noto Sans TC', sans-serif" font-size="18">指導教授：</text>
+  <text x="230" y="670" text-anchor="start" fill="#f8fafc" font-family="'Noto Sans TC', sans-serif" font-size="20" font-weight="700">蔡執仲 博士</text>
+
+  <line x1="120" y1="730" x2="480" y2="730" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <text x="300" y="780" text-anchor="middle" fill="#94a3b8" font-family="'Noto Sans TC', sans-serif" font-size="16">中華民國一一三年七月</text>
+</svg>
