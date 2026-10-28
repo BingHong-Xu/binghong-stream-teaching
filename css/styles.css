@@ -1894,16 +1894,17 @@ button {
   border: 1px solid var(--border);
 }
 
-/* Wide Hero Bento Card (Spans 2 columns on Desktop) */
+/* Wide Hero Bento Card (Clean Flagship Vertical Hero) */
 .spotlight-card.bento-wide {
-  grid-column: span 2;
-  display: grid;
-  grid-template-columns: 46% 54%;
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
 }
 
 .spotlight-card.bento-wide .spotlight-banner {
-  height: 100%;
-  min-height: 290px;
+  width: 100%;
+  height: 275px;
+  min-height: 275px;
 }
 
 .spotlight-card:hover {
@@ -2022,7 +2023,12 @@ button {
   margin-bottom: 0.65rem;
 }
 
-.spotlight-card.bento-wide h3,
+.spotlight-card.bento-wide h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .spotlight-card.bento-full h3 {
   font-size: 1.45rem;
 }
@@ -2039,7 +2045,10 @@ button {
   flex: 1;
 }
 
-.spotlight-card.bento-wide .spotlight-overview,
+.spotlight-card.bento-wide .spotlight-overview {
+  -webkit-line-clamp: 3;
+}
+
 .spotlight-card.bento-full .spotlight-overview {
   -webkit-line-clamp: 4;
 }
@@ -4154,14 +4163,13 @@ mark.highlight {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .spotlight-grid,
-  .spotlight-grid.bento-grid {
+  .spotlight-grid:not(.bento-grid) {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.25rem;
   }
 
-  .spotlight-card.bento-wide,
-  .spotlight-card.bento-full {
+  .spotlight-grid:not(.bento-grid) .spotlight-card.bento-wide,
+  .spotlight-grid:not(.bento-grid) .spotlight-card.bento-full {
     grid-column: span 2 !important;
   }
 
@@ -4325,14 +4333,13 @@ mark.highlight {
     font-size: 0.84rem;
   }
 
-  .spotlight-grid,
-  .spotlight-grid.bento-grid {
+  .spotlight-grid:not(.bento-grid) {
     grid-template-columns: 1fr !important;
     gap: 1.25rem;
   }
 
-  .spotlight-card.bento-wide,
-  .spotlight-card.bento-full {
+  .spotlight-grid:not(.bento-grid) .spotlight-card.bento-wide,
+  .spotlight-grid:not(.bento-grid) .spotlight-card.bento-full {
     grid-column: span 1 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -5580,8 +5587,8 @@ mark.highlight {
 
 /* Bento Grid 2.0 for 6 Spotlights */
 .spotlight-grid.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr) !important;
   gap: 1.5rem;
 }
 
@@ -5591,13 +5598,25 @@ mark.highlight {
 
 .spotlight-grid.bento-grid > .spotlight-card.bento-wide {
   grid-column: span 6;
-  display: grid;
-  grid-template-columns: 44% 56%;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 1240px) {
+.spotlight-grid.bento-grid > .spotlight-card.bento-wide .spotlight-banner {
+  width: 100%;
+  height: 275px;
+  min-height: 275px;
+}
+
+@media (max-width: 1200px) {
   .spotlight-grid.bento-grid > .spotlight-card {
     grid-column: span 6;
+  }
+}
+
+@media (max-width: 1024px) {
+  .spotlight-grid.bento-grid {
+    gap: 1.25rem;
   }
   .spotlight-grid.bento-grid > .spotlight-card.bento-wide {
     grid-column: span 12;
@@ -5605,11 +5624,21 @@ mark.highlight {
 }
 
 @media (max-width: 768px) {
+  .spotlight-grid.bento-grid {
+    gap: 1.15rem;
+  }
   .spotlight-grid.bento-grid > .spotlight-card,
-  .spotlight-grid.bento-grid > .spotlight-card.bento-wide {
-    grid-column: span 12;
-    display: flex;
-    flex-direction: column;
+  .spotlight-grid.bento-grid > .spotlight-card.bento-wide,
+  .spotlight-grid.bento-grid > .spotlight-card.bento-full {
+    grid-column: span 12 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .spotlight-grid.bento-grid > .spotlight-card.bento-wide .spotlight-banner,
+  .spotlight-grid.bento-grid > .spotlight-card.bento-full .spotlight-banner {
+    height: 200px !important;
+    min-height: 200px !important;
   }
 }
 
