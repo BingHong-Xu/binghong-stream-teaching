@@ -337,22 +337,24 @@
         "type": "pdf"
       },
       {
+        "title": "上傳114-1學年度-期末成果資料01─創課方案.pdf（114學年度第1學期【美數．數美】幾何與比例的跨領域探索・創課方案 4.2 版）",
+        "shortLabel": "📄 上傳114-1學年度-期末成果資料01─創課方案.pdf",
+        "path": "downloads/attachments/上傳114-1學年度-期末成果資料01─創課方案.pdf",
+        "previewImage": "downloads/attachments/上傳114-1學年度-期末成果資料01─創課方案_cover.jpg",
+        "type": "pdf"
+      },
+      {
+        "title": "上傳114-2學年度-期末成果資料01─創課方案.pdf（114學年度第2學期【美數．數美】幾何與比例的跨域探索II・創課方案 4.2 版）",
+        "shortLabel": "📄 上傳114-2學年度-期末成果資料01─創課方案.pdf",
+        "path": "downloads/attachments/上傳114-2學年度-期末成果資料01─創課方案.pdf",
+        "previewImage": "downloads/attachments/上傳114-2學年度-期末成果資料01─創課方案_cover.jpg",
+        "type": "pdf"
+      },
+      {
         "title": "跨領域美感教育卓越領航計畫合作學校【美數．數美】幾何對稱與形變成果簡報（20260916-Geometric_Art.pdf）",
         "shortLabel": "📄 20260916-Geometric_Art.pdf（幾何對稱與形變簡報）",
         "path": "downloads/attachments/20260916-Geometric_Art.pdf",
         "previewImage": "downloads/attachments/20260916-Geometric_Art_cover.jpg",
-        "type": "pdf"
-      },
-      {
-        "title": "永貞國小 114 學年度第 1 學期 (114-1) 跨領域美感創課方案 4.2 完整教案（美數．數美：幾何與比例探索）",
-        "shortLabel": "📄 114-1 跨領域美感創課方案 4.2 教案 (PDF)",
-        "path": "downloads/attachments/4062820972_114-1學年度跨領域美感創課方案4.2_美數數美幾何與比例探索.pdf",
-        "type": "pdf"
-      },
-      {
-        "title": "永貞國小 114 學年度第 2 學期 (114-2) 跨領域美感創課方案 4.2 完整教案（美數．數美：幾何光影、立體空間與在地版畫）",
-        "shortLabel": "📄 114-2 跨領域美感創課方案 4.2 教案 (PDF)",
-        "path": "downloads/attachments/4062820973_114-2學年度跨領域美感創課方案4.2_美數數美幾何光影與版畫實作.pdf",
         "type": "pdf"
       }
     ],
@@ -360,6 +362,14 @@
       {
         "url": "downloads/attachments/【NoBGM成果】2026畢業成果展_cover.jpg",
         "caption": "【NoBGM成果】2026畢業成果展：114學年度跨領域美感教育工作坊暨永貞六甲多元×跨域學習成果展簡報封面"
+      },
+      {
+        "url": "downloads/attachments/上傳114-1學年度-期末成果資料01─創課方案_cover.jpg",
+        "caption": "【上傳114-1學年度-期末成果資料01─創課方案.pdf】114-1【美數．數美】幾何與比例的跨領域探索（創課方案 4.2 版封面）"
+      },
+      {
+        "url": "downloads/attachments/上傳114-2學年度-期末成果資料01─創課方案_cover.jpg",
+        "caption": "【上傳114-2學年度-期末成果資料01─創課方案.pdf】114-2【美數．數美】幾何與比例的跨域探索II（創課方案 4.2 版封面）"
       },
       {
         "url": "downloads/attachments/20260916-Geometric_Art_cover.jpg",

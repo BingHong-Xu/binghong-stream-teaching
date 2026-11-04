@@ -875,6 +875,12 @@ function createPageHtml(feat) {
         <button type="button" onclick="openSpecialLightbox('【NoBGM成果】2026 跨領域美感畢業成果展簡報 PDF', 'downloads/attachments/【NoBGM成果】2026畢業成果展.pdf', 'pdf', '永貞國小六年甲班（YES 601）2026 跨領域美感教育畢業成果展完整簡報（25頁）')" class="btn-outline" style="color: #fef08a; border-color: rgba(250, 204, 21, 0.55); background: rgba(250, 204, 21, 0.12); font-size: 0.9rem; padding: 0.55rem 1rem; border-radius: 10px; font-weight: 700; cursor: pointer;">
           📄 預覽 2026 畢業成果展 PDF
         </button>
+        <button type="button" onclick="openSpecialLightbox('上傳114-1學年度-期末成果資料01─創課方案.pdf', 'downloads/attachments/上傳114-1學年度-期末成果資料01─創課方案.pdf', 'pdf', '教育部跨領域美感教育卓越領航計畫合作學校創課方案(4.2版) 114-1【美數．數美】幾何與比例的跨領域探索')" class="btn-outline" style="color: #e9d5ff; border-color: rgba(168, 85, 247, 0.55); background: rgba(168, 85, 247, 0.15); font-size: 0.9rem; padding: 0.55rem 1rem; border-radius: 10px; font-weight: 700; cursor: pointer;">
+          📄 114-1 創課方案 PDF
+        </button>
+        <button type="button" onclick="openSpecialLightbox('上傳114-2學年度-期末成果資料01─創課方案.pdf', 'downloads/attachments/上傳114-2學年度-期末成果資料01─創課方案.pdf', 'pdf', '教育部跨領域美感教育卓越領航計畫合作學校創課方案(4.2版) 114-2【美數．數美】幾何與比例的跨域探索II')" class="btn-outline" style="color: #e9d5ff; border-color: rgba(168, 85, 247, 0.55); background: rgba(168, 85, 247, 0.15); font-size: 0.9rem; padding: 0.55rem 1rem; border-radius: 10px; font-weight: 700; cursor: pointer;">
+          📄 114-2 創課方案 PDF
+        </button>
         <button type="button" onclick="openSpecialLightbox('【2026跨領域美感發表】幾何對稱與形變（Geometric Art）', 'downloads/attachments/20260916-Geometric_Art.pdf', 'pdf', '教育部跨領域美感教育卓越領航計畫：幾何對稱與形變教學設計與美感實踐簡報（24頁）')" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.35); background: transparent; font-size: 0.9rem; padding: 0.55rem 1rem; border-radius: 10px; font-weight: 600; cursor: pointer;">
           📄 幾何對稱與形變 PDF
         </button>

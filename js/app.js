@@ -1506,6 +1506,15 @@
               <a href="${targetUrl}" target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #6366f1, #9333ea); border: none; font-size: 0.85rem; padding: 0.45rem 1.1rem; color: #fff; text-decoration: none; border-radius: var(--radius-md); font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem;">
                 🚀 開啟 2026 跨領域美感網站全貌 ↗
               </a>
+              <button type="button" onclick="window.previewSpotlightDoc('【NoBGM成果】2026畢業成果展.pdf', 'downloads/attachments/【NoBGM成果】2026畢業成果展.pdf', '', 'pdf')" class="btn-outline" style="color: #fef08a; border-color: rgba(250, 204, 21, 0.55); background: rgba(250, 204, 21, 0.12); font-size: 0.85rem; padding: 0.45rem 0.85rem; border-radius: var(--radius-md); font-weight: 700; cursor: pointer;">
+                📄 2026畢業成果展 PDF
+              </button>
+              <button type="button" onclick="window.previewSpotlightDoc('上傳114-1學年度-期末成果資料01─創課方案.pdf', 'downloads/attachments/上傳114-1學年度-期末成果資料01─創課方案.pdf', '', 'pdf')" class="btn-outline" style="color: #e9d5ff; border-color: rgba(168, 85, 247, 0.55); background: rgba(168, 85, 247, 0.15); font-size: 0.85rem; padding: 0.45rem 0.85rem; border-radius: var(--radius-md); font-weight: 700; cursor: pointer;">
+                📄 114-1 創課方案 PDF
+              </button>
+              <button type="button" onclick="window.previewSpotlightDoc('上傳114-2學年度-期末成果資料01─創課方案.pdf', 'downloads/attachments/上傳114-2學年度-期末成果資料01─創課方案.pdf', '', 'pdf')" class="btn-outline" style="color: #e9d5ff; border-color: rgba(168, 85, 247, 0.55); background: rgba(168, 85, 247, 0.15); font-size: 0.85rem; padding: 0.45rem 0.85rem; border-radius: var(--radius-md); font-weight: 700; cursor: pointer;">
+                📄 114-2 創課方案 PDF
+              </button>
               <a href="${targetUrl}#labs" target="_blank" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
                 🧪 互動實驗室 ↗
               </a>
