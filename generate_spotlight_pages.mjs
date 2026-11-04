@@ -400,7 +400,7 @@ function buildLearningMapSections(feat) {
             ✨ 實體官方摺頁數位典藏 · 100% 原始畫質 + 完整雙頁 PDF
           </span>
           <h2 style="margin: 0.5rem 0 0.25rem;"><span>🗺️ 永貞六甲多元智能×SDGs永續學習地圖摺頁展廳</span></h2>
-          <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">點擊切換折頁「內頁全景（八大智能成果地圖）」或「外頁全景（封面、五大亮點與導師簡歷）」，或直接預覽／下載《YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf》。</p>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">點擊切換折頁「內頁全景（八大智能成果地圖）」或「外頁全景（封面、五大亮點與導師簡歷）」，或直接預覽／下載《YES601-永貞六甲多元智能×SDGs永續學習地圖.pdf》。</p>
         </div>
         <div class="lm-brochure-nav" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
           <button id="btnBrochureInner" class="btn-primary" style="font-size: 0.85rem; padding: 0.45rem 1rem;" onclick="switchBrochureSide('inner')">
@@ -409,8 +409,8 @@ function buildLearningMapSections(feat) {
           <button id="btnBrochureOuter" class="btn-outline" style="font-size: 0.85rem; padding: 0.45rem 1rem;" onclick="switchBrochureSide('outer')">
             📘 檢視折頁外頁（封面與導覽）
           </button>
-          <button class="btn-outline" style="font-size: 0.85rem; padding: 0.45rem 1rem; border-color: #059669; color: #059669; font-weight: 700;" onclick="window.openSpecialLightbox('YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf', 'pdf', '')">
-            📄 線上預覽三折頁 PDF
+          <button class="btn-outline" style="font-size: 0.85rem; padding: 0.45rem 1rem; border-color: #059669; color: #059669; font-weight: 700;" onclick="window.openSpecialLightbox('YES601-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601-永貞六甲多元智能×SDGs永續學習地圖.pdf', 'pdf', '')">
+            📄 線上預覽學習地圖 PDF
           </button>
         </div>
       </div>
@@ -427,8 +427,8 @@ function buildLearningMapSections(feat) {
             🗺️ 折頁內頁全景：創新思維與智慧領航 · 熱血競技與團隊協行 · 內在涵養與永續共榮（八大多元智能完整實踐）
           </span>
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; width: auto;" class="lm-brochure-footer-btn-wrap">
-            <a href="downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf" download class="btn-primary lm-brochure-footer-btn" style="font-size: 0.82rem; padding: 0.35rem 0.85rem; background: #059669; border-color: #059669;">
-              📥 下載三折頁完整 PDF 原檔
+            <a href="downloads/attachments/YES601-永貞六甲多元智能×SDGs永續學習地圖.pdf" download class="btn-primary lm-brochure-footer-btn" style="font-size: 0.82rem; padding: 0.35rem 0.85rem; background: #059669; border-color: #059669;">
+              📥 下載學習地圖完整 PDF 原檔
             </a>
             <a id="brochureDownloadBtn" href="downloads/feature_photos/sdgs_learning_map_inner.jpg" download class="btn-outline lm-brochure-footer-btn" style="font-size: 0.82rem; padding: 0.35rem 0.85rem;">
               💾 下載目前高清圖檔

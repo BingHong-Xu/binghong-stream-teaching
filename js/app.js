@@ -1444,7 +1444,7 @@
               </div>
               <div class="spotlight-btn-group">
                 <span class="spotlight-btn">深入專題 🔍</span>
-                ${feat.id === 'learning_map' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(5,150,105,0.12); color: #059669; border-color: rgba(5,150,105,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf', '', 'pdf')" title="線上預覽三折頁雙面 PDF 原檔">📄 三折頁 PDF</button>` : ''}
+                ${feat.id === 'learning_map' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(5,150,105,0.12); color: #059669; border-color: rgba(5,150,105,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('YES601-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601-永貞六甲多元智能×SDGs永續學習地圖.pdf', '', 'pdf')" title="線上預覽 YES601-永貞六甲多元智能×SDGs永續學習地圖 PDF 原檔">📄 學習地圖 PDF</button>` : ''}
                 ${feat.id === 'succulent' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(16,185,129,0.12); color: #059669; border-color: rgba(16,185,129,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('【決賽】T0011_「嚐」試多「肉」的「常樂」之道—STREAM議題融入校本課程之探究 (PDF)', 'downloads/attachments/【決賽】T0011_「嚐」試多「肉」的「常樂」之道—STREAM議題融入校本課程之探究.pdf', '', 'pdf')" title="線上預覽 2026 科學探究競賽教師組決賽簡報 PDF">📄 決賽簡報 PDF</button>` : ''}
                 ${feat.id === 'science' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(37,99,235,0.12); color: #2563eb; border-color: rgba(37,99,235,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('【手繪】科學探究競賽-國小組（竹節蟲黃二的生命奇蹟 PDF）', 'downloads/attachments/【手繪】科學探究競賽-國小組.pdf', '', 'pdf')" title="線上預覽國小組《竹節蟲黃二的生命奇蹟》手繪探究繪本 PDF">📄 國小組手繪 PDF</button>` : ''}
                 ${feat.id === 'reading' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(217,119,6,0.12); color: #d97706; border-color: rgba(217,119,6,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('2026臺中場-徐秉鴻-定稿 (PDF)', 'downloads/attachments/2026臺中場-徐秉鴻-定稿.pdf', '', 'pdf')" title="線上預覽 2026 臺中場夢N實踐家簡報 PDF">📄 2026臺中場 PDF</button>` : ''}
@@ -1535,8 +1535,8 @@
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.65rem;">
               <strong style="font-size: 1rem; color: #059669;">⭐ 永貞國小六年甲班（YES 601）17 位學童全人展能星光名冊</strong>
               <div style="display: flex; gap: 0.45rem; flex-wrap: wrap;">
-                <button type="button" class="btn-primary" style="background: #059669; border: none; font-size: 0.8rem; padding: 0.35rem 0.85rem;" onclick="window.previewSpotlightDoc('YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf', '', 'pdf')">📄 線上預覽三折頁 PDF</button>
-                <a href="downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf" download class="btn-outline" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">📥 下載三折頁 PDF</a>
+                <button type="button" class="btn-primary" style="background: #059669; border: none; font-size: 0.8rem; padding: 0.35rem 0.85rem;" onclick="window.previewSpotlightDoc('YES601-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601-永貞六甲多元智能×SDGs永續學習地圖.pdf', '', 'pdf')">📄 線上預覽學習地圖 PDF</button>
+                <a href="downloads/attachments/YES601-永貞六甲多元智能×SDGs永續學習地圖.pdf" download class="btn-outline" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">📥 下載學習地圖 PDF</a>
               </div>
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
