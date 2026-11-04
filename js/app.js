@@ -889,7 +889,7 @@
           </div>
 
           <div class="sa-exec-principal-box">
-            <strong>🏫 推薦單位（${escapeHtml(info.recommender || '苗栗縣頭份市永貞國民小學・鍾瑞蓉 校長推薦')}）推薦理由摘錄：</strong><br>
+            <strong>🏫 推薦單位（${escapeHtml(info.recommender || '苗栗縣頭份市永貞國民小學・鍾瑞蓉 校長推薦')}）推薦意見摘錄：</strong><br>
             「${escapeHtml(info.recommendationReason || '')}」
           </div>
         </div>
