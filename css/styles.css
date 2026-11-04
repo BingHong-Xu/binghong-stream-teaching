@@ -4927,6 +4927,27 @@ mark.highlight {
   width: 100%;
 }
 
+/* --- Theme 0: 永續教育 (Sustainability) --- */
+.pillar-card[data-pillar="sustainability"] .pillar-top-accent {
+  background: linear-gradient(90deg, #059669, #10b981, #d97706);
+}
+.pillar-card[data-pillar="sustainability"] {
+  --pillar-accent: #059669;
+  --pillar-glow: rgba(5, 150, 105, 0.28);
+  --pillar-bg-soft: rgba(5, 150, 105, 0.08);
+  --pillar-border-soft: rgba(5, 150, 105, 0.25);
+}
+[data-theme="dark"] .pillar-card[data-pillar="sustainability"] {
+  --pillar-accent: #34d399;
+  --pillar-bg-soft: rgba(16, 185, 129, 0.12);
+  --pillar-border-soft: rgba(16, 185, 129, 0.3);
+}
+.pillar-card[data-pillar="sustainability"]:hover {
+  transform: translateY(-8px);
+  border-color: rgba(16, 185, 129, 0.55);
+  box-shadow: 0 20px 38px -10px rgba(5, 150, 105, 0.32), 0 0 0 1px rgba(16, 185, 129, 0.2);
+}
+
 /* --- Theme 1: 小教實習 (Practicum) --- */
 .pillar-card[data-pillar="practicum"] .pillar-top-accent {
   background: linear-gradient(90deg, #2563eb, #38bdf8, #6366f1);
@@ -4936,6 +4957,11 @@ mark.highlight {
   --pillar-glow: rgba(37, 99, 235, 0.28);
   --pillar-bg-soft: rgba(37, 99, 235, 0.06);
   --pillar-border-soft: rgba(37, 99, 235, 0.22);
+}
+[data-theme="dark"] .pillar-card[data-pillar="practicum"] {
+  --pillar-accent: #60a5fa;
+  --pillar-bg-soft: rgba(59, 130, 246, 0.12);
+  --pillar-border-soft: rgba(59, 130, 246, 0.3);
 }
 .pillar-card[data-pillar="practicum"]:hover {
   transform: translateY(-8px);
@@ -4953,6 +4979,11 @@ mark.highlight {
   --pillar-bg-soft: rgba(124, 58, 237, 0.06);
   --pillar-border-soft: rgba(124, 58, 237, 0.22);
 }
+[data-theme="dark"] .pillar-card[data-pillar="aesthetic"] {
+  --pillar-accent: #c084fc;
+  --pillar-bg-soft: rgba(168, 85, 247, 0.12);
+  --pillar-border-soft: rgba(168, 85, 247, 0.3);
+}
 .pillar-card[data-pillar="aesthetic"]:hover {
   transform: translateY(-8px);
   border-color: rgba(124, 58, 237, 0.55);
@@ -4968,6 +4999,11 @@ mark.highlight {
   --pillar-glow: rgba(5, 150, 105, 0.28);
   --pillar-bg-soft: rgba(5, 150, 105, 0.06);
   --pillar-border-soft: rgba(5, 150, 105, 0.22);
+}
+[data-theme="dark"] .pillar-card[data-pillar="reading"] {
+  --pillar-accent: #34d399;
+  --pillar-bg-soft: rgba(16, 185, 129, 0.12);
+  --pillar-border-soft: rgba(16, 185, 129, 0.3);
 }
 .pillar-card[data-pillar="reading"]:hover {
   transform: translateY(-8px);
@@ -5018,6 +5054,10 @@ mark.highlight {
   gap: 0.3rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 2;
+}
+
+.pillar-card[data-pillar="sustainability"] .pillar-badge-overlay {
+  background: linear-gradient(135deg, #047857, #059669, #d97706);
 }
 
 .pillar-card[data-pillar="practicum"] .pillar-badge-overlay {
@@ -5196,6 +5236,20 @@ mark.highlight {
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
   text-decoration: none;
+}
+
+.pillar-btn-primary {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.pillar-card[data-pillar="sustainability"] .pillar-btn-primary {
+  background: linear-gradient(135deg, #059669 0%, #10b981 65%, #0d9488 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.38);
 }
 
 .pillar-card[data-pillar="practicum"] .pillar-btn-primary {
