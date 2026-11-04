@@ -199,6 +199,17 @@
         </li>
       `).join('');
 
+      const primaryDoc = (p.documents && p.documents[0]) || null;
+      const featuredDocHtml = primaryDoc ? `
+        <div style="margin: 0.65rem 0 0.25rem; padding: 0.6rem 0.75rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 10px; display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-main); flex: 1; min-width: 160px;">${escapeHtml(primaryDoc.shortLabel || primaryDoc.title)}</span>
+          <div style="display: flex; gap: 0.4rem;">
+            <button type="button" class="btn-primary" style="padding: 0.28rem 0.65rem; font-size: 0.75rem;" onclick="window.previewSpotlightDoc('${escapeHtml(primaryDoc.title)}', '${primaryDoc.path}', '', 'pdf')">預覽 PDF</button>
+            <a href="${primaryDoc.path}" download class="btn-outline" style="padding: 0.28rem 0.6rem; font-size: 0.75rem;">下載</a>
+          </div>
+        </div>
+      ` : '';
+
       return `
         <article class="pillar-card" data-pillar="${p.id}">
           <div class="pillar-top-accent" style="${p.id === 'sustainability' ? 'background: linear-gradient(90deg, #059669, #10b981, #d97706);' : ''}"></div>
@@ -222,6 +233,8 @@
             <ul class="pillar-highlights-list">
               ${highlightsHtml}
             </ul>
+
+            ${featuredDocHtml}
 
             <div class="pillar-footer">
               <button class="pillar-btn pillar-btn-primary" onclick="window.openPillarModal('${p.id}')">深入專區實錄 🔍</button>
@@ -253,6 +266,23 @@
       };
     }
 
+    const overviewDocsHtml = (p.documents || []).length > 0 ? `
+      <div style="margin-bottom: 1.25rem; padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
+        <h4 style="font-size: 0.98rem; color: ${accentColor}; margin: 0 0 0.65rem 0;">📑 專區重點簡報與教案原檔 PDF（點擊線上預覽或下載）</h4>
+        <div style="display: flex; flex-direction: column; gap: 0.55rem;">
+          ${p.documents.map(d => `
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; flex-wrap: wrap; padding: 0.65rem 0.9rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;">
+              <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-main);">📄 ${escapeHtml(d.title)}</span>
+              <div style="display: flex; gap: 0.5rem;">
+                <button class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.78rem;" onclick="window.previewSpotlightDoc('${escapeHtml(d.title)}', '${d.path}', '', 'pdf')">線上預覽 PDF</button>
+                <a href="${d.path}" download class="btn-outline" style="padding: 0.35rem 0.8rem; font-size: 0.78rem;">下載 PDF</a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    ` : '';
+
     // Populate Tab 1: Overview
     const tabOverview = document.getElementById('pillarTabOverview');
     tabOverview.innerHTML = `
@@ -261,6 +291,7 @@
         <p style="font-size: 0.92rem; color: var(--text-main); line-height: 1.65;"><strong>職責：</strong>${escapeHtml(p.role)}<br><strong>指導／合作陣容：</strong>${escapeHtml(p.mentors)}</p>
         ${p.summary ? `<p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; background: var(--bg-surface); padding: 0.85rem 1rem; border-radius: 10px; border-left: 4px solid ${accentColor}; margin-top: 0.75rem;">${escapeHtml(p.summary)}</p>` : ''}
       </div>
+      ${overviewDocsHtml}
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 0.85rem; margin-bottom: 1rem;">
         ${(p.highlights || []).map(h => `
           <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.85rem;">
@@ -1413,6 +1444,9 @@
               </div>
               <div class="spotlight-btn-group">
                 <span class="spotlight-btn">深入專題 🔍</span>
+                ${feat.id === 'learning_map' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(5,150,105,0.12); color: #059669; border-color: rgba(5,150,105,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf', '', 'pdf')" title="線上預覽三折頁雙面 PDF 原檔">📄 三折頁 PDF</button>` : ''}
+                ${feat.id === 'reading' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(217,119,6,0.12); color: #d97706; border-color: rgba(217,119,6,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('2026臺中場-徐秉鴻-定稿 (PDF)', 'downloads/attachments/2026臺中場-徐秉鴻-定稿.pdf', '', 'pdf')" title="線上預覽 2026 臺中場夢N實踐家簡報 PDF">📄 2026臺中場 PDF</button>` : ''}
+                ${feat.id === 'aesthetic' ? `<button type="button" class="spotlight-link-direct no-modal" style="background: rgba(124,58,237,0.12); color: #7c3aed; border-color: rgba(124,58,237,0.35); cursor: pointer;" onclick="window.previewSpotlightDoc('20260916-Geometric_Art 幾何對稱與形變簡報 (PDF)', 'downloads/attachments/20260916-Geometric_Art.pdf', '', 'pdf')" title="線上預覽幾何對稱與形變成果簡報 PDF">📄 幾何美感 PDF</button>` : ''}
                 ${feat.externalSite ? `<a href="${window.location.protocol === 'file:' ? feat.externalSite.url : feat.externalSite.serverUrl}" target="_blank" class="spotlight-link-direct no-modal" style="background: linear-gradient(135deg, #6366f1, #9333ea); color: #fff; border-color: transparent;" title="開啟 2026 跨領域美感成果展網站全貌">🎨 2026美感展 ↗</a>` : ''}
                 <a href="special-${feat.id}.html" class="spotlight-link-direct no-modal" title="開啟獨立完整專頁">獨立專頁 ↗</a>
               </div>
@@ -1479,6 +1513,23 @@
               <a href="special-aesthetic.html" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; padding: 0.45rem 0.85rem; text-decoration: none; border-radius: var(--radius-md); font-weight: 600;">
                 🎨 查看標竿專題頁 ↗
               </a>
+            </div>
+          </div>
+        `;
+      } else if (feat.id === 'learning_map') {
+        const roster17 = ['吳丞諺', '林柏語', '鍾柏冠', '陳彥彤', '蘇于睿', '陳烽廷', '陳奕安', '饒恩慈', '高靖芸', '白羽菲', '李姷君', '陳姵蓉', '林庭羽', '鍾姿涵', '林莛栩', '楊雅閑', '黃祈恩'];
+        el.spModalExternalSiteWrapper.style.display = 'block';
+        el.spModalExternalSiteWrapper.innerHTML = `
+          <div style="background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(6,182,212,0.08)); border: 1px solid rgba(16,185,129,0.35); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.65rem;">
+              <strong style="font-size: 1rem; color: #059669;">⭐ 永貞國小六年甲班（YES 601）17 位學童全人展能星光名冊</strong>
+              <div style="display: flex; gap: 0.45rem; flex-wrap: wrap;">
+                <button type="button" class="btn-primary" style="background: #059669; border: none; font-size: 0.8rem; padding: 0.35rem 0.85rem;" onclick="window.previewSpotlightDoc('YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf', '', 'pdf')">📄 線上預覽三折頁 PDF</button>
+                <a href="downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf" download class="btn-outline" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">📥 下載三折頁 PDF</a>
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+              ${roster17.map((stu, idx) => `<span style="padding: 0.28rem 0.7rem; border-radius: 999px; background: var(--bg-card); border: 1px solid rgba(16,185,129,0.3); font-size: 0.84rem; font-weight: 700; color: var(--text-main);">✨ ${idx + 1}. ${stu}</span>`).join('')}
             </div>
           </div>
         `;

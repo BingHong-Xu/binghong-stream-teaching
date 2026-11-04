@@ -204,13 +204,13 @@ function buildLearningMapSections(feat) {
       focus: '推動學習島嶼與識字測驗、閱讀與寫作',
       sdgs: ['SDG 4 優質教育', 'SDG 10 減少不平等'],
       honors: [
-        '<strong>恩慈</strong>：榮獲苗栗縣文狀元「秀才」',
-        '<strong>姿涵</strong>：榮獲夢花文學獎小夢花兒童詩「優選」',
-        '<strong>恩慈、羽菲、姿涵、雅閑</strong>：榮獲「品德小故事」全縣佳作',
-        '<strong>柏語、彥彤、柏冠、于睿</strong>：榮登「識字英雄榜」全國前20名',
-        '<strong>7位學童文章屢登《國語日報》</strong>（姍君、祈恩、靖芸、羽菲、庭羽、建翔、雅閑）',
-        '<strong>雅閑、靖芸、羽菲</strong>：入選「明日說書人博覽會」',
-        '<strong>恩慈、庭羽、靖芸</strong>：入選「校內國語文競賽」前三名'
+        '<strong>饒恩慈</strong>：榮獲苗栗縣文狀元「秀才」',
+        '<strong>鍾姿涵</strong>：榮獲夢花文學獎小夢花兒童詩「優選」',
+        '<strong>饒恩慈、白羽菲、鍾姿涵、楊雅閑</strong>：榮獲「品德小故事」全縣佳作',
+        '<strong>林柏語、陳彥彤、鍾柏冠、蘇于睿</strong>：榮登「識字英雄榜」全國前20名',
+        '<strong>7位學童文章屢登《國語日報》</strong>（李姷君、黃祈恩、高靖芸、白羽菲、林庭羽、林莛栩、楊雅閑）',
+        '<strong>楊雅閑、高靖芸、白羽菲</strong>：入選「明日說書人博覽會」',
+        '<strong>饒恩慈、林庭羽、高靖芸</strong>：入選「校內國語文競賽」前三名'
       ]
     },
     {
@@ -226,8 +226,8 @@ function buildLearningMapSections(feat) {
       sdgs: ['SDG 4 優質教育', 'SDG 14 水下生命'],
       honors: [
         '<strong>校長盃「紅火蟻專題研究」海報比賽</strong>：',
-        '• 第一名：<strong>恩慈、靖芸、羽菲、祈恩</strong>',
-        '• 第三名：<strong>丞諺、彥彤、于睿、烽廷</strong>',
+        '• 第一名：<strong>饒恩慈、高靖芸、白羽菲、黃祈恩</strong>',
+        '• 第三名：<strong>吳丞諺、陳彥彤、蘇于睿、陳烽廷</strong>',
         '<strong>PaGamO 中文閱讀素養電競賽</strong>：班級積分破 5,000 分大關'
       ]
     },
@@ -261,9 +261,9 @@ function buildLearningMapSections(feat) {
       sdgs: ['SDG 3 良好健康福祉', 'SDG 5 性別平權'],
       honors: [
         '<strong>全校校慶運動會</strong>：拔河與趣味競賽雙奪「冠軍」雙冠王、大隊接力與躲避球「亞軍」',
-        '<strong>全班學童身穿 SDGs 戰袍</strong>：榮獲苗栗縣長盃與理事長盃樂樂棒球錦標賽全縣「亞軍、季軍」',
-        '<strong>靖芸、羽菲、祈恩</strong>：出戰全國小學籃球錦標賽女子乙組勇奪「全國亞軍」',
-        '<strong>祈恩</strong>：榮膺全國小學籃球錦標賽「最佳球員」'
+        '<strong>全班 17 位學童身穿 SDGs 戰袍</strong>（含<strong>陳姵蓉</strong>等全員）：榮獲苗栗縣長盃與理事長盃樂樂棒球錦標賽全縣「亞軍、季軍」',
+        '<strong>高靖芸、白羽菲、黃祈恩</strong>：出戰全國小學籃球錦標賽女子乙組勇奪「全國亞軍」',
+        '<strong>黃祈恩</strong>：榮膺全國小學籃球錦標賽「最佳球員」'
       ]
     },
     {
@@ -278,10 +278,10 @@ function buildLearningMapSections(feat) {
       focus: '踐行公民素養與社會共好',
       sdgs: ['SDG 1 消除貧困', 'SDG 8 尊嚴就業', 'SDG 12 責任消費', 'SDG 16 和平正義'],
       honors: [
-        '<strong>羽菲與恩慈</strong>：當選 114 學年度全校模範生（縣長獎）與 113-114 班級模範生',
-        '<strong>莛栩、丞諺、恩慈、姿涵</strong>：擔任廣達游於藝「導覽小尖兵」',
-        '<strong>多肉盆栽耶誕義賣</strong>：丞諺、奕安、姿涵、柏冠等學童參與愛心義賣捐助弱勢',
-        '<strong>客家電視台新聞專題採訪</strong>：庭羽、羽菲、丞諺、于睿等學童代表班級受訪報導'
+        '<strong>白羽菲、饒恩慈</strong>：當選 114 學年度全校模範生（縣長獎）與 113-114 班級模範生',
+        '<strong>林莛栩、吳丞諺、饒恩慈、鍾姿涵</strong>：擔任廣達游於藝「導覽小尖兵」',
+        '<strong>多肉盆栽耶誕義賣</strong>：吳丞諺、陳奕安、鍾姿涵、鍾柏冠等學童參與愛心義賣捐助弱勢',
+        '<strong>客家電視台新聞專題採訪</strong>：林庭羽、白羽菲、吳丞諺、蘇于睿等學童代表班級受訪報導'
       ]
     },
     {
@@ -298,7 +298,7 @@ function buildLearningMapSections(feat) {
       honors: [
         '英語歌曲、簡報、舞蹈多元展能競賽榮獲「優等」',
         '國際視訊交流展演 APT 與直笛（校本特色交流）',
-        '<strong>恩慈、姷君</strong>：獲全國音樂比賽陶笛重奏「優等」',
+        '<strong>饒恩慈、李姷君</strong>：獲全國音樂比賽陶笛重奏「優等」',
         '烏克麗麗與雙語課程體驗'
       ]
     },
@@ -317,7 +317,7 @@ function buildLearningMapSections(feat) {
         '中華民國心理衛生協會「SEL 心理韌性桌布」深度體驗',
         '苗栗縣生命教育教案徵選「雙篇優等」',
         '識字金銀島自主學習獎（113-114學年度學習島嶼自主學習）',
-        '<strong>Cool English 自主簡報競賽獲獎</strong>：恩慈榮獲「佳作」、羽菲榮獲「獎品」；靖芸、丞諺、雅閑、奕安、庭羽、莛栩入選自主簡報發表'
+        '<strong>Cool English 自主簡報競賽獲獎</strong>：饒恩慈榮獲「佳作」、白羽菲榮獲「獎品」；高靖芸、吳丞諺、楊雅閑、陳奕安、林庭羽、林莛栩入選自主簡報發表'
       ]
     },
     {
@@ -333,8 +333,8 @@ function buildLearningMapSections(feat) {
       sdgs: ['SDG 12 責任消費', 'SDG 13 氣候行動', 'SDG 15 陸域生態'],
       honors: [
         '參加國家科學及技術委員會「科普環島列車」（進駐苗栗站擔任科學關主）',
-        '<strong>姷君</strong>：入選環境知識競賽苗栗山城「環保大使」',
-        '<strong>靖芸、羽菲</strong>：探究專題作品《竹節蟲黃二的生命奇蹟》入選「全國科學探究競賽」'
+        '<strong>李姷君</strong>：入選環境知識競賽苗栗山城「環保大使」',
+        '<strong>高靖芸、白羽菲</strong>：探究專題作品《竹節蟲黃二的生命奇蹟》入選「全國科學探究競賽」'
       ]
     }
   ];
@@ -372,25 +372,23 @@ function buildLearningMapSections(feat) {
   ];
 
   const studentStars = [
-    { name: '饒恩慈', honors: '文狀元秀才 · 紅火蟻第一名 · 品德小故事佳作 · 陶笛重奏優等 · 全校模範生縣長獎 · Cool English佳作' },
-    { name: '鍾姿涵', honors: '夢花文學獎兒童詩優選 · 品德小故事佳作 · 廣達導覽小尖兵 · 樂樂棒全縣雙亞軍 · 多肉愛心義賣' },
-    { name: '陳羽菲', honors: '全校模範生縣長獎 · 紅火蟻第一名 · 女籃全國亞軍 · 國語日報刊登 · 品德小故事佳作 · 客家電視台專訪' },
-    { name: '陳祈恩', honors: '全國小學籃球錦標賽最佳球員 · 女籃全國亞軍 · 紅火蟻第一名 · 國語日報刊登' },
-    { name: '高靖芸', honors: '女籃全國亞軍 · 紅火蟻第一名 · 竹節蟲全國科探入選 · 明日說書人 · 國語日報刊登 · 樂樂棒雙亞軍' },
-    { name: '鍾柏語', honors: '識字英雄榜全國前20名 · 樂樂棒全縣雙亞軍' },
-    { name: '林彥彤', honors: '識字英雄榜全國前20名 · 紅火蟻第三名 · 樂樂棒全縣雙亞軍' },
-    { name: '徐柏冠', honors: '識字英雄榜全國前20名 · 樂樂棒全縣雙亞軍 · 多肉愛心義賣' },
-    { name: '蘇于睿', honors: '識字英雄榜全國前20名 · 紅火蟻第三名 · 樂樂棒全縣雙亞軍 · 客家電視台採訪' },
-    { name: '黃雅閑', honors: '品德小故事全縣佳作 · 國語日報刊登 · 明日說書人 · 自主簡報' },
-    { name: '林庭羽', honors: '國語日報刊登 · 校內語文競賽前三名 · 客家電視台採訪 · 自主簡報' },
-    { name: '張姍君', honors: '國語日報刊登 · 樂樂棒全縣雙亞軍' },
-    { name: '邱建翔', honors: '國語日報刊登 · 樂樂棒全縣雙亞軍' },
-    { name: '羅丞諺', honors: '紅火蟻第三名 · 樂樂棒雙亞軍 · 廣達導覽小尖兵 · 多肉義賣 · 客家電視台專訪' },
-    { name: '江烽廷', honors: '紅火蟻第三名 · 樂樂棒全縣雙亞軍' },
-    { name: '林奕安', honors: '樂樂棒全縣雙亞軍 · 多肉愛心義賣 · 自主簡報' },
-    { name: '鍾佩蓉', honors: '樂樂棒全縣雙亞軍' },
-    { name: '林莛栩', honors: '廣達游於藝導覽小尖兵 · 跨領域美感作品導覽 · 自主簡報' },
-    { name: '李姷君', honors: '全國音樂比賽陶笛重奏優等 · 環保大使選拔入選' }
+    { name: '吳丞諺', honors: '紅火蟻專題研究第三名 · 樂樂棒球全縣雙亞軍 · 廣達游於藝導覽小尖兵 · 多肉盆栽耶誕義賣 · 客家電視台專訪 · Cool English自主簡報入選' },
+    { name: '林柏語', honors: '識字英雄榜全國前20名 · 推動學習島嶼與閱讀寫作 · 樂樂棒球全縣雙亞軍' },
+    { name: '鍾柏冠', honors: '識字英雄榜全國前20名 · 樂樂棒球全縣雙亞軍 · 多肉盆栽耶誕義賣' },
+    { name: '陳彥彤', honors: '識字英雄榜全國前20名 · 紅火蟻專題研究第三名 · 樂樂棒球全縣雙亞軍' },
+    { name: '蘇于睿', honors: '識字英雄榜全國前20名 · 紅火蟻專題研究第三名 · 樂樂棒球全縣雙亞軍 · 客家電視台新聞專訪' },
+    { name: '陳烽廷', honors: '紅火蟻專題研究第三名 · 數位素養與PaGamO電競賽 · 樂樂棒球全縣雙亞軍' },
+    { name: '陳奕安', honors: '樂樂棒球全縣雙亞軍 · 多肉盆栽耶誕義賣 · Cool English自主簡報入選' },
+    { name: '饒恩慈', honors: '苗栗縣文狀元秀才 · 紅火蟻專題研究第一名 · 品德小故事全縣佳作 · 全國音樂比賽陶笛重奏優等 · 全校模範生縣長獎 · 廣達導覽小尖兵 · Cool English自主簡報佳作' },
+    { name: '高靖芸', honors: '全國小學籃球錦標賽女乙組全國亞軍 · 紅火蟻專題研究第一名 · 竹節蟲全國科學探究競賽入選 · 明日說書人博覽會 · 國語日報刊登 · 校內國語文競賽前三名 · 樂樂棒球全縣雙亞軍 · Cool English自主簡報入選' },
+    { name: '白羽菲', honors: '全校模範生縣長獎 · 紅火蟻專題研究第一名 · 全國小學籃球錦標賽女乙組全國亞軍 · 竹節蟲全國科學探究競賽入選 · 國語日報刊登 · 品德小故事全縣佳作 · 明日說書人博覽會 · 客家電視台專訪 · Cool English自主簡報獲獎' },
+    { name: '李姷君', honors: '全國音樂比賽陶笛重奏優等 · 國語日報刊登 · 環境知識競賽苗栗山城環保大使入選 · 樂樂棒球全縣雙亞軍' },
+    { name: '陳姵蓉', honors: '苗栗縣長盃與理事長盃樂樂棒球錦標賽全縣雙亞軍 · 校慶拔河與趣味競賽雙料冠軍 · 班級體能與群育楷模' },
+    { name: '林庭羽', honors: '國語日報刊登 · 校內國語文競賽前三名 · 客家電視台新聞專訪 · Cool English自主簡報入選 · 樂樂棒球全縣雙亞軍' },
+    { name: '鍾姿涵', honors: '夢花文學獎小夢花兒童詩優選 · 品德小故事全縣佳作 · 廣達游於藝導覽小尖兵 · 樂樂棒球全縣雙亞軍 · 多肉盆栽耶誕義賣' },
+    { name: '林莛栩', honors: '國語日報刊登 · 廣達游於藝導覽小尖兵 · 跨領域美感作品導覽說課 · 樂樂棒球全縣雙亞軍 · Cool English自主簡報入選' },
+    { name: '楊雅閑', honors: '品德小故事全縣佳作 · 國語日報刊登 · 明日說書人博覽會 · Cool English自主簡報入選 · 樂樂棒球全縣雙亞軍' },
+    { name: '黃祈恩', honors: '全國小學籃球錦標賽最佳球員 · 全國小學籃球錦標賽女乙組全國亞軍 · 紅火蟻專題研究第一名 · 國語日報刊登 · 樂樂棒球全縣雙亞軍' }
   ];
 
   return `
@@ -399,17 +397,20 @@ function buildLearningMapSections(feat) {
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
         <div>
           <span style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.75rem; border-radius: 999px; background: rgba(16, 185, 129, 0.12); color: #059669; font-weight: 700; font-size: 0.8rem; border: 1px solid rgba(16, 185, 129, 0.3);">
-            ✨ 實體官方摺頁數位典藏 · 100% 原始畫質
+            ✨ 實體官方摺頁數位典藏 · 100% 原始畫質 + 完整雙頁 PDF
           </span>
           <h2 style="margin: 0.5rem 0 0.25rem;"><span>🗺️ 永貞六甲多元智能×SDGs永續學習地圖摺頁展廳</span></h2>
-          <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">點擊切換折頁「內頁全景（八大智能成果地圖）」或「外頁全景（封面、五大亮點與導師簡歷）」，點擊圖片即可開啟高解析燈箱放大檢視。</p>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">點擊切換折頁「內頁全景（八大智能成果地圖）」或「外頁全景（封面、五大亮點與導師簡歷）」，或直接預覽／下載《YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf》。</p>
         </div>
-        <div class="lm-brochure-nav">
+        <div class="lm-brochure-nav" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
           <button id="btnBrochureInner" class="btn-primary" style="font-size: 0.85rem; padding: 0.45rem 1rem;" onclick="switchBrochureSide('inner')">
             🗺️ 檢視折頁內頁（成果地圖）
           </button>
           <button id="btnBrochureOuter" class="btn-outline" style="font-size: 0.85rem; padding: 0.45rem 1rem;" onclick="switchBrochureSide('outer')">
             📘 檢視折頁外頁（封面與導覽）
+          </button>
+          <button class="btn-outline" style="font-size: 0.85rem; padding: 0.45rem 1rem; border-color: #059669; color: #059669; font-weight: 700;" onclick="window.openSpecialLightbox('YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖 (PDF)', 'downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf', 'pdf', '')">
+            📄 線上預覽三折頁 PDF
           </button>
         </div>
       </div>
@@ -425,9 +426,12 @@ function buildLearningMapSections(feat) {
           <span id="brochureLabel" style="font-weight: 800; color: var(--text-main); font-size: 0.95rem;">
             🗺️ 折頁內頁全景：創新思維與智慧領航 · 熱血競技與團隊協行 · 內在涵養與永續共榮（八大多元智能完整實踐）
           </span>
-          <div style="display: flex; gap: 0.5rem; width: auto;" class="lm-brochure-footer-btn-wrap">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; width: auto;" class="lm-brochure-footer-btn-wrap">
+            <a href="downloads/attachments/YES601三折頁-永貞六甲多元智能×SDGs永續學習地圖.pdf" download class="btn-primary lm-brochure-footer-btn" style="font-size: 0.82rem; padding: 0.35rem 0.85rem; background: #059669; border-color: #059669;">
+              📥 下載三折頁完整 PDF 原檔
+            </a>
             <a id="brochureDownloadBtn" href="downloads/feature_photos/sdgs_learning_map_inner.jpg" download class="btn-outline lm-brochure-footer-btn" style="font-size: 0.82rem; padding: 0.35rem 0.85rem;">
-              💾 下載目前高清原檔
+              💾 下載目前高清圖檔
             </a>
           </div>
         </div>
@@ -557,19 +561,22 @@ function buildLearningMapSections(feat) {
     <section class="article-section">
       <h2><span>📑 折頁官方高畫質原檔典藏下載</span></h2>
       <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-        ${(feat.documents || []).map(d => `
+        ${(feat.documents || []).map(d => {
+          const isPdf = d.type === 'pdf' || (d.path || '').toLowerCase().endsWith('.pdf');
+          return `
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px;">
-            <span style="font-weight: 700; color: var(--text-main);">📑 ${escapeHtml(d.title)}</span>
+            <span style="font-weight: 700; color: var(--text-main);">${isPdf ? '📄' : '📑'} ${escapeHtml(d.title)}</span>
             <div style="display: flex; gap: 0.5rem;">
-              <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('${escapeHtml(d.title)}', '${d.path}', 'image', '')">
-                🔍 高畫質預覽
+              <button class="btn-primary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;" onclick="window.openSpecialLightbox('${escapeHtml(d.title)}', '${d.path}', '${isPdf ? 'pdf' : 'image'}', '')">
+                🔍 ${isPdf ? '線上預覽 PDF' : '高畫質預覽'}
               </button>
               <a href="${d.path}" target="_blank" download class="btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">
                 💾 下載原檔 &rarr;
               </a>
             </div>
           </div>
-        `).join('')}
+          `;
+        }).join('')}
       </div>
     </section>
   `;
