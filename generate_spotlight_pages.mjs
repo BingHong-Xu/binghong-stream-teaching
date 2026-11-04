@@ -872,6 +872,12 @@ function createPageHtml(feat) {
         <a href="https://binghong-xu.github.io/yongzhen-stem-art/" target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #6366f1, #9333ea); border: none; font-size: 0.9rem; padding: 0.55rem 1.25rem; color: #fff; text-decoration: none; border-radius: 10px; font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem;">
           🚀 開啟 2026 跨領域美感網站全貌 ↗
         </a>
+        <button type="button" onclick="openSpecialLightbox('【NoBGM成果】2026 跨領域美感畢業成果展簡報 PDF', 'downloads/attachments/【NoBGM成果】2026畢業成果展.pdf', 'pdf', '永貞國小六年甲班（YES 601）2026 跨領域美感教育畢業成果展完整簡報（25頁）')" class="btn-outline" style="color: #fef08a; border-color: rgba(250, 204, 21, 0.55); background: rgba(250, 204, 21, 0.12); font-size: 0.9rem; padding: 0.55rem 1rem; border-radius: 10px; font-weight: 700; cursor: pointer;">
+          📄 預覽 2026 畢業成果展 PDF
+        </button>
+        <button type="button" onclick="openSpecialLightbox('【2026跨領域美感發表】幾何對稱與形變（Geometric Art）', 'downloads/attachments/20260916-Geometric_Art.pdf', 'pdf', '教育部跨領域美感教育卓越領航計畫：幾何對稱與形變教學設計與美感實踐簡報（24頁）')" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.35); background: transparent; font-size: 0.9rem; padding: 0.55rem 1rem; border-radius: 10px; font-weight: 600; cursor: pointer;">
+          📄 幾何對稱與形變 PDF
+        </button>
         <a href="https://binghong-xu.github.io/yongzhen-stem-art/#labs" target="_blank" class="btn-outline" style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.35); font-size: 0.9rem; padding: 0.55rem 1rem; text-decoration: none; border-radius: 10px; font-weight: 600;">
           🧪 互動實驗室 ↗
         </a>

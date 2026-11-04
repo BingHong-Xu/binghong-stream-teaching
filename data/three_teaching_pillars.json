@@ -330,6 +330,13 @@
     ],
     "documents": [
       {
+        "title": "【NoBGM成果】2026畢業成果展.pdf（教育部跨領域美感教育卓越領航計畫・苗栗永貞國小六年甲班成果展完整簡報）",
+        "shortLabel": "📄 【NoBGM成果】2026畢業成果展.pdf",
+        "path": "downloads/attachments/【NoBGM成果】2026畢業成果展.pdf",
+        "previewImage": "downloads/attachments/【NoBGM成果】2026畢業成果展_cover.jpg",
+        "type": "pdf"
+      },
+      {
         "title": "跨領域美感教育卓越領航計畫合作學校【美數．數美】幾何對稱與形變成果簡報（20260916-Geometric_Art.pdf）",
         "shortLabel": "📄 20260916-Geometric_Art.pdf（幾何對稱與形變簡報）",
         "path": "downloads/attachments/20260916-Geometric_Art.pdf",
@@ -350,6 +357,10 @@
       }
     ],
     "gallery": [
+      {
+        "url": "downloads/attachments/【NoBGM成果】2026畢業成果展_cover.jpg",
+        "caption": "【NoBGM成果】2026畢業成果展：114學年度跨領域美感教育工作坊暨永貞六甲多元×跨域學習成果展簡報封面"
+      },
       {
         "url": "downloads/attachments/20260916-Geometric_Art_cover.jpg",
         "caption": "【20260916-Geometric_Art.pdf】跨領域美感教育卓越領航計畫合作學校【美數．數美】幾何對稱與形變成果簡報封面"
